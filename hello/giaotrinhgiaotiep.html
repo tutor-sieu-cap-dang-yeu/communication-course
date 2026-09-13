@@ -525,6 +525,44 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
 .tl-v{flex:1;font-size:14px;color:var(--text-dark);line-height:1.7;}
 .tl-ex{margin:0;padding-left:18px;}
 .tl-ex li{margin:2px 0;}
+/* ===== Lesson 8 CSS (mirrors L7 patterns) ===== */
+.l8-sel{font-family:inherit;font-size:14px;font-weight:700;color:var(--teal);border:1.5px solid var(--teal);border-radius:6px;padding:2px 6px;background:var(--white);cursor:pointer;margin:0 2px;}
+.l8-sel.sel-ok{border-color:var(--green-success);color:var(--green-success);background:var(--green-light);}
+.l8-sel.sel-bad{border-color:var(--red-error,#c0392b);color:var(--red-error,#c0392b);background:#fdecea;}
+#page-lesson8 .ex-row{padding:12px 14px;border-bottom:1px solid var(--border);}
+#page-lesson8 .ex-row:last-child{border-bottom:none;}
+#page-lesson8 .ex-n{font-weight:800;color:var(--teal);margin-right:6px;}
+#page-lesson8 .ex-txt,#page-lesson8 .ex-q{font-size:14.5px;color:var(--text-dark);line-height:1.9;}
+#page-lesson8 .circle-opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+#page-lesson8 .circle-opt{font-family:inherit;font-size:13.5px;color:var(--text-dark);border:1.5px solid var(--border);border-radius:8px;padding:6px 12px;background:var(--white);cursor:pointer;transition:all .15s;}
+#page-lesson8 .circle-opt:hover{border-color:var(--teal);}
+#page-lesson8 .circle-opt.selected{border-color:var(--teal);background:var(--sage);font-weight:700;}
+#page-lesson8 .circle-opt.opt-correct{border-color:var(--green-success);background:var(--green-light);color:var(--green-success);font-weight:700;}
+#page-lesson8 .circle-opt.opt-wrong{border-color:var(--red-error,#c0392b);background:#fdecea;color:var(--red-error,#c0392b);}
+#page-lesson8 .mcq-exp{margin-top:8px;font-size:12.5px;color:var(--text-mid);background:var(--sage);border-radius:6px;padding:6px 10px;}
+.fill-in{font-family:inherit;font-size:14px;color:var(--forest);border:1.5px solid var(--border);border-radius:6px;padding:3px 8px;outline:none;}
+.fill-in:focus{border-color:var(--teal);}
+.fill-in.in-ok{color:var(--green-success);font-weight:700;border-color:var(--green-success);background:var(--green-light);}
+.fill-in.in-bad{color:var(--red-error,#c0392b);border-color:var(--red-error,#c0392b);background:#fdecea;}
+#page-lesson8 .dict-in.in-ok{color:var(--green-success);font-weight:700;border-color:var(--green-success);background:var(--green-light);}
+#page-lesson8 .dict-in.in-bad{color:var(--red-error,#c0392b);border-color:var(--red-error,#c0392b);background:#fdecea;}
+.tense-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0;}
+.tense-card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--teal);border-radius:var(--radius);padding:14px 16px;}
+.tense-name{font-weight:800;color:var(--forest);font-size:14px;margin-bottom:8px;}
+.tense-formula{display:inline-block;background:var(--sage);color:var(--forest);border-radius:20px;padding:4px 12px;font-size:12.5px;margin-bottom:8px;}
+.tense-ex{font-size:14px;color:var(--text-dark);line-height:1.7;}
+.tense-ex2{font-size:12.5px;color:var(--text-soft);font-style:italic;margin-top:4px;}
+.transcript{background:var(--sage);border-radius:8px;padding:10px 14px;margin-top:8px;}
+.transcript p{font-size:13px;color:var(--text-mid);line-height:1.7;margin:4px 0;}
+.scenario-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);}
+.scenario-head{background:linear-gradient(135deg,var(--forest),var(--moss));color:#fff;font-weight:700;padding:10px 16px;font-size:14px;}
+.scenario-body{background:var(--white);padding:12px 16px;font-size:14px;color:var(--text-dark);line-height:1.7;}
+.read-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13.5px;}
+.read-table th,.read-table td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top;color:var(--text-dark);}
+.read-table th{background:var(--sage);color:var(--forest);font-weight:700;}
+.read-table td b{color:var(--forest);}
+.pron-sent{margin:8px 0 0;padding-left:22px;}
+.pron-sent li{font-size:14.5px;color:var(--text-dark);line-height:2;}
 .l7-sel{font-family:inherit;font-size:14px;font-weight:700;color:var(--teal);border:1.5px solid var(--teal);border-radius:6px;padding:2px 6px;background:var(--white);cursor:pointer;margin:0 2px;}
 .l7-sel.sel-ok{border-color:var(--green-success);color:var(--green-success);background:var(--green-light);}
 .l7-sel.sel-bad{border-color:var(--red-error,#c0392b);color:var(--red-error,#c0392b);background:#fdecea;}
@@ -837,7 +875,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
   <div class="hero sm">
     <div class="meta"><span class="badge badge-mint">PHASE 2</span><span class="badge badge-white">5 WEEKS · 10 LESSONS</span><span class="badge badge-white">SESSIONS 5–14</span></div>
     <h1>Phase 2</h1>
-    <p class="sub">Modules 3–7. Session 5 opens with Mock Test Phase 1 + a new lesson. Content will be added in the next update.</p>
+    <p class="sub">Modules 3–7. Module 3 (Lessons 5–6) and Module 4 (Lessons 7–8) are ready. More content will be added in the next update.</p>
   </div>
   <div class="section">
     <div class="module-card">
@@ -849,7 +887,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
         <div class="lnum">5</div>
         <div class="linfo">
           <div class="lt">Lesson 5 — The Job Cycle</div>
-          <div class="ld">Hiring &amp; travel · tasks &amp; positions · leaving a job · street-interview reading · workplace listening · career speaking · 30-question quiz</div>
+          <div class="ld">Hiring &amp; travel · tasks &amp; positions · leaving a job · street-interview reading · workplace listening · career speaking · 40-question quiz</div>
         </div>
         <span class="done-mark" id="doneMark-lesson5" style="display:none;">✓ Completed</span>
         <button class="btn btn-primary btn-sm" data-page="lesson5">Open lesson →</button>
@@ -858,7 +896,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
         <div class="lnum">6</div>
         <div class="linfo">
           <div class="lt">Lesson 6 — Describing Your Company</div>
-          <div class="ld">Four workplace cultures · working environments · people &amp; personality traits · culture reading · office listening · company speaking · 30-question quiz</div>
+          <div class="ld">Four workplace cultures · working environments · people &amp; personality traits · culture reading · office listening · company speaking · 40-question quiz</div>
         </div>
         <span class="done-mark" id="doneMark-lesson6" style="display:none;">✓ Completed</span>
         <button class="btn btn-primary btn-sm" data-page="lesson6">Open lesson →</button>
@@ -873,12 +911,20 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
         <div class="lnum">7</div>
         <div class="linfo">
           <div class="lt">Lesson 7 — Schedule &amp; Time</div>
-          <div class="ld">Telling the time · months &amp; quarters · days &amp; timeline · prepositions of time (3 exercises) · scheduling emails · ordinals &amp; phone message · birthday speaking · fill-in discussion · 30-question quiz</div>
+          <div class="ld">Telling the time · months &amp; quarters · days &amp; timeline · prepositions of time (3 exercises) · scheduling emails · ordinals &amp; phone message · birthday speaking · fill-in discussion · 40-question quiz</div>
         </div>
         <span class="done-mark" id="doneMark-lesson7" style="display:none;">✓ Completed</span>
         <button class="btn btn-primary btn-sm" data-page="lesson7">Open lesson →</button>
       </div>
-      <div class="lesson-row locked"><div class="lnum">8</div><div class="linfo"><div class="lt">Lesson 8</div><div class="ld">Content will be added in the next update</div></div><span class="badge badge-forest">🔒 Locked</span></div>
+      <div class="lesson-row">
+        <div class="lnum">8</div>
+        <div class="linfo">
+          <div class="lt">Lesson 8 — Successful Business</div>
+          <div class="ld">12 business types &amp; 12 success factors · comparatives with <i>to be</i> (-er / more) · the opinion template · customer-review reading · owner-interview listening · reply-to-your-boss discussion · 40-question quiz</div>
+        </div>
+        <span class="done-mark" id="doneMark-lesson8" style="display:none;">✓ Completed</span>
+        <button class="btn btn-primary btn-sm" data-page="lesson8">Open lesson →</button>
+      </div>
     </div>
     <div class="module-card"><div class="module-head"><span class="mn">MODULE 5</span><h3>Coming soon</h3></div><div class="lesson-row locked"><div class="lnum">9</div><div class="linfo"><div class="lt">Lessons 9–10</div><div class="ld">Updating soon</div></div><span class="badge badge-forest">🔒 Locked</span></div></div>
     <div class="module-card"><div class="module-head"><span class="mn">MODULE 6</span><h3>Coming soon</h3></div><div class="lesson-row locked"><div class="lnum">11</div><div class="linfo"><div class="lt">Lessons 11–12</div><div class="ld">Updating soon</div></div><span class="badge badge-forest">🔒 Locked</span></div></div>
@@ -4124,6 +4170,410 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
   </div>
 </div>
 
+
+<!-- ================= PAGE: LESSON 8 (Module 4 · Successful Business) ================= -->
+<div class="page" id="page-lesson8">
+  <div class="hero">
+    <div class="meta">
+      <span class="badge badge-mint">PHASE 2 · MODULE 4 · LESSON 8</span>
+      <span class="badge badge-white">CEFR A2 → B1</span>
+      <span class="badge badge-white">⏱ 120 MIN</span>
+    </div>
+    <h1>Successful Business</h1>
+    <p class="sub">Describe and judge what makes a business successful. Learn 12 business types and 12 success factors, master the comparative with <b>to be</b> (<i>-er</i> / <i>more</i>), and give a balanced opinion with the template <b>“Nothing is more important than…”</b>.</p>
+    <div class="outcomes">
+      <span class="badge badge-white">Getting Ready</span>
+      <span class="badge badge-white">Speaking</span>
+      <span class="badge badge-white">Grammar</span>
+      <span class="badge badge-white">Reading</span>
+      <span class="badge badge-white">Listening</span>
+      <span class="badge badge-white">Discussion</span>
+      <span class="badge badge-white">Quiz</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="tab-bar" data-group="l8tabs">
+      <button class="tab-btn active" data-tab="l8-overview">1 · Overview</button>
+      <button class="tab-btn" data-tab="l8-p1">2 · Getting Ready</button>
+      <button class="tab-btn" data-tab="l8-p2">3 · Speaking</button>
+      <button class="tab-btn" data-tab="l8-grammar">4 · Grammar</button>
+      <button class="tab-btn" data-tab="l8-reading">5 · Reading</button>
+      <button class="tab-btn" data-tab="l8-listening">6 · Listening</button>
+      <button class="tab-btn" data-tab="l8-discussion">7 · Discussion</button>
+      <button class="tab-btn" data-tab="l8-quiz">8 · Quiz</button>
+    </div>
+
+    <!-- ===== TAB 1: OVERVIEW ===== -->
+    <div class="tab-panel active" data-panel-group="l8tabs" data-panel="l8-overview">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Welcome</span><h2 class="section-title">What makes a business successful?</h2><p class="section-subtitle">By the end of this lesson you can name business types, weigh success factors, compare businesses, and defend your opinion in natural English.</p></div>
+        <div class="journey">
+          <div class="j-step"><div class="j-num">1</div><h4>Language Input</h4><div class="j-part">Tab 2 · Getting Ready</div><p>Business types, success factors, phrases, pronunciation &amp; quick practice.</p></div>
+          <div class="j-step"><div class="j-num">2</div><h4>Guided Practice</h4><div class="j-part">Tab 3 · Speaking</div><p>4-level speaking with the opinion template + reflex practice.</p></div>
+          <div class="j-step"><div class="j-num">3</div><h4>Language Recognition</h4><div class="j-part">Tabs 4–6 · Grammar, Reading &amp; Listening</div><p>Comparatives, customer reviews &amp; owner interviews.</p></div>
+          <div class="j-step"><div class="j-num">4</div><h4>Real-world Communication</h4><div class="j-part">Tabs 3, 7 · Speaking &amp; Discussion</div><p>Give opinions &amp; reply to four kinds of boss.</p></div>
+          <div class="j-step"><div class="j-num">5</div><h4>Reflection &amp; Review</h4><div class="j-part">Tab 8 · Quiz</div><p>40-question game to lock everything in.</p></div>
+        </div>
+        <div class="goal-grid" style="margin-top:18px;">
+          <div class="goal-card"><div class="ic">🏪</div><h4>Vocabulary</h4><p>12 business types + 12 success factors, with IPA &amp; simple English meanings.</p></div>
+          <div class="goal-card"><div class="ic">📊</div><h4>Grammar</h4><p>Comparatives with <i>to be</i>: short <i>-er</i>, long <i>more</i>, irregular (better/worse).</p></div>
+          <div class="goal-card"><div class="ic">🗣️</div><h4>Speaking</h4><p>“In my opinion, nothing is more important than Y…” — a balanced opinion.</p></div>
+          <div class="goal-card"><div class="ic">🎧</div><h4>Listening</h4><p>Catch what customers like &amp; dislike; finish a shop dictation.</p></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-primary" data-l8tab="l8-p1">Start: Getting Ready →</button></div>
+      </div>
+    </div>
+    <!-- ===== TAB 2: PART 1 — GETTING READY ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-p1">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Part 1 · Getting Ready</span><h2 class="section-title">Build your business language</h2><p class="section-subtitle">Four steps before you speak: <b>A</b> vocabulary, <b>B</b> useful phrases, <b>C</b> pronunciation, <b>D</b> quick practice.</p></div>
+        <div class="tab-bar" data-group="l8p1">
+          <button class="tab-btn active" data-tab="l8p1-a">A · Vocabulary</button>
+          <button class="tab-btn" data-tab="l8p1-b">B · Useful Phrases</button>
+          <button class="tab-btn" data-tab="l8p1-c">C · Pronunciation</button>
+          <button class="tab-btn" data-tab="l8p1-d">D · Quick Practice</button>
+        </div>
+
+        <!-- A · VOCABULARY -->
+        <div class="tab-panel active" data-panel-group="l8p1" data-panel="l8p1-a">
+          <div class="mini-label">A.1 · Success factors — how we judge a business (tap to flip)</div>
+          <div class="info-box" style="margin-bottom:14px;">💡 These 12 nouns are the words we use to say <b>why</b> a business is good or bad — its service, prices, atmosphere, and so on.</div>
+          <div class="vocab-grid" id="l8vg_factors"></div>
+
+          <div class="mini-label" style="margin-top:22px;">A.2 · Types of business (tap to flip)</div>
+          <div class="info-box" style="margin-bottom:14px;">🏪 12 common places a customer visits. Learn the word, the IPA, and a simple definition.</div>
+          <div class="vocab-grid" id="l8vg_types"></div>
+
+          <!-- A.5 Comprehensive Context Passage -->
+          <div class="exercise" style="margin-top:22px;">
+            <div class="exercise-title">📖 A.5 · Comprehensive Context Passage — “Which place is better?”</div>
+            <div class="info-box" style="margin-bottom:14px;">Every word from A.1–A.2 lives inside ONE short story about comparing two businesses. Read it aloud twice. Colors show which bank each phrase belongs to.</div>
+            <div class="legend">
+              <span class="hl-vocab">business type / factor</span>
+              <span class="hl-phrase">opinion phrase</span>
+              <span class="hl-pron">stressed word</span>
+              <span class="hl-accent">comparative (-er / more)</span>
+            </div>
+            <div class="sample-box" style="line-height:2.1;">
+              Last week I tried a new <span class="hl-vocab">restaurant</span> and a small <span class="hl-vocab">boutique</span> on the same street. <span class="hl-phrase">In my opinion, nothing is more important than</span> <span class="hl-vocab">service</span>. The waiters were <span class="hl-accent">friendlier</span> and <span class="hl-accent">faster</span> than at the old café, and the <span class="hl-pron">at·MOS·phere</span> was warm and comfortable. The <span class="hl-vocab">prices</span> were a little <span class="hl-accent">more expensive</span>, but the <span class="hl-vocab">quality</span> and <span class="hl-vocab">value</span> were much <span class="hl-accent">better</span>. The boutique had a great <span class="hl-vocab">location</span> and clever window <span class="hl-vocab">displays</span>, though its <span class="hl-vocab">popularity</span> made it <span class="hl-accent">more crowded</span>. <span class="hl-phrase">Of course, good prices are important, too,</span> and the <span class="hl-vocab">staff</span> were very <span class="hl-pron">pro·FES·sion·al</span>. For me, the <span class="hl-vocab">convenience</span> and clean <span class="hl-vocab">facilities</span> made the restaurant the winner — <span class="hl-phrase">but service is really the number one thing.</span>
+            </div>
+          </div>
+          <div class="btn-group"><button class="btn btn-primary" data-l8p1tab="l8p1-b">Next: Useful Phrases →</button></div>
+        </div>
+
+        <!-- B · USEFUL PHRASES -->
+        <div class="tab-panel" data-panel-group="l8p1" data-panel="l8p1-b">
+          <div class="info-box" style="margin-bottom:14px;">💬 Natural phrases for giving an opinion about a business and talking about a place. <b>Tap “Show Vietnamese”</b> to reveal meanings.</div>
+          <div id="l8phrases"></div>
+          <div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="l8TogglePhrasesVi(this)">Show Vietnamese</button><button class="btn btn-primary" data-l8p1tab="l8p1-c">Next: Pronunciation →</button></div>
+        </div>
+
+        <!-- C · PRONUNCIATION -->
+        <div class="tab-panel" data-panel-group="l8p1" data-panel="l8p1-c">
+          <div class="section-header"><span class="part-label">Pronunciation focus · Word stress</span><h2 class="section-title">Stress in longer business words</h2><p class="section-subtitle">Many success-factor words have 3–4 syllables. Put the <b>stress on the right syllable</b> (shown in CAPITALS) and the word instantly sounds natural.</p></div>
+          <div class="mini-label">Say each word aloud — hit the CAPITAL syllable harder</div>
+          <div id="l8pronWords"></div>
+          <div class="listening-notice" style="margin-top:14px;">🗣️ <b>Tip:</b> in the comparative, “than” is weak and short — it sounds like <i>/ðən/</i>: “cheaper-<b>thun</b>”, “more professional-<b>thun</b>”.</div>
+          <div class="btn-group"><button class="btn btn-primary" data-l8p1tab="l8p1-d">Next: Quick Practice →</button></div>
+        </div>
+
+        <!-- D · QUICK PRACTICE -->
+        <div class="tab-panel" data-panel-group="l8p1" data-panel="l8p1-d">
+          <div class="info-box" style="margin-bottom:14px;">⚡ Fast checks to lock in Part 1. Choose an answer for each, then press <b>Check answers</b>.</div>
+          <div class="exercise">
+            <div class="exercise-title">D.1 · Choose the correct answer</div>
+            <div id="l8qpList"></div>
+            <div class="feedback-box" id="fb-l8qp"><div class="score-badge" id="sc-l8qp">0/6</div><span id="ms-l8qp"></span></div>
+            <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckQP()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetQP()">Reset</button></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">D.2 · Match each business to what it is</div>
+            <div class="exercise-instruction">Pick the correct place for each description, then check.</div>
+            <div id="l8matchList"></div>
+            <div class="feedback-box" id="fb-l8match"><div class="score-badge" id="sc-l8match">0/8</div><span id="ms-l8match"></span></div>
+            <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckMatch()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetMatch()">Reset</button></div>
+          </div>
+          <div class="btn-group"><button class="btn btn-primary" data-l8tab="l8-p2">Next: Part 2 — Speaking →</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== TAB 3: PART 2 — SPEAKING ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-p2">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Part 2 · Speaking</span><h2 class="section-title">Give your opinion about a business</h2><p class="section-subtitle">First guided production with the opinion template (2A), then instant-reflex speaking (2B).</p></div>
+        <div class="tab-bar" data-group="l8p2">
+          <button class="tab-btn active" data-tab="l8p2-a">2A · Speaking</button>
+          <button class="tab-btn" data-tab="l8p2-b">2B · Reflex Practice</button>
+        </div>
+
+        <!-- 2A SPEAKING -->
+        <div class="tab-panel active" data-panel-group="l8p2" data-panel="l8p2-a">
+          <div class="scenario-card" style="margin-bottom:16px;"><div class="scenario-head">🎯 The opinion template</div><div class="scenario-body"><b>In my opinion, nothing is more important than [Y]. Of course, [X] is important, too, but [Y] is really the number one thing.</b><br><span style="font-size:13px;opacity:.85;">Pick the ONE factor you care about most (Y), then admit a second one (X).</span></div></div>
+          <div class="exercise">
+            <div class="exercise-title">🏓 Activity 1 — Ping-Pong Priority</div>
+            <div class="exercise-instruction">Fast reflex duel. Read each question, then answer aloud with the template above. Reveal a hint answer to compare.</div>
+            <div id="l8ping"></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">🕵️ Activity 2 — Spot the Imposter</div>
+            <div class="exercise-instruction">Each sentence hides a grammar or logic mistake. Answer the question, then reveal the corrected version.</div>
+            <div id="l8imposter"></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">✅ Speaking checklist</div>
+            <label class="check-item"><input type="checkbox" class="l8spk"> I used today's business vocabulary.</label>
+            <label class="check-item"><input type="checkbox" class="l8spk"> I used the “nothing is more important than…” template.</label>
+            <label class="check-item"><input type="checkbox" class="l8spk"> My comparatives (-er / more) were correct.</label>
+            <label class="check-item"><input type="checkbox" class="l8spk"> I gave a reason with “because”.</label>
+            <label class="check-item"><input type="checkbox" class="l8spk"> I spoke confidently and naturally.</label>
+          </div>
+          <div class="btn-group"><button class="btn btn-primary" data-l8p2tab="l8p2-b">Next: Reflex Practice →</button></div>
+        </div>
+
+        <!-- 2B REFLEX -->
+        <div class="tab-panel" data-panel-group="l8p2" data-panel="l8p2-b">
+          <div class="tab-bar" data-group="l8p2b">
+            <button class="tab-btn active" data-tab="l8p2b-t1">Tier 1 · Lucky Draw</button>
+            <button class="tab-btn" data-tab="l8p2b-t2">Tier 2 · Extended Speaking</button>
+          </div>
+          <div class="tab-panel active" data-panel-group="l8p2b" data-panel="l8p2b-t1">
+            <div class="info-box" style="margin-bottom:16px;">🎯 <b>Goal: speak IMMEDIATELY.</b> No time to prepare — react like a real customer giving an opinion.</div>
+            <div class="draw-grid">
+              <div class="draw-zone">
+                <span class="alt-badge">IN-CLASS ALTERNATIVE: DRAW PAPER CARDS</span>
+                <h4>📚 Zone 1 — Say a business word</h4>
+                <div class="zone-desc">Draw a word → say a FULL sentence about a business using it (a factor or a place).</div>
+                <button class="draw-btn" onclick="l8DrawWord()">DRAW A<br>WORD</button>
+                <div class="draw-result" id="l8drawWordRes"><span class="small">Your word will appear here…</span></div>
+              </div>
+              <div class="draw-zone">
+                <span class="alt-badge">IN-CLASS ALTERNATIVE: DRAW PAPER CARDS</span>
+                <h4>💬 Zone 2 — Opinion situations</h4>
+                <div class="zone-desc">Draw a situation → answer with the opinion template. One-word answers don't count!</div>
+                <button class="draw-btn" onclick="l8DrawSituation()">DRAW A<br>SITUATION</button>
+                <div class="draw-result" id="l8drawSitRes"><span class="small">Your situation will appear here…</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel-group="l8p2b" data-panel="l8p2b-t2">
+            <div class="info-box" style="margin-bottom:14px;">🎤 Speak for longer (30 s – 3 min) on a prompt. Draw a prompt, keep to the structure, and beat the clock.</div>
+            <div class="exercise">
+              <div class="exercise-title">🎲 Draw a speaking prompt</div>
+              <button class="draw-btn" style="margin:6px auto 12px;" onclick="l8DrawPrompt()">DRAW A<br>PROMPT</button>
+              <div class="draw-result" id="l8promptRes"><span class="small">Your prompt will appear here…</span></div>
+              <div class="tier2-hint" style="margin-top:14px;"><b>💡 Use today's words &amp; structures:</b>
+                <ul>
+                  <li>Opinion template: “In my opinion, nothing is more important than <b>[Y]</b>… Of course, <b>[X]</b> is important, too, but <b>[Y]</b> is really the number one thing.”</li>
+                  <li>Comparatives: short adj + <b>-er</b> (cheaper, faster) · long adj + <b>more</b> (more professional) · irregular (<b>better / worse</b>)</li>
+                  <li>Success factors: service · quality · price · value · speed · location · atmosphere · staff …</li>
+                  <li>Give a reason with <b>because</b> (“…because time is money.”)</li>
+                </ul>
+              </div>
+              <div class="count-row">
+                <div class="count-display" id="timerL8T2">01:00</div>
+                <button class="preset-pill" data-sec8t2 onclick="l8T2SetPreset(60,this)">1 min</button>
+                <button class="preset-pill" data-sec8t2 onclick="l8T2SetPreset(120,this)">2 min</button>
+                <button class="preset-pill" data-sec8t2 onclick="l8T2SetPreset(180,this)">3 min</button>
+                <button class="btn-start" onclick="l8T2StartTimer()">▶ Start</button>
+                <button class="btn-timer-reset" onclick="l8T2ResetTimer()">↺ Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group"><button class="btn btn-outline" data-l8tab="l8-p1">← Part 1</button><button class="btn btn-primary" data-l8tab="l8-grammar">Next: Grammar →</button></div>
+    </div>
+    <!-- ===== TAB 4: GRAMMAR ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-grammar">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Grammar focus</span><h2 class="section-title">The comparative with “to be”</h2><p class="section-subtitle">To compare two things, use <b>Subject 1 + to be + comparative + than + Subject 2</b>. Short adjectives add <i>-er</i>; long adjectives use <i>more</i>.</p></div>
+        <div class="tense-grid">
+          <div class="tense-card"><div class="tense-name">Short adjectives (1 syllable)</div><div class="tense-formula">S1 + <b>to be</b> + adj-<b>er</b> + than + S2</div><div class="tense-ex">Online books <b>are cheaper than</b> campus books.</div><div class="tense-ex2">cheap → cheaper · fast → faster · close → closer</div></div>
+          <div class="tense-card"><div class="tense-name">Long adjectives (2+ syllables)</div><div class="tense-formula">S1 + <b>to be</b> + <b>more</b> + adj + than + S2</div><div class="tense-ex">This hotel <b>is more expensive than</b> that one.</div><div class="tense-ex2">expensive → more expensive · professional → more professional</div></div>
+          <div class="tense-card"><div class="tense-name">Irregular &amp; special</div><div class="tense-formula">learn these by heart</div><div class="tense-ex"><b>good → better</b> · <b>bad → worse</b> · <b>far → farther/further</b></div><div class="tense-ex2">2-syllable “-y”: friendly → friendlier · never say “more friendlier” (double comparative ✗)</div></div>
+        </div>
+        <div class="info-box" style="margin-top:14px;">⚠️ Two classic mistakes: <b>double comparative</b> (“more friendlier” ✗ → <i>friendlier</i>) and <b>wrong irregular</b> (“more good” ✗ → <i>better</i>).</div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercise 1 · Fill the comparative</div>
+          <div class="exercise-instruction">Complete with the comparative of the adjective in brackets. Type your answer, then check.</div>
+          <div id="l8ex1List"></div>
+          <div class="feedback-box" id="fb-l8ex1"><div class="score-badge" id="sc-l8ex1">0/3</div><span id="ms-l8ex1"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckEx1()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetEx1()">Reset</button></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Exercise 2 · “-er” or “more”? (choose the correct form)</div>
+          <div class="exercise-instruction">For each adjective, tap the correct comparative. Then check — an explanation appears for every item.</div>
+          <div id="l8ex2List"></div>
+          <div class="feedback-box" id="fb-l8ex2"><div class="score-badge" id="sc-l8ex2">0/14</div><span id="ms-l8ex2"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckEx2()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetEx2()">Reset</button></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l8tab="l8-p2">← Speaking</button><button class="btn btn-primary" data-l8tab="l8-reading">Next: Reading →</button></div>
+      </div>
+    </div>
+
+    <!-- ===== TAB 5: READING ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-reading">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Reading</span><h2 class="section-title">Customer reviews &amp; the secrets of business owners</h2><p class="section-subtitle">Read the two passages, then do the four tasks. Check your answers and reveal the evidence.</p></div>
+        <div class="read-passage">
+          <h4>Passage 1 — Customer Reviews</h4>
+          <p>At the new Indian restaurant on Sixth Street, everyone says the food is very good, but the service is slow. Customers have to wait for nearly an hour before getting their meals. Meanwhile, the campus bookstore is convenient, but its prices are about 10% more expensive than the store in the mall, and 20% more expensive than online shops.</p>
+          <p>At the Metropolitan Health Club on Third Street, prices are very cheap, but it is too popular and always full of people. Because of this popularity, customers sometimes have to wait a long time to use the machines. Another business, a hotel in Honolulu, has very friendly and helpful staff. However, its location is a problem because it is too far from downtown restaurants and clubs.</p>
+        </div>
+        <div class="read-passage" style="margin-top:14px;">
+          <h4>Passage 2 — The Secrets of Business Owners</h4>
+          <p>What makes a business successful? Different owners have different opinions. A Japanese restaurant owner thinks excellent service is the number one thing. He believes that if customers feel treated poorly, they won't come back. Of course, fresh fish and talented chefs are important, too.</p>
+          <p>A travel agent believes that providing a good value is most important because the Internet has changed the business; clients can now go online and get tickets by themselves. A builder says that these days, speed is the most crucial factor because time is money. People are usually prepared to pay more if the job is done fast. Finally, a clothing store owner believes that having the right kind of window displays is an art. Displays help people see, touch, and try clothes on right away. Good prices are also important, but the display is really the number one thing.</p>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Task 1 · Information fill (Passage 1)</div>
+          <div class="exercise-instruction">Type the missing good/bad point for each business, then check.</div>
+          <div id="l8rInfo"></div>
+          <div class="feedback-box" id="fb-l8rinfo"><div class="score-badge" id="sc-l8rinfo">0/5</div><span id="ms-l8rinfo"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckRInfo()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetRInfo()">Reset</button></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Task 2 · True / False / Not Given (Passage 2)</div>
+          <div id="l8rTfng"></div>
+          <div class="feedback-box" id="fb-l8rtfng"><div class="score-badge" id="sc-l8rtfng">0/5</div><span id="ms-l8rtfng"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckTfng()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetTfng()">Reset</button></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Task 3 · Multiple choice (vocabulary &amp; grammar in context)</div>
+          <div id="l8rMcq"></div>
+          <div class="feedback-box" id="fb-l8rmcq"><div class="score-badge" id="sc-l8rmcq">0/4</div><span id="ms-l8rmcq"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckRMcq()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetRMcq()">Reset</button></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Task 4 · Short answer (no more than three words)</div>
+          <div id="l8rShort"></div>
+          <div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="l8ShowShort(this)">Show model answers</button></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l8tab="l8-grammar">← Grammar</button><button class="btn btn-primary" data-l8tab="l8-listening">Next: Listening →</button></div>
+      </div>
+    </div>
+    <!-- ===== TAB 6: LISTENING ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-listening">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Listening</span><h2 class="section-title">What customers like &amp; dislike</h2><p class="section-subtitle">Your teacher plays each audio. Choose your answers, press Check, then reveal the transcript.</p></div>
+        <div class="listening-notice">🎧 <b>No audio in this file</b> — your teacher plays CD 1-12 → 1-16. Do the tasks, then open the transcript to review.</div>
+
+        <div class="exercise">
+          <div class="exercise-title">Listening 1 · What do they DISLIKE? (choose a or b)</div>
+          <div id="l8lis1"></div>
+          <div class="feedback-box" id="fb-l8lis1"><div class="score-badge" id="sc-l8lis1">0/6</div><span id="ms-l8lis1"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckLis1()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetLis1()">Reset</button><button class="btn btn-secondary btn-sm" onclick="l8Reveal('l8ts1',this)">Show transcript</button></div>
+          <div class="reveal-block" id="l8ts1"><div class="transcript" id="l8ts1Body"></div></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Listening 2 · Task 1 — Match the business type (A–F)</div>
+          <div class="exercise-instruction">Match each speaker (1–6) to a business category. Each letter is used once.</div>
+          <div id="l8lis2match"></div>
+          <div class="feedback-box" id="fb-l8lis2m"><div class="score-badge" id="sc-l8lis2m">0/6</div><span id="ms-l8lis2m"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckLis2m()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetLis2m()">Reset</button></div>
+          <div class="exercise-title" style="margin-top:18px;">Listening 2 · Task 2 — What do they LIKE? (a, b or c)</div>
+          <div id="l8lis2like"></div>
+          <div class="feedback-box" id="fb-l8lis2l"><div class="score-badge" id="sc-l8lis2l">0/6</div><span id="ms-l8lis2l"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckLis2l()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetLis2l()">Reset</button><button class="btn btn-secondary btn-sm" onclick="l8Reveal('l8ts2',this)">Show transcript</button></div>
+          <div class="reveal-block" id="l8ts2"><div class="transcript" id="l8ts2Body"></div></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Listening 3 · Task 1 — Most important factor (a, b or c)</div>
+          <div id="l8lis3imp"></div>
+          <div class="feedback-box" id="fb-l8lis3i"><div class="score-badge" id="sc-l8lis3i">0/4</div><span id="ms-l8lis3i"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckLis3i()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetLis3i()">Reset</button></div>
+          <div class="exercise-title" style="margin-top:18px;">Listening 3 · Task 2 — Other important factor (match a–d)</div>
+          <div id="l8lis3oth"></div>
+          <div class="feedback-box" id="fb-l8lis3o"><div class="score-badge" id="sc-l8lis3o">0/4</div><span id="ms-l8lis3o"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckLis3o()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetLis3o()">Reset</button><button class="btn btn-secondary btn-sm" onclick="l8Reveal('l8ts3',this)">Show transcript</button></div>
+          <div class="reveal-block" id="l8ts3"><div class="transcript" id="l8ts3Body"></div></div>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">Pronunciation · Listen &amp; repeat (CD 1-15)</div>
+          <div class="exercise-instruction">Your teacher plays each sentence. Listen, then repeat it aloud with natural rhythm and stress.</div>
+          <div id="l8lisPron"></div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-title">Dictation · Write the missing words (CD 1-16)</div>
+          <div class="exercise-instruction">Listen and type the missing words in each gap, then check.</div>
+          <div id="l8dict"></div>
+          <div class="feedback-box" id="fb-l8dict"><div class="score-badge" id="sc-l8dict">0/5</div><span id="ms-l8dict"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l8CheckDict()">Check answers</button><button class="btn btn-secondary btn-sm" onclick="l8ShowDict()">Show answers</button><button class="btn btn-outline btn-sm" onclick="l8ResetDict()">Reset</button></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l8tab="l8-reading">← Reading</button><button class="btn btn-primary" data-l8tab="l8-discussion">Next: Discussion →</button></div>
+      </div>
+    </div>
+    <!-- ===== TAB 7: DISCUSSION ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-discussion">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Discussion · Keyboard Hero</span><h2 class="section-title">Reply to four kinds of boss</h2><p class="section-subtitle">Read the workplace situation and the Vietnamese meaning, then <b>rebuild the English answer</b>. Each hidden word shows only its first letter; the dots match the missing letters (punctuation not counted).</p></div>
+        <div class="info-box" style="margin-bottom:8px;">⌨️ Type each word into its box. Use <b>Reveal</b> to check one line, or <b>Reveal all</b> to see every answer. This recycles the opinion template + support/feedback vocabulary.</div>
+        <div id="l8discList"></div>
+        <div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="l8RevealAllDisc()">Reveal all</button><button class="btn btn-outline btn-sm" onclick="l8ResetDisc()">Reset</button></div>
+        <div class="btn-group"><button class="btn btn-outline" data-l8tab="l8-listening">← Listening</button><button class="btn btn-primary" data-l8tab="l8-quiz">Next: Quiz →</button></div>
+      </div>
+    </div>
+
+    <!-- ===== TAB 8: QUIZ ===== -->
+    <div class="tab-panel" data-panel-group="l8tabs" data-panel="l8-quiz">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Final review · Quiz game</span><h2 class="section-title">Successful Business — 40-question challenge</h2><p class="section-subtitle">40 questions · 10 seconds each · answer before the bar runs out. At least 20 are “what does it mean?” vocabulary questions, plus comparatives, reading &amp; context.</p></div>
+
+        <div class="quiz-screen active" id="l8qzStart">
+          <div class="quiz-intro">
+            <div class="quiz-intro-ic">🎮</div>
+            <h3>Ready to test yourself?</h3>
+            <p>40 quick questions: 20 ask “what does a word mean?” and 20 cover comparatives, business types, reviews and owner opinions. Each question gives you 10 seconds — if the timer runs out, it counts as wrong and shows the answer.</p>
+            <button class="btn btn-primary" onclick="l8QzStart()">▶ Start Quiz</button>
+          </div>
+        </div>
+
+        <div class="quiz-screen" id="l8qzPlay">
+          <div class="quiz-head"><span class="quiz-counter" id="l8qzCounter">QUESTION 1 / 40</span><span class="timer-pill" id="l8qzTimer">⏳ 10s</span></div>
+          <div class="quiz-bar-wrap"><div class="quiz-bar" id="l8qzBar"></div></div>
+          <div class="quiz-type" id="l8qzType">VOCABULARY</div>
+          <div class="quiz-q" id="l8qzQ"></div>
+          <div class="quiz-opts" id="l8qzOpts"></div>
+          <div class="quiz-explain" id="l8qzExplain"></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" id="l8qzSubmit" onclick="l8QzSubmit()">Submit</button><button class="btn btn-secondary btn-sm" id="l8qzNext" onclick="l8QzNext()" style="display:none;">Next →</button></div>
+        </div>
+
+        <div class="quiz-screen" id="l8qzResult">
+          <div class="quiz-result">
+            <div class="big-score" id="l8qzScore">0 / 40</div>
+            <div class="quiz-verdict" id="l8qzVerdict"></div>
+            <button class="btn btn-primary" onclick="l8QzStart()">↻ Play again</button>
+          </div>
+        </div>
+
+        <div class="exercise" style="margin-top:18px;">
+          <div class="exercise-title">✅ Self-assessment</div>
+          <label class="check-item"><input type="checkbox" class="l8spk"> I understand today's business vocabulary.</label>
+          <label class="check-item"><input type="checkbox" class="l8spk"> I can compare businesses with -er / more.</label>
+          <label class="check-item"><input type="checkbox" class="l8spk"> I can give a balanced opinion with the template.</label>
+          <label class="check-item"><input type="checkbox" class="l8spk"> I understand spoken reviews and owner interviews.</label>
+          <label class="check-item"><input type="checkbox" class="l8spk"> I feel more confident discussing successful businesses.</label>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn-outline" data-l8tab="l8-discussion">← Discussion</button>
+          <button class="btn btn-primary" onclick="markComplete('lesson8',this)">✓ Mark Lesson Complete</button>
+          <button class="btn btn-outline" data-page="phase2">← Back to Phase 2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </main>
 </div>
 <button class="reset-fab" onclick="globalReset()">🔄 Reset All</button>
@@ -4266,7 +4716,7 @@ function showPage(id){
   if(pg){ pg.classList.add('active'); }
   document.querySelectorAll('.nav-item').forEach(function(n){
     var target = n.getAttribute('data-page');
-    var lessonParent = (id === 'lesson1' || id === 'lesson2' || id === 'lesson3' || id === 'lesson4' || id === 'mocktest1') ? 'phase1' : ((id === 'lesson5' || id === 'lesson6' || id === 'lesson7') ? 'phase2' : id);
+    var lessonParent = (id === 'lesson1' || id === 'lesson2' || id === 'lesson3' || id === 'lesson4' || id === 'mocktest1') ? 'phase1' : ((id === 'lesson5' || id === 'lesson6' || id === 'lesson7' || id === 'lesson8') ? 'phase2' : id);
     n.classList.toggle('active', target === lessonParent);
   });
   window.scrollTo(0,0);
@@ -4316,6 +4766,8 @@ document.addEventListener('click', function(e){
   if(b6){ switchTab('l6tabs', b6.getAttribute('data-l6tab')); return; }
   var b7 = e.target.closest('[data-l7tab]');
   if(b7){ switchTab('l7tabs', b7.getAttribute('data-l7tab')); return; }
+  var b8 = e.target.closest('[data-l8tab]');
+  if(b8){ switchTab('l8tabs', b8.getAttribute('data-l8tab')); return; }
 });
 
 /* ---------- 5. RENDER: alphabet / names / countries / numbers / vocab ---------- */
@@ -4604,6 +5056,7 @@ function clearAllTimers(){
   if(window.mt1ClearTimers){ window.mt1ClearTimers(); }
   if(window.l6ClearTimers){ window.l6ClearTimers(); }
   if(window.l7ClearTimers){ window.l7ClearTimers(); }
+  if(window.l8ClearTimers){ window.l8ClearTimers(); }
 }
 
 /* ---------- 12. PROGRESS ---------- */
@@ -4638,7 +5091,7 @@ function updateProgress(){
     if(p1done){ pill1.classList.add('done'); pill1.classList.remove('current'); dot1.textContent = '✓'; nav1.textContent = '✓'; }
     else { pill1.classList.add('current'); pill1.classList.remove('done'); dot1.textContent = '●'; nav1.textContent = '●'; }
   }
-  var p2done = completedLessons['lesson5'] && completedLessons['lesson6'];
+  var p2done = completedLessons['lesson5'] && completedLessons['lesson6'] && completedLessons['lesson7'] && completedLessons['lesson8'];
   var pill2 = document.getElementById('pill2');
   var dot2 = document.getElementById('pillDot2');
   var nav2 = document.getElementById('navSt2');
@@ -4688,6 +5141,7 @@ function globalReset(){
   if(window.mt1Reset){ window.mt1Reset(); }
   if(window.l6Reset){ window.l6Reset(); }
   if(window.l7Reset){ window.l7Reset(); }
+  if(window.l8Reset){ window.l8Reset(); }
   var pill1 = document.getElementById('pill1');
   if(pill1){ pill1.classList.add('current'); pill1.classList.remove('done'); }
   showPage('overview');
@@ -7694,6 +8148,554 @@ function verify(){
 renderVocab();renderEmails();renderInfoTable();renderOrdTable();
 renderEx1();renderEx2();renderEx3();renderDict();renderCircle();renderDisc();
 renderPhrases();renderPron();renderQP();renderMatch();renderSpeaking();
+t2Render();
+verify();
+})();
+
+/* ===== LESSON 8 ENGINE — Successful Business (isolated IIFE) ===== */
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id);};
+var TIMERS=[];
+function track(h){TIMERS.push(h);return h;}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function norm(s){return String(s).trim().toLowerCase().replace(/[.,?!;:]+$/,"");}
+function normLoose(s){return String(s).trim().toLowerCase().replace(/[.\u00a0]/g," ").replace(/\s+/g," ").trim();}
+function fb(fbId,scId,msId,s,tot){var f=$(fbId);if(!f)return;$(scId).textContent=s+"/"+tot;var m=$(msId);if(m)m.textContent=(s===tot)?"Perfect! 🎉":(s>=Math.ceil(tot*0.6)?"Good — check the red ones.":"Keep practising.");f.classList.remove("success","error","info");f.classList.add("show",(s===tot)?"success":(s>=Math.ceil(tot*0.6)?"info":"error"));}
+window.l8Reveal=function(id,btn){var el=$(id);if(!el)return;var r=el.classList.toggle("revealed");if(btn){if(/^Show /.test(btn.textContent))btn.textContent=btn.textContent.replace(/^Show /,"Hide ");else if(/^Hide /.test(btn.textContent))btn.textContent=btn.textContent.replace(/^Hide /,"Show ");}};
+
+/* ---------- generic MCQ (circle-opt) ---------- */
+function renderMCQ(cid,arr){var w=$(cid);if(!w)return;w.innerHTML=arr.map(function(x,i){var opts=x.o.map(function(o,oi){return '<button class="circle-opt" data-i="'+i+'" data-oi="'+oi+'" onclick="l8Pick(this)">'+String.fromCharCode(97+oi)+'. '+esc(o)+'</button>';}).join('');return '<div class="ex-row mcq" data-i="'+i+'"><div class="ex-q"><span class="ex-n">'+(i+1)+'.</span> '+x.q+'</div><div class="circle-opts">'+opts+'</div></div>';}).join('');}
+window.l8Pick=function(el){var row=el.closest(".ex-row");if(row.classList.contains("graded"))return;row.querySelectorAll(".circle-opt").forEach(function(o){o.classList.remove("selected");});el.classList.add("selected");};
+function gradeMCQ(cid,arr,fbId,scId,msId){var s=0;arr.forEach(function(x,i){var row=$(cid).querySelector('.ex-row[data-i="'+i+'"]');row.classList.add("graded");var sel=row.querySelector(".circle-opt.selected");var pick=sel?parseInt(sel.getAttribute("data-oi"),10):-1;if(pick===x.a)s++;row.querySelectorAll(".circle-opt").forEach(function(o,oi){o.classList.remove("opt-correct","opt-wrong");if(oi===x.a)o.classList.add("opt-correct");else if(oi===pick)o.classList.add("opt-wrong");o.style.pointerEvents="none";});if(x.e){var ex=row.querySelector(".mcq-exp");if(!ex){ex=document.createElement("div");ex.className="mcq-exp";row.appendChild(ex);}ex.innerHTML="💡 "+x.e;}});fb(fbId,scId,msId,s,arr.length);}
+function clearFb(id){var f=$(id);if(f)f.classList.remove("show","success","error","info");}
+
+/* ---------- generic SELECT match ---------- */
+function renderSel(cid,arr,opts){var w=$(cid);if(!w)return;var sel=function(nm){return '<select class="l8-sel" data-nm="'+nm+'"><option value="">—</option>'+opts.map(function(o){return '<option value="'+o[0]+'">'+esc(o[0]+' · '+o[1])+'</option>';}).join('')+'</select>';};w.innerHTML=arr.map(function(x,i){return '<div class="ex-row" data-i="'+i+'"><span class="ex-n">'+(i+1)+'.</span><span class="ex-txt">'+esc(x.q)+' &nbsp;'+sel(cid+"_"+i)+'</span></div>';}).join('');}
+function gradeSel(cid,arr,fbId,scId,msId){var s=0;arr.forEach(function(x,i){var el=document.querySelector('.l8-sel[data-nm="'+cid+'_'+i+'"]');if(!el)return;var ok=el.value===x.a;if(ok)s++;el.classList.remove("sel-ok","sel-bad");el.classList.add(ok?"sel-ok":"sel-bad");el.disabled=true;});fb(fbId,scId,msId,s,arr.length);}
+
+/* ---------- generic FILL (text inputs) ---------- */
+function gradeFill(sel,pairs,fbId,scId,msId){var s=0;pairs.forEach(function(p){var el=$(p.id);if(!el)return;var ok=p.alt?p.alt.some(function(a){return normLoose(el.value)===normLoose(a);}):normLoose(el.value)===normLoose(p.ans);el.classList.remove("in-ok","in-bad");if(el.value.trim()!=="")el.classList.add(ok?"in-ok":"in-bad");if(ok)s++;});fb(fbId,scId,msId,s,pairs.length);}
+
+/* ---------- A. VOCABULARY ---------- */
+/* factor: [word, IPA, VI, EN-def] */
+var FACTORS=[
+ ["Service","/ˈsɜːrvɪs/","Dịch vụ, cách phục vụ khách","How a business helps and treats its customers."],
+ ["Quality","/ˈkwɑːləti/","Chất lượng","How good or well-made a product or service is."],
+ ["Price","/praɪs/","Giá cả","The amount of money you must pay to buy something."],
+ ["Value","/ˈvæljuː/","Giá trị (đáng đồng tiền)","Something that is worth the money you pay for it."],
+ ["Speed","/spiːd/","Tốc độ, sự nhanh chóng","How fast a business does a job or serves customers."],
+ ["Display","/dɪˈspleɪ/","Sự trưng bày","How products are arranged for customers to see and touch."],
+ ["Location","/loʊˈkeɪʃn/","Địa điểm, vị trí","The place where a business is built."],
+ ["Atmosphere","/ˈætməsfɪr/","Không gian, bầu không khí","The feeling or mood of a place."],
+ ["Facilities","/fəˈsɪlətiz/","Cơ sở vật chất","Buildings, equipment, or rooms provided for a purpose."],
+ ["Popularity","/ˌpɑːpjuˈlærəti/","Độ nổi tiếng","The state of being liked or supported by many people."],
+ ["Convenience","/kənˈviːniəns/","Sự tiện lợi","Something that saves you time, effort, or difficulty."],
+ ["Staff","/stæf/","Đội ngũ nhân viên","The group of people who work for a business."]
+];
+/* biz: [word, IPA, EN-def, VI] */
+var BIZTYPES=[
+ ["Restaurant","/ˈrestrɒnt/","A place where you can buy and eat a meal.","Nhà hàng"],
+ ["Bookstore","/ˈbʊkstɔːr/","A shop that sells books and magazines.","Hiệu sách"],
+ ["Health club","/ˈhelθ klʌb/","A place where people go to exercise and stay fit.","Phòng tập / CLB thể thao"],
+ ["Hotel","/hoʊˈtel/","A place where you pay to stay and sleep when traveling.","Khách sạn"],
+ ["Boutique","/buːˈtiːk/","A small shop that sells fashionable clothes or gifts.","Cửa hàng thời trang nhỏ"],
+ ["Clothing store","/ˈkloʊðɪŋ stɔːr/","A shop that sells clothes for men, women, or children.","Cửa hàng quần áo"],
+ ["Language school","/ˈlæŋɡwɪdʒ skuːl/","A place where people go to learn a foreign language.","Trường ngoại ngữ"],
+ ["Hair salon","/ˈheər səˌlɒn/","A place where you go to get your hair cut or styled.","Tiệm làm tóc"],
+ ["Auto repair shop","/ˈɔːtoʊ rɪˈpeər ʃɒp/","A place where mechanics fix cars when they are broken.","Tiệm sửa ô tô"],
+ ["Garage","/ˈɡærɑːʒ/","A business that repairs or services motor vehicles.","Gara ô tô"],
+ ["Travel agency","/ˈtrævl ˌeɪdʒənsi/","A company that helps people plan trips and buy tickets.","Đại lý du lịch"],
+ ["Builder / Contractor","/ˈbɪldər/","A person or business that builds or repairs houses and buildings.","Nhà thầu / Cty xây dựng"]
+];
+function richCard(name,ipa,vi,def){return '<div class="vocab-card"><span class="flip-hint">tap ↻</span><div class="word">'+esc(name)+'</div><div class="ipa">'+esc(ipa)+'</div><div class="en-def">'+esc(def)+'</div><div class="back"><div class="vi">'+esc(vi)+'</div><div class="example">'+esc(def)+'</div></div></div>';}
+function renderVocab(){var f=$("l8vg_factors");if(f)f.innerHTML=FACTORS.map(function(x){return richCard(x[0],x[1],x[2],x[3]);}).join('');var t=$("l8vg_types");if(t)t.innerHTML=BIZTYPES.map(function(x){return richCard(x[0],x[1],x[3],x[2]);}).join('');}
+
+/* ---------- B. USEFUL PHRASES ---------- */
+var PHRASES=[
+ ["In my opinion, nothing is more important than…","Theo tôi, không gì quan trọng hơn…"],
+ ["Of course, …, is important, too.","Dĩ nhiên, … cũng quan trọng."],
+ ["… is really the number one thing.","… mới thực sự là yếu tố số một."],
+ ["What's the new … like?","Chỗ … mới thế nào?"],
+ ["The service is terrible / excellent.","Dịch vụ tệ / tuyệt vời."],
+ ["It's worth the trip.","Rất đáng để đi (một chuyến)."],
+ ["It's not the cheapest, but it's the best.","Không rẻ nhất, nhưng là tốt nhất."],
+ ["I wasn't too satisfied.","Tôi không hài lòng lắm."]
+];
+function renderPhrases(){var w=$("l8phrases");if(!w)return;w.innerHTML=PHRASES.map(function(p){return '<div class="phrase-card"><span class="phrase-en">'+esc(p[0])+'</span><span class="phrase-vi viTxt viTxtP8" style="display:none;">'+esc(p[1])+'</span></div>';}).join('');}
+window.l8TogglePhrasesVi=function(btn){var on=false;document.querySelectorAll("#l8phrases .viTxtP8").forEach(function(v){var show=v.style.display==="none";v.style.display=show?"":"none";on=show;});btn.textContent=on?"Hide Vietnamese":"Show Vietnamese";};
+
+/* ---------- C. PRONUNCIATION (word stress) ---------- */
+var PRON_WORDS=[["convenience","con·VE·nience"],["facilities","fa·CI·li·ties"],["popularity","pop·u·LAR·i·ty"],["atmosphere","AT·mos·phere"],["location","lo·CA·tion"],["professional","pro·FES·sion·al"]];
+function renderPron(){var w=$("l8pronWords");if(!w)return;w.innerHTML='<div class="pron-grid">'+PRON_WORDS.map(function(p){return '<div class="pron-pair"><div class="pron-teen" style="flex:1;"><span class="pron-num" style="font-size:16px;">'+esc(p[0])+'</span><span class="pron-say">'+esc(p[1])+'</span></div></div>';}).join('')+'</div>';}
+
+/* ---------- D. QUICK PRACTICE ---------- */
+var QP=[
+ {q:'Which word means “how a business treats its customers”?',o:['service','location','display','price'],a:0,e:'Service = how a business helps and treats customers.'},
+ {q:'A place where mechanics fix cars is a…',o:['boutique','garage','bookstore','hotel'],a:1,e:'Garage / auto repair shop = fixes cars.'},
+ {q:'“Value” means…',o:['the mood of a place','worth the money you pay','how fast they serve','the staff'],a:1,e:'Value = worth the money you pay.'},
+ {q:'A small shop that sells fashionable clothes is a…',o:['health club','language school','boutique','travel agency'],a:2,e:'Boutique = small fashionable-clothes shop.'},
+ {q:'“Atmosphere” is closest to…',o:['the feeling / mood of a place','the price list','the opening hours','the car park'],a:0,e:'Atmosphere = the feeling or mood of a place.'},
+ {q:'The group of people who work for a business is the…',o:['value','staff','facilities','speed'],a:1,e:'Staff = the workers of a business.'}
+];
+function renderQP(){renderMCQ("l8qpList",QP);}
+window.l8CheckQP=function(){gradeMCQ("l8qpList",QP,"fb-l8qp","sc-l8qp","ms-l8qp");};
+window.l8ResetQP=function(){renderQP();clearFb("fb-l8qp");};
+
+var MATCH_OPTS=[["Restaurant","nhà hàng"],["Hotel","khách sạn"],["Garage","gara"],["Bookstore","hiệu sách"],["Hair salon","tiệm tóc"],["Travel agency","đại lý du lịch"],["Health club","phòng tập"],["Language school","trường ngoại ngữ"]];
+var MATCH=[
+ {q:"A place where you buy and eat a meal.",a:"Restaurant"},
+ {q:"A place where you pay to stay and sleep when traveling.",a:"Hotel"},
+ {q:"A business that repairs or services cars.",a:"Garage"},
+ {q:"A shop that sells books and magazines.",a:"Bookstore"},
+ {q:"A place where you get your hair cut or styled.",a:"Hair salon"},
+ {q:"A company that helps people plan trips and buy tickets.",a:"Travel agency"},
+ {q:"A place where people go to exercise and stay fit.",a:"Health club"},
+ {q:"A place where people go to learn a foreign language.",a:"Language school"}
+];
+function renderMatch(){renderSel("l8matchList",MATCH,MATCH_OPTS);}
+window.l8CheckMatch=function(){gradeSel("l8matchList",MATCH,"fb-l8match","sc-l8match","ms-l8match");};
+window.l8ResetMatch=function(){renderMatch();clearFb("fb-l8match");};
+
+/* ---------- PART 2A — SPEAKING (4 levels) ---------- */
+/* PART 2A — verbatim activities from the source doc */
+/* Ping-Pong Priority: [topic, question, hintAnswer] */
+var PINGPONG=[
+ ["Job Offer. X is 'salary', Y is 'work-life balance'.",
+  "Which one is more important for your health? X or Y?",
+  "In my opinion, nothing is more important than work-life balance. Of course, salary is important, too. But work-life balance is really the number one thing because we don't want to get burned out."],
+ ["Company Culture. X is 'high expectations', Y is 'boss's support'.",
+  "If you are a new employee, which one do you need first to work happily? X or Y?",
+  "In my opinion, in a great company, nothing is more important than regular support and training from the leaders. Of course, having high expectations is important, too. But support is really the number one thing because it helps employees know what to do, work happily, and perform much better."],
+ ["Gaming hobby. X is 'climbing the rank', Y is 'unwinding'.",
+  "If you play games to reduce stress, which one is more important? X or Y?",
+  "In my opinion, when playing games, nothing is more important than unwinding and relaxing. Of course, climbing the rank is important, too. But unwinding is really the number one thing because gaming should be just for kicks to help you feel happy after a busy day."]
+];
+/* Spot the Imposter: [imposterSentence, question, correctedAnswer] */
+var IMPOSTER=[
+ ['"In my opinion, nothing is <b>more good</b> than speed."',
+  "Is 'more good' correct in English?",
+  '"...nothing is <b>better</b> than..."'],
+ ['"In my opinion, nothing is <b>professionaler</b> than our staff."',
+  "For long adjectives like 'professional', do we add '-er'?",
+  '"...nothing is <b>more professional</b> than..."'],
+ ['"Nothing is more important than <b>prices</b>. Of course, <b>displays</b> are important, too. But <b>displays</b> are really the number one thing."',
+  "Wait! If 'displays' is the number one thing, why did you say 'nothing is more important than prices' at first? Is the logic correct?",
+  '"Nothing is more important than <b>displays</b>. Of course, <b>prices</b> are important, too. But <b>displays</b> are really the number one thing."']
+];
+function renderSpeaking(){
+ var wp=$("l8ping");
+ if(wp)wp.innerHTML=PINGPONG.map(function(x,i){
+  return '<div class="phrase-card"><div class="mini-label">Question '+(i+1)+' · Topic: '+esc(x[0])+'</div>'+
+   '<div class="dialogue-box">🏓 '+esc(x[1])+'</div>'+
+   '<div class="btn-group" style="margin-top:8px;"><button class="btn btn-secondary btn-sm" onclick="l8Reveal(\'l8ping_'+i+'\',this)">Show hint answer</button></div>'+
+   '<div class="reveal-block" id="l8ping_'+i+'"><div class="sample-box" style="margin-top:8px;">💬 '+esc(x[2])+'</div></div></div>';
+ }).join('');
+ var wi=$("l8imposter");
+ if(wi)wi.innerHTML=IMPOSTER.map(function(x,i){
+  return '<div class="phrase-card"><div class="dialogue-box" style="border-left:4px solid var(--red-error,#c0392b);">🕵️ Imposter: '+x[0]+'</div>'+
+   '<div class="ex-txt" style="margin-top:6px;"><b>Q:</b> '+esc(x[1])+'</div>'+
+   '<div class="btn-group" style="margin-top:8px;"><button class="btn btn-secondary btn-sm" onclick="l8Reveal(\'l8imp_'+i+'\',this)">Show correct answer</button></div>'+
+   '<div class="reveal-block" id="l8imp_'+i+'"><div class="sample-box" style="margin-top:8px;">✅ '+x[2]+'</div></div></div>';
+ }).join('');
+}
+
+/* ---------- PART 2B — REFLEX ---------- */
+var REFLEX_WORDS=[
+ ["service","dịch vụ"],["quality","chất lượng"],["price","giá cả"],["value","giá trị"],["speed","tốc độ"],["display","trưng bày"],["location","địa điểm"],["atmosphere","không khí"],["facilities","cơ sở vật chất"],["popularity","độ nổi tiếng"],["convenience","tiện lợi"],["staff","nhân viên"],
+ ["restaurant","nhà hàng"],["hotel","khách sạn"],["boutique","cửa hàng thời trang"],["health club","phòng tập"],["hair salon","tiệm tóc"],["garage","gara ô tô"],["travel agency","đại lý du lịch"],["bookstore","hiệu sách"]
+];
+var REFLEX_SITS=[
+ "A friend asks what the new restaurant is like — give your opinion in a full sentence.",
+ "Say which is more important for a hotel: service or location. Explain why.",
+ "Compare two cafés you know using a comparative (cheaper / better / friendlier).",
+ "Someone says a shop is cheap but the service is bad. Would you go? Give a reason.",
+ "Recommend your favourite business to a classmate and say why it's the best.",
+ "Use the template to say the number one thing for a good clothing store.",
+ "A hotel is beautiful but far from downtown. Give your opinion using the template.",
+ "Explain why 'value' matters more than 'price' for a travel agency.",
+ "Describe the atmosphere of a place you like and why it keeps you coming back.",
+ "Your friend had slow service at a restaurant. React and give advice."
+];
+var REFLEX_PROMPTS=[
+ "Describe your favourite business (a shop, café or hotel). Name the type, then use the opinion template to say what makes it successful, and compare it with a rival using -er / more.",
+ "You are a business owner. Say what is the number one thing for your business and why, admitting one other important factor (use the full template + because).",
+ "Compare two places you know (two restaurants, two shops…). Use at least three comparatives (cheaper, better, more convenient) and give your final choice.",
+ "A friend wants a recommendation for a hotel. Give your opinion, compare two hotels, and finish with the number one thing to look for."
+];
+var wordBag=[],sitBag=[],promptBag=[];
+window.l8DrawWord=function(){if(!wordBag.length)wordBag=shuffle(REFLEX_WORDS);var it=wordBag.pop();$("l8drawWordRes").innerHTML='<span class="big">'+esc(it[0])+'</span><span class="small">'+esc(it[1])+'</span>';};
+window.l8DrawSituation=function(){if(!sitBag.length)sitBag=shuffle(REFLEX_SITS);var it=sitBag.pop();$("l8drawSitRes").innerHTML='<span class="big" style="font-size:16px;">'+esc(it)+'</span>';};
+window.l8DrawPrompt=function(){if(!promptBag.length)promptBag=shuffle(REFLEX_PROMPTS);var it=promptBag.pop();$("l8promptRes").innerHTML='<span class="big" style="font-size:16px;">'+esc(it)+'</span>';};
+var t2Preset=60,t2Left=60,t2Int=null;
+function t2Fmt(s){var m=Math.floor(s/60),x=s%60;return (m<10?"0":"")+m+":"+(x<10?"0":"")+x;}
+function t2Render(){var d=$("timerL8T2");if(d){d.textContent=t2Fmt(t2Left);d.classList.toggle("timeup",t2Left===0);}}
+window.l8T2SetPreset=function(sec,pill){if(t2Int){clearInterval(t2Int);t2Int=null;}t2Preset=sec;t2Left=sec;t2Render();if(pill){pill.parentElement.querySelectorAll(".preset-pill[data-sec8t2]").forEach(function(p){p.classList.remove("active");});pill.classList.add("active");}};
+window.l8T2StartTimer=function(){if(t2Int){clearInterval(t2Int);t2Int=null;}if(t2Left<=0)t2Left=t2Preset;t2Render();t2Int=track(setInterval(function(){t2Left--;if(t2Left<=0){t2Left=0;clearInterval(t2Int);t2Int=null;}t2Render();},1000));};
+window.l8T2ResetTimer=function(){if(t2Int){clearInterval(t2Int);t2Int=null;}t2Left=t2Preset;t2Render();};
+
+/* ---------- GRAMMAR ---------- */
+var EX1=[
+ {pre:'Nothing is', adj:'important', post:'than service.', ans:'more important'},
+ {pre:'Nothing is', adj:'important', post:'than speed.', ans:'more important'},
+ {pre:'Nothing is', adj:'important', post:'than having the right kind of displays.', ans:'more important'}
+];
+function renderEx1(){var w=$("l8ex1List");if(!w)return;w.innerHTML=EX1.map(function(x,i){return '<div class="ex-row" data-i="'+i+'"><span class="ex-n">'+(i+1)+'.</span><span class="ex-txt">'+esc(x.pre)+' <input type="text" class="fill-in" id="l8e1_'+i+'" size="14" placeholder="('+esc(x.adj)+')"> '+esc(x.post)+'</span></div>';}).join('');}
+window.l8CheckEx1=function(){gradeFill(".fill-in",EX1.map(function(x,i){return {id:"l8e1_"+i,ans:x.ans};}),"fb-l8ex1","sc-l8ex1","ms-l8ex1");};
+window.l8ResetEx1=function(){renderEx1();clearFb("fb-l8ex1");};
+
+/* EX2: choose -er or more. o=[B,C], a=index, e=explain */
+var EX2=[
+ {adj:"Cheap",o:["Cheaper","More cheap"],a:0,e:"1-syllable → add <b>-er</b>: cheaper. “More cheap” is wrong."},
+ {adj:"Good",o:["More good","Better"],a:1,e:"Irregular: good → <b>better</b>. Never “more good”."},
+ {adj:"Close",o:["Closer","More close"],a:0,e:"Short adj ending -e → add <b>-r</b>: closer."},
+ {adj:"Slow",o:["Slower","More slow"],a:0,e:"1-syllable → <b>slower</b>."},
+ {adj:"Friendly",o:["Friendlier","More friendlier"],a:0,e:"2-syllable -y → -ier: <b>friendlier</b>. “More friendlier” = double comparative ✗."},
+ {adj:"Bad",o:["More bad","Worse"],a:1,e:"Irregular: bad → <b>worse</b>."},
+ {adj:"Fast",o:["Faster","More fast"],a:0,e:"1-syllable → <b>faster</b>."},
+ {adj:"Expensive",o:["Expensiver","More expensive"],a:1,e:"Long adj → <b>more expensive</b>. “Expensiver” doesn’t exist."},
+ {adj:"Convenient",o:["Convenienter","More convenient"],a:1,e:"Long adj (3 syllables) → <b>more convenient</b>."},
+ {adj:"Nice",o:["Nicer","More nice"],a:0,e:"Short adj ending -e → <b>nicer</b>."},
+ {adj:"Helpful",o:["Helpfuller","More helpful"],a:1,e:"-ful adjective → <b>more helpful</b>."},
+ {adj:"Far",o:["Farther / Further","More far"],a:0,e:"Irregular: far → <b>farther / further</b>."},
+ {adj:"Beautiful",o:["Beautifuler","More beautiful"],a:1,e:"Long adj → <b>more beautiful</b>."},
+ {adj:"Professional",o:["Professionaler","More professional"],a:1,e:"Long adj → <b>more professional</b>."}
+];
+function renderEx2(){var w=$("l8ex2List");if(!w)return;w.innerHTML=EX2.map(function(x,i){var opts=x.o.map(function(o,oi){return '<button class="circle-opt" data-i="'+i+'" data-oi="'+oi+'" onclick="l8Pick(this)">'+esc(o)+'</button>';}).join('');return '<div class="ex-row mcq" data-i="'+i+'"><div class="ex-q"><span class="ex-n">'+(i+1)+'.</span> <b>'+esc(x.adj)+'</b></div><div class="circle-opts">'+opts+'</div></div>';}).join('');}
+window.l8CheckEx2=function(){var arr=EX2.map(function(x){return {o:x.o,a:x.a,e:x.e};});gradeMCQ("l8ex2List",arr,"fb-l8ex2","sc-l8ex2","ms-l8ex2");};
+window.l8ResetEx2=function(){renderEx2();clearFb("fb-l8ex2");};
+
+/* ---------- READING ---------- */
+var RINFO=[
+ {ans:"an hour",alt:["an hour","hour","nearly an hour"]},
+ {ans:"convenient"},
+ {ans:"very cheap",alt:["very cheap","cheap"]},
+ {ans:"friendly and helpful",alt:["friendly and helpful","very friendly and helpful"]},
+ {ans:"location"}
+];
+function riIn(i){return '<input type="text" class="fill-in" id="l8ri_'+i+'" size="14">';}
+function renderRInfo(){var w=$("l8rInfo");if(!w)return;
+ w.innerHTML='<table class="read-table"><thead><tr><th>Business</th><th>Good Point (What they like)</th><th>Bad Point (What they dislike)</th></tr></thead><tbody>'+
+ '<tr><td><b>New Indian Restaurant</b></td><td>The food is very good.</td><td>(1) The service is slow / Customers wait nearly '+riIn(0)+'.</td></tr>'+
+ '<tr><td><b>Campus Bookstore</b></td><td>It is (2) '+riIn(1)+'.</td><td>Prices are 10% more expensive than the mall.</td></tr>'+
+ '<tr><td><b>Metropolitan Health Club</b></td><td>It is (3) '+riIn(2)+'.</td><td>It is too popular / Customers wait to use machines.</td></tr>'+
+ '<tr><td><b>Honolulu Hotel</b></td><td>Staff is (4) '+riIn(3)+'.</td><td>(5) The '+riIn(4)+' is too far from downtown.</td></tr>'+
+ '</tbody></table>';
+}
+window.l8CheckRInfo=function(){gradeFill(".fill-in",RINFO.map(function(x,i){return {id:"l8ri_"+i,ans:x.ans,alt:x.alt};}),"fb-l8rinfo","sc-l8rinfo","ms-l8rinfo");};
+window.l8ResetRInfo=function(){renderRInfo();clearFb("fb-l8rinfo");};
+
+var TFNG=[
+ {q:"The Japanese restaurant owner believes that food quality is more important than service.",o:["True","False","Not Given"],a:1,e:"F — he says service is the number one thing; food is second."},
+ {q:"Travel agencies must focus on good value because customers can easily book tickets online by themselves.",o:["True","False","Not Given"],a:0,e:"T — “providing a good value is most important because… clients can now go online.”"},
+ {q:"The builder says that customers never want to pay extra money for faster work.",o:["True","False","Not Given"],a:1,e:"F — “People are usually prepared to pay more if the job is done fast.”"},
+ {q:"Modern building materials are much cheaper than traditional ones.",o:["True","False","Not Given"],a:2,e:"NG — the passage never mentions material prices."},
+ {q:"The fashion store owner believes that good displays encourage customers to touch and try on clothes.",o:["True","False","Not Given"],a:0,e:"T — “Displays help people see, touch, and try clothes on right away.”"}
+];
+function renderTfng(){renderMCQ("l8rTfng",TFNG);}
+window.l8CheckTfng=function(){gradeMCQ("l8rTfng",TFNG,"fb-l8rtfng","sc-l8rtfng","ms-l8rtfng");};
+window.l8ResetTfng=function(){renderTfng();clearFb("fb-l8rtfng");};
+
+var RMCQ=[
+ {q:"Buying textbooks online is ___ than buying them at the campus bookstore.",o:["expensiver","cheaper","more cheap"],a:1,e:"Short adj cheap → cheaper. Online is 20% cheaper."},
+ {q:"At the Metropolitan Health Club, customers have to wait because the place is ___ popular.",o:["not","too","less"],a:1,e:"“…it was too popular.”"},
+ {q:"The builder prefers speed because he believes “time is ___”.",o:["money","gold","quality"],a:0,e:"“time is money.”"},
+ {q:"The fashion store owner says that creating effective displays is ___.",o:["easy","an art","cheap"],a:1,e:"“Creating effective clothing displays is an art.”"}
+];
+function renderRMcq(){renderMCQ("l8rMcq",RMCQ);}
+window.l8CheckRMcq=function(){gradeMCQ("l8rMcq",RMCQ,"fb-l8rmcq","sc-l8rmcq","ms-l8rmcq");};
+window.l8ResetRMcq=function(){renderRMcq();clearFb("fb-l8rmcq");};
+
+var RSHORT=[
+ ["According to the restaurant owner, what will customers do if they are treated poorly?","Won't come back"],
+ ["What does the travel agency provide for busy clients who cannot plan their own trips?","Convenience"],
+ ["What is the number one thing for the fashion store owner?","The display"]
+];
+function renderShort(){var w=$("l8rShort");if(!w)return;w.innerHTML=RSHORT.map(function(x,i){return '<div class="phrase-card"><span class="phrase-en">'+(i+1)+'. '+esc(x[0])+'</span><span class="phrase-vi viTxt viTxtShort8" style="display:none;">✅ '+esc(x[1])+'</span></div>';}).join('');}
+window.l8ShowShort=function(btn){var on=false;document.querySelectorAll("#l8rShort .viTxtShort8").forEach(function(v){var show=v.style.display==="none";v.style.display=show?"":"none";on=show;});btn.textContent=on?"Hide model answers":"Show model answers";};
+
+/* ---------- LISTENING ---------- */
+var LIS1=[
+ {q:"",o:["the food","the service"],a:1},
+ {q:"",o:["the location","the prices"],a:1},
+ {q:"",o:["the popularity","the prices"],a:0},
+ {q:"",o:["the service","the location"],a:1},
+ {q:"",o:["the prices","the service"],a:1},
+ {q:"",o:["the clothes","the service"],a:1}
+];
+function renderLis1(){renderMCQ("l8lis1",LIS1);}
+window.l8CheckLis1=function(){gradeMCQ("l8lis1",LIS1,"fb-l8lis1","sc-l8lis1","ms-l8lis1");};
+window.l8ResetLis1=function(){renderLis1();clearFb("fb-l8lis1");};
+
+var BIZ_OPTS=[["A","Hair salon"],["B","Computer class / Language school"],["C","Auto repair shop"],["D","Restaurant / Cafe"],["E","Clothing store"],["F","Hotel / Building"]];
+var LIS2M=[
+ {q:"Speaker 1",a:"D"},
+ {q:"Speaker 2",a:"B"},
+ {q:"Speaker 3",a:"A"},
+ {q:"Speaker 4",a:"F"},
+ {q:"Speaker 5",a:"C"},
+ {q:"Speaker 6",a:"E"}
+];
+function renderLis2m(){renderSel("l8lis2match",LIS2M,BIZ_OPTS);}
+window.l8CheckLis2m=function(){gradeSel("l8lis2match",LIS2M,"fb-l8lis2m","sc-l8lis2m","ms-l8lis2m");};
+window.l8ResetLis2m=function(){renderLis2m();clearFb("fb-l8lis2m");};
+
+var LIS2L=[
+ {q:"",o:["the location","the service","the atmosphere"],a:2},
+ {q:"",o:["the prices","the facilities","the teachers"],a:1},
+ {q:"",o:["the staff","the speed","the prices"],a:0},
+ {q:"",o:["the atmosphere","the staff","the prices"],a:0},
+ {q:"",o:["the location","the prices","the size"],a:1},
+ {q:"",o:["the prices","the quality","the displays"],a:1}
+];
+function renderLis2l(){renderMCQ("l8lis2like",LIS2L);}
+window.l8CheckLis2l=function(){gradeMCQ("l8lis2like",LIS2L,"fb-l8lis2l","sc-l8lis2l","ms-l8lis2l");};
+window.l8ResetLis2l=function(){renderLis2l();clearFb("fb-l8lis2l");};
+
+var LIS3I=[
+ {q:"Japanese restaurant owner",o:["the fish","the chefs","the service"],a:2},
+ {q:"Travel agent",o:["the website","a good value","the speed"],a:1},
+ {q:"Builder / Contractor",o:["the speed","the prices","the quality"],a:0},
+ {q:"Fashion store owner",o:["the displays","the quality","the prices"],a:0}
+];
+function renderLis3i(){renderMCQ("l8lis3imp",LIS3I);}
+window.l8CheckLis3i=function(){gradeMCQ("l8lis3imp",LIS3I,"fb-l8lis3i","sc-l8lis3i","ms-l8lis3i");};
+window.l8ResetLis3i=function(){renderLis3i();clearFb("fb-l8lis3i");};
+
+var OTH_OPTS=[["a","the convenience"],["b","the food"],["c","the prices"],["d","the quality"]];
+var LIS3O=[
+ {q:"Japanese restaurant owner — other important factor",a:"b"},
+ {q:"Travel agent — other important factor",a:"a"},
+ {q:"Builder / Contractor — other important factor",a:"d"},
+ {q:"Fashion store owner — other important factor",a:"c"}
+];
+function renderLis3o(){renderSel("l8lis3oth",LIS3O,OTH_OPTS);}
+window.l8CheckLis3o=function(){gradeSel("l8lis3oth",LIS3O,"fb-l8lis3o","sc-l8lis3o","ms-l8lis3o");};
+window.l8ResetLis3o=function(){renderLis3o();clearFb("fb-l8lis3o");};
+
+/* Dictation — full conversation, 5 inline gaps */
+var DICT=[
+ {ans:"are not very"},
+ {ans:"are really bad"},
+ {ans:"fell apart"},
+ {ans:"takes hours to", alt:["takes hours to","takes too long to"]},
+ {ans:"favorite jeans", alt:["favorite jeans","favourite jeans"]}
+];
+function dictIn(i){return '<input type="text" class="dict-in" id="l8dict_'+i+'" size="12">';}
+function renderDict(){var w=$("l8dict");if(!w)return;
+ w.innerHTML='<div class="dialogue-box" style="line-height:2.2;">'+
+ '<b>A:</b> Do you want to go to the Century Fashions sale on Saturday?<br>'+
+ '<b>B:</b> I\'d like to, but the salespeople there <b>(1)</b> '+dictIn(0)+' professional.<br>'+
+ '<b>A:</b> I know what you mean. They\'re not very friendly, either.<br>'+
+ '<b>B:</b> Yeah, and some of the clothes are nice, but some of them <b>(2)</b> '+dictIn(1)+' quality.<br>'+
+ '<b>A:</b> That\'s true. I bought a sweater there last winter, and it <b>(3)</b> '+dictIn(2)+' after I wore it twice.<br>'+
+ '<b>B:</b> Also, it <b>(4)</b> '+dictIn(3)+' pay for things. The lines are always really long.<br>'+
+ '<b>A:</b> Then again, I did get my <b>(5)</b> '+dictIn(4)+' there!'+
+ '</div>';
+}
+window.l8CheckDict=function(){var s=0;DICT.forEach(function(x,i){var el=$("l8dict_"+i);if(!el)return;var ok=(x.alt||[x.ans]).some(function(a){return normLoose(el.value)===normLoose(a);});el.classList.remove("in-ok","in-bad");if(el.value.trim()!=="")el.classList.add(ok?"in-ok":"in-bad");if(ok)s++;});fb("fb-l8dict","sc-l8dict","ms-l8dict",s,DICT.length);};
+window.l8ShowDict=function(){DICT.forEach(function(x,i){var el=$("l8dict_"+i);if(el){el.value=x.ans;el.classList.remove("in-bad");el.classList.add("in-ok");}});};
+window.l8ResetDict=function(){renderDict();clearFb("fb-l8dict");};
+
+/* Transcripts (teacher's audio) — full verbatim */
+var TS1=[
+ "1. A: What's the new Indian restaurant on Sixth Street like? B: Well, everyone said it was very good, but I wasn't too satisfied when I went there the other night. A: Why not? B: The food was good, but it took too long to arrive. We had to wait for nearly an hour before we got anything to eat. A: Oh! That's terrible service.",
+ "2. A: I'm going to get the textbook for our biology class at the campus bookstore. Do you want to come? B: No, I don't think so. A: Why not? Don't you think it's convenient having a bookstore right on campus? B: Yes, it is. But have you compared their prices with other bookstores? That store in the mall is usually about 10% cheaper. And you save about 20% buying your books online. A: Oh. I didn't know that.",
+ "3. A: Do you belong to a health club? B: Not right now. I used to go to the Metropolitan Health Club on Third Street. I thought it was great because it was so cheap, but then I stopped going. A: Really? I heard it was pretty popular. B: That was the problem. It was too popular. It was always full of people. Sometimes I had to wait a long time to use the machines.",
+ "4. A: So how was the hotel in Honolulu? B: It was pretty good. The staff was really nice—very friendly and helpful. There was one problem with it, though. A: What was that? B: The location. It was too far from the restaurants and clubs. Next time, I think I'll stay much closer to the downtown.",
+ "5. A: Do you want to try Italian food tonight? B: Sure. Where would you like to go? A: How about Little Roma—that Italian restaurant across from the movie theater? I heard the prices are cheap. B: That's true. But the service is pretty bad. The waiters are really slow, and they're not very friendly either. A: Oh, I didn't know that. Let's try another place.",
+ "6. A: I heard there's a sale at Brenda's Boutique. Do you want to check it out? They have some really good clothes. B: I know, but the service is terrible. The people who work there are so rude. A: I know what you mean."
+];
+var TS2=[
+ "1. I really enjoy going there with friends after work. There's always something interesting on the menu. I also love the atmosphere. It's very cool and they have really comfortable sofas.",
+ "2. I'm glad I decided to study there. My Spanish is much better now. It's pretty expensive, but the facilities are very good. They have a great computer lab, and there's free wifi all over campus. It's much better than the school I was going to last year.",
+ "3. I've been going there for over a year. I just love the way they make my hair look. The stylists are really good at their work. The atmosphere makes you feel at home, too, with coffee and snacks, plus really good music. Sure, it's expensive, but I only go there every two months or so.",
+ "4. It's a great place to stay. The atmosphere is so glamorous and exciting. There are bright lights at the front door, and people always arrive in really expensive cars. The rooms are really beautiful, too. Of course, it's not the cheapest hotel in Miami, but it's definitely the best.",
+ "5. I always take mine to a garage on Market Street. It takes a long time to get there from my house, but it's worth the trip. It's the best repair shop in the city. The mechanics do great work, and they never try to charge you too much. In fact, the prices are great—about half the cost of some other places in town.",
+ "6. I get most of my shirts there. You'll love the store. All of their stuff looks great and fits perfectly. It's really good quality, too. They also have lots of different styles and colors to choose from. The window displays are a problem, though. They aren't well-lit, so it's hard to see what they have from outside the store."
+];
+var TS3=[
+ "1. Japanese restaurant owner: I think the most important thing is service. If customers feel like they are treated poorly, then they probably won't come back. That's why I train all of my workers to give excellent service. They greet customers politely, show them to a table right away, and explain the items on the menu. Of course, the food is important, too. The fish has to be as fresh as possible, and you have to find talented chefs to prepare it.",
+ "2. Travel agent: The Internet has totally changed this business. In the old days, people had to come to a travel agency to get tickets. Now they go online and get their tickets by themselves. When they come to me, I know they're looking for a good value. That's really the most important thing. Of course, our travel agency provides convenience for some clients who don't have the time to plan their own trips.",
+ "3. Builder / Contractor: These days, nothing is more important than speed. Time is money. People want a job done well, but they want it done quickly. And they're usually prepared to pay a little more if you can promise it will get done fast. And, of course, quality is important, too. We're building people's homes, so we want them to enjoy living there for a long time.",
+ "4. Fashion store owner: It's so important to have the right kind of displays. Creating effective clothing displays is an art. You want people to see the items right away, pick them up, touch them, and then go try the clothes on. And you want them to buy something, too! Good prices are also important, but the display is really the number one thing."
+];
+function fillTs(id,arr){var w=$(id);if(w)w.innerHTML=arr.map(function(t){return '<p>'+esc(t)+'</p>';}).join('');}
+var PRON_SENT=[
+ "The food took too long to arrive.",
+ "They were not professional.",
+ "The prices are really high.",
+ "The waiters were really slow.",
+ "That hotel is too far from the restaurants and clubs.",
+ "The rooms are not nice."
+];
+function renderPronL(){var w=$("l8lisPron");if(!w)return;w.innerHTML='<ol class="pron-sent">'+PRON_SENT.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol>';}
+function renderTranscripts(){fillTs("l8ts1Body",TS1);fillTs("l8ts2Body",TS2);fillTs("l8ts3Body",TS3);}
+
+/* ---------- DISCUSSION (Keyboard Hero) ---------- */
+var DISC=[{"ctx": "High expectations, low support — asking for support &amp; training", "vi": "Dĩ nhiên, việc đạt được mục tiêu cao là rất quan trọng. Nhưng với em, lúc này không có gì quan trọng hơn sự hỗ trợ và đào tạo bài bản vì chúng em muốn hoàn thành tốt công việc mà không bị kiệt sức.", "ans": "Of course, achieving high goals is important. But to me, nothing is more important than regular support and training right now because we want to do the job well without getting burned out.", "exp": "Thừa nhận ý phụ (high goals) rồi khẳng định ý chính bằng <b>nothing is more important than…</b> + lý do với <b>because</b>.", "toks": [{"t": "gap", "lead": "", "core": "Of", "trail": "", "hint": "O*"}, {"t": "gap", "lead": "", "core": "course", "trail": ",", "hint": "c*****"}, {"t": "gap", "lead": "", "core": "achieving", "trail": "", "hint": "a********"}, {"t": "gap", "lead": "", "core": "high", "trail": "", "hint": "h***"}, {"t": "gap", "lead": "", "core": "goals", "trail": "", "hint": "g****"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "important", "trail": ".", "hint": "i********"}, {"t": "gap", "lead": "", "core": "But", "trail": "", "hint": "B**"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "me", "trail": ",", "hint": "m*"}, {"t": "gap", "lead": "", "core": "nothing", "trail": "", "hint": "n******"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "more", "trail": "", "hint": "m***"}, {"t": "gap", "lead": "", "core": "important", "trail": "", "hint": "i********"}, {"t": "gap", "lead": "", "core": "than", "trail": "", "hint": "t***"}, {"t": "gap", "lead": "", "core": "regular", "trail": "", "hint": "r******"}, {"t": "gap", "lead": "", "core": "support", "trail": "", "hint": "s******"}, {"t": "gap", "lead": "", "core": "and", "trail": "", "hint": "a**"}, {"t": "gap", "lead": "", "core": "training", "trail": "", "hint": "t*******"}, {"t": "gap", "lead": "", "core": "right", "trail": "", "hint": "r****"}, {"t": "gap", "lead": "", "core": "now", "trail": "", "hint": "n**"}, {"t": "gap", "lead": "", "core": "because", "trail": "", "hint": "b******"}, {"t": "gap", "lead": "", "core": "we", "trail": "", "hint": "w*"}, {"t": "gap", "lead": "", "core": "want", "trail": "", "hint": "w***"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "do", "trail": "", "hint": "d*"}, {"t": "gap", "lead": "", "core": "the", "trail": "", "hint": "t**"}, {"t": "gap", "lead": "", "core": "job", "trail": "", "hint": "j**"}, {"t": "gap", "lead": "", "core": "well", "trail": "", "hint": "w***"}, {"t": "gap", "lead": "", "core": "without", "trail": "", "hint": "w******"}, {"t": "gap", "lead": "", "core": "getting", "trail": "", "hint": "g******"}, {"t": "gap", "lead": "", "core": "burned", "trail": "", "hint": "b*****"}, {"t": "gap", "lead": "", "core": "out", "trail": ".", "hint": "o**"}]}, {"ctx": "Low expectations, low support — asking for clear goals &amp; feedback", "vi": "Tất nhiên, có sự linh hoạt thì rất tốt. Nhưng theo ý kiến của em, không có gì quan trọng hơn các mục tiêu và phản hồi rõ ràng vì chúng em muốn biết chính xác mình cần làm gì để đạt hiệu suất tốt.", "ans": "Of course, having flexibility is nice. But in my opinion, nothing is more important than clear goals and feedback because we want to know exactly what to do to perform well.", "exp": "Mẫu <b>In my opinion, nothing is more important than…</b> để nêu ưu tiên (clear goals &amp; feedback).", "toks": [{"t": "gap", "lead": "", "core": "Of", "trail": "", "hint": "O*"}, {"t": "gap", "lead": "", "core": "course", "trail": ",", "hint": "c*****"}, {"t": "gap", "lead": "", "core": "having", "trail": "", "hint": "h*****"}, {"t": "gap", "lead": "", "core": "flexibility", "trail": "", "hint": "f**********"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "nice", "trail": ".", "hint": "n***"}, {"t": "gap", "lead": "", "core": "But", "trail": "", "hint": "B**"}, {"t": "gap", "lead": "", "core": "in", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "my", "trail": "", "hint": "m*"}, {"t": "gap", "lead": "", "core": "opinion", "trail": ",", "hint": "o******"}, {"t": "gap", "lead": "", "core": "nothing", "trail": "", "hint": "n******"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "more", "trail": "", "hint": "m***"}, {"t": "gap", "lead": "", "core": "important", "trail": "", "hint": "i********"}, {"t": "gap", "lead": "", "core": "than", "trail": "", "hint": "t***"}, {"t": "gap", "lead": "", "core": "clear", "trail": "", "hint": "c****"}, {"t": "gap", "lead": "", "core": "goals", "trail": "", "hint": "g****"}, {"t": "gap", "lead": "", "core": "and", "trail": "", "hint": "a**"}, {"t": "gap", "lead": "", "core": "feedback", "trail": "", "hint": "f*******"}, {"t": "gap", "lead": "", "core": "because", "trail": "", "hint": "b******"}, {"t": "gap", "lead": "", "core": "we", "trail": "", "hint": "w*"}, {"t": "gap", "lead": "", "core": "want", "trail": "", "hint": "w***"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "know", "trail": "", "hint": "k***"}, {"t": "gap", "lead": "", "core": "exactly", "trail": "", "hint": "e******"}, {"t": "gap", "lead": "", "core": "what", "trail": "", "hint": "w***"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "do", "trail": "", "hint": "d*"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "perform", "trail": "", "hint": "p******"}, {"t": "gap", "lead": "", "core": "well", "trail": ".", "hint": "w***"}]}, {"ctx": "Low expectations, high support — asking for bigger challenges", "vi": "Dĩ nhiên, một môi trường thân thiện và ít áp lực là rất tuyệt vời. Nhưng với em, không có gì quan trọng hơn việc có những thử thách lớn vì em muốn phát triển trong sự nghiệp của mình.", "ans": "Of course, a friendly and low-pressure environment is wonderful. But to me, nothing is more important than having big challenges because I want to grow in my career.", "exp": "Từ ghép <b>low-pressure</b> gõ nguyên cụm; ý chính là <b>having big challenges</b> + lý do phát triển sự nghiệp.", "toks": [{"t": "gap", "lead": "", "core": "Of", "trail": "", "hint": "O*"}, {"t": "gap", "lead": "", "core": "course", "trail": ",", "hint": "c*****"}, {"t": "gap", "lead": "", "core": "a", "trail": "", "hint": "a"}, {"t": "gap", "lead": "", "core": "friendly", "trail": "", "hint": "f*******"}, {"t": "gap", "lead": "", "core": "and", "trail": "", "hint": "a**"}, {"t": "gap", "lead": "", "core": "low-pressure", "trail": "", "hint": "l***********"}, {"t": "gap", "lead": "", "core": "environment", "trail": "", "hint": "e**********"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "wonderful", "trail": ".", "hint": "w********"}, {"t": "gap", "lead": "", "core": "But", "trail": "", "hint": "B**"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "me", "trail": ",", "hint": "m*"}, {"t": "gap", "lead": "", "core": "nothing", "trail": "", "hint": "n******"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "more", "trail": "", "hint": "m***"}, {"t": "gap", "lead": "", "core": "important", "trail": "", "hint": "i********"}, {"t": "gap", "lead": "", "core": "than", "trail": "", "hint": "t***"}, {"t": "gap", "lead": "", "core": "having", "trail": "", "hint": "h*****"}, {"t": "gap", "lead": "", "core": "big", "trail": "", "hint": "b**"}, {"t": "gap", "lead": "", "core": "challenges", "trail": "", "hint": "c*********"}, {"t": "gap", "lead": "", "core": "because", "trail": "", "hint": "b******"}, {"t": "gap", "lead": "", "core": "I", "trail": "", "hint": "I"}, {"t": "gap", "lead": "", "core": "want", "trail": "", "hint": "w***"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "grow", "trail": "", "hint": "g***"}, {"t": "gap", "lead": "", "core": "in", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "my", "trail": "", "hint": "m*"}, {"t": "gap", "lead": "", "core": "career", "trail": ".", "hint": "c*****"}]}, {"ctx": "High expectations, high support — confirming goals &amp; thanking", "vi": "Cảm ơn sự dẫn dắt của sếp. Dĩ nhiên, việc đạt được các mục tiêu lớn là quan trọng. Nhưng với đội ngũ của chúng em, không có gì quan trọng hơn sự hỗ trợ thường xuyên của sếp vì nó giúp chúng em làm việc vui vẻ và có động lực.", "ans": "Thank you for your guidance. Of course, attaining ambitious goals is important. But to our team, nothing is more important than your regular support because it keeps us happy and motivated.", "exp": "Cảm ơn (guidance) → thừa nhận mục tiêu → khẳng định ưu tiên <b>your regular support</b> bằng mẫu câu.", "toks": [{"t": "gap", "lead": "", "core": "Thank", "trail": "", "hint": "T****"}, {"t": "gap", "lead": "", "core": "you", "trail": "", "hint": "y**"}, {"t": "gap", "lead": "", "core": "for", "trail": "", "hint": "f**"}, {"t": "gap", "lead": "", "core": "your", "trail": "", "hint": "y***"}, {"t": "gap", "lead": "", "core": "guidance", "trail": ".", "hint": "g*******"}, {"t": "gap", "lead": "", "core": "Of", "trail": "", "hint": "O*"}, {"t": "gap", "lead": "", "core": "course", "trail": ",", "hint": "c*****"}, {"t": "gap", "lead": "", "core": "attaining", "trail": "", "hint": "a********"}, {"t": "gap", "lead": "", "core": "ambitious", "trail": "", "hint": "a********"}, {"t": "gap", "lead": "", "core": "goals", "trail": "", "hint": "g****"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "important", "trail": ".", "hint": "i********"}, {"t": "gap", "lead": "", "core": "But", "trail": "", "hint": "B**"}, {"t": "gap", "lead": "", "core": "to", "trail": "", "hint": "t*"}, {"t": "gap", "lead": "", "core": "our", "trail": "", "hint": "o**"}, {"t": "gap", "lead": "", "core": "team", "trail": ",", "hint": "t***"}, {"t": "gap", "lead": "", "core": "nothing", "trail": "", "hint": "n******"}, {"t": "gap", "lead": "", "core": "is", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "more", "trail": "", "hint": "m***"}, {"t": "gap", "lead": "", "core": "important", "trail": "", "hint": "i********"}, {"t": "gap", "lead": "", "core": "than", "trail": "", "hint": "t***"}, {"t": "gap", "lead": "", "core": "your", "trail": "", "hint": "y***"}, {"t": "gap", "lead": "", "core": "regular", "trail": "", "hint": "r******"}, {"t": "gap", "lead": "", "core": "support", "trail": "", "hint": "s******"}, {"t": "gap", "lead": "", "core": "because", "trail": "", "hint": "b******"}, {"t": "gap", "lead": "", "core": "it", "trail": "", "hint": "i*"}, {"t": "gap", "lead": "", "core": "keeps", "trail": "", "hint": "k****"}, {"t": "gap", "lead": "", "core": "us", "trail": "", "hint": "u*"}, {"t": "gap", "lead": "", "core": "happy", "trail": "", "hint": "h****"}, {"t": "gap", "lead": "", "core": "and", "trail": "", "hint": "a**"}, {"t": "gap", "lead": "", "core": "motivated", "trail": ".", "hint": "m********"}]}];
+function renderDisc(){
+ var w=$("l8discList");if(!w)return;
+ w.innerHTML=DISC.map(function(d,di){
+  var gi=0;
+  var line=d.toks.map(function(tk){
+   if(tk.t==="show")return '<span class="disc-slot"><span class="disc-top disc-show">'+esc(tk.w)+'</span><span class="disc-hint disc-hint-blank">·</span></span>';
+   var id="l8d_"+di+"_"+gi;gi++;
+   return '<span class="disc-slot"><span class="disc-top">'+(tk.lead?esc(tk.lead):"")+'<input type="text" class="disc-in" id="'+id+'" data-ans="'+esc(tk.core)+'" size="'+Math.max(tk.core.length,2)+'">'+(tk.trail?esc(tk.trail):"")+'</span><span class="disc-hint">'+esc(tk.hint)+'</span></span>';
+  }).join('');
+  return '<div class="disc-card" data-di="'+di+'"><div class="mini-label">'+esc(d.ctx)+'</div><div class="disc-vi"><b>Bài '+(di+1)+':</b> '+esc(d.vi)+'</div>'+
+   '<div class="disc-build">'+line+'</div>'+
+   '<div class="btn-group" style="margin-top:8px;"><button class="btn btn-primary btn-sm" onclick="l8CheckDisc('+di+')">Check</button><button class="btn btn-secondary btn-sm" onclick="l8ShowDisc('+di+')">Show this sentence</button></div>'+
+   '<div class="disc-answer reveal-block" id="l8dAns_'+di+'"><div class="sample-box" style="margin:8px 0 6px;"><b>Answer:</b> '+esc(d.ans)+'</div><div class="disc-exp">💡 '+d.exp+'</div></div></div>';
+ }).join('');
+}
+window.l8CheckDisc=function(di){var card=document.querySelector('#l8discList .disc-card[data-di="'+di+'"]');card.querySelectorAll(".disc-in").forEach(function(inp){var ok=norm(inp.value)===norm(inp.getAttribute("data-ans"));inp.classList.remove("disc-ok","disc-bad");if(inp.value.trim()!=="")inp.classList.add(ok?"disc-ok":"disc-bad");});};
+window.l8ShowDisc=function(di){var card=document.querySelector('#l8discList .disc-card[data-di="'+di+'"]');card.querySelectorAll(".disc-in").forEach(function(inp){inp.value=inp.getAttribute("data-ans");inp.classList.remove("disc-bad");inp.classList.add("disc-ok");inp.disabled=true;});$("l8dAns_"+di).classList.add("revealed");};
+window.l8RevealAllDisc=function(){DISC.forEach(function(_,di){l8ShowDisc(di);});};
+window.l8ResetDisc=function(){renderDisc();};
+
+/* ---------- QUIZ (40) ---------- */
+var QUIZ=[
+ /* ===== 20 VOCABULARY (meaning-first, 20 distinct words) ===== */
+ {t:"VOCABULARY",q:'"Service" what does it mean?',o:['It is how a business helps and treats its customers.','It is the amount of money you pay.','It is the place where a business is built.','It is how fast a job is done.'],a:0,e:'Service = how customers are treated.'},
+ {t:"VOCABULARY",q:'"Quality" what does it mean?',o:['It is the mood of a place.','It is how good or well-made a product or service is.','It is the number of customers.','It is the group of workers.'],a:1,e:'Quality = how good/well-made something is.'},
+ {t:"VOCABULARY",q:'"Price" what does it mean?',o:['It is how friendly the staff are.','It is the feeling of a place.','It is the amount of money you must pay to buy something.','It is how products are arranged.'],a:2,e:'Price = the money you pay.'},
+ {t:"VOCABULARY",q:'"Value" what does it mean?',o:['It is something that is worth the money you pay for it.','It is the opening time of a shop.','It is the speed of service.','It is the location of a business.'],a:0,e:'Value = worth the money you pay.'},
+ {t:"VOCABULARY",q:'"Speed" what does it mean?',o:['It is the quality of the food.','It is how fast a business does a job or serves customers.','It is the price of a product.','It is the mood of a place.'],a:1,e:'Speed = how fast the business serves.'},
+ {t:"VOCABULARY",q:'"Display" what does it mean?',o:['It is the group of workers.','It is the money you pay.','It is how products are arranged for customers to see and touch.','It is the place where a business is built.'],a:2,e:'Display = how products are arranged.'},
+ {t:"VOCABULARY",q:'"Location" what does it mean?',o:['It is the place where a business is built.','It is how good a product is.','It is the feeling of a place.','It is how fast they serve.'],a:0,e:'Location = where the business is.'},
+ {t:"VOCABULARY",q:'"Atmosphere" what does it mean?',o:['It is the price list.','It is the feeling or mood of a place.','It is the number of workers.','It is the amount you pay.'],a:1,e:'Atmosphere = the feeling/mood of a place.'},
+ {t:"VOCABULARY",q:'"Facilities" what does it mean?',o:['It is the friendliness of staff.','It is the speed of service.','It is buildings, equipment, or rooms provided for a purpose.','It is the price of a service.'],a:2,e:'Facilities = buildings/equipment/rooms.'},
+ {t:"VOCABULARY",q:'"Popularity" what does it mean?',o:['It is the state of being liked or supported by many people.','It is the cost of a product.','It is the location of a shop.','It is the mood of a place.'],a:0,e:'Popularity = being liked by many people.'},
+ {t:"VOCABULARY",q:'"Convenience" what does it mean?',o:['It is the quality of a product.','It is something that saves you time, effort, or difficulty.','It is the group of workers.','It is the feeling of a place.'],a:1,e:'Convenience = saves you time/effort.'},
+ {t:"VOCABULARY",q:'"Staff" what does it mean?',o:['It is the price of a service.','It is the place where a business is built.','It is the group of people who work for a business.','It is how good a product is.'],a:2,e:'Staff = the workers of a business.'},
+ {t:"VOCABULARY",q:'"Restaurant" what does it mean?',o:['A place where you can buy and eat a meal.','A shop that sells books and magazines.','A place where you get your hair cut.','A company that helps you plan trips.'],a:0,e:'Restaurant = you buy and eat a meal there.'},
+ {t:"VOCABULARY",q:'"Boutique" what does it mean?',o:['A place where mechanics fix cars.','A small shop that sells fashionable clothes or gifts.','A place where you learn a language.','A place where you stay and sleep.'],a:1,e:'Boutique = small fashionable-clothes shop.'},
+ {t:"VOCABULARY",q:'"Health club" what does it mean?',o:['A shop that sells clothes.','A company that helps you plan trips.','A place where people go to exercise and stay fit.','A place where you buy a meal.'],a:2,e:'Health club = a place to exercise.'},
+ {t:"VOCABULARY",q:'"Garage" what does it mean?',o:['A business that repairs or services motor vehicles.','A shop that sells books.','A place where you get your hair styled.','A place where you learn a language.'],a:0,e:'Garage = repairs/services vehicles.'},
+ {t:"VOCABULARY",q:'"Travel agency" what does it mean?',o:['A place where you eat a meal.','A company that helps people plan trips and buy tickets.','A place where you exercise.','A shop that sells clothes.'],a:1,e:'Travel agency = helps plan trips & buy tickets.'},
+ {t:"VOCABULARY",q:'"Hair salon" what does it mean?',o:['A place where mechanics fix cars.','A place where you buy books.','A place where you go to get your hair cut or styled.','A place where you stay overnight.'],a:2,e:'Hair salon = you get your hair cut/styled.'},
+ {t:"VOCABULARY",q:'"Language school" what does it mean?',o:['A place where people go to learn a foreign language.','A shop that sells fashionable clothes.','A business that repairs cars.','A company that plans trips.'],a:0,e:'Language school = you learn a foreign language.'},
+ {t:"VOCABULARY",q:'"Builder / Contractor" what does it mean?',o:['A place where you buy a meal.','A person or business that builds or repairs houses and buildings.','A shop that sells magazines.','A place where you exercise.'],a:1,e:'Builder/Contractor = builds/repairs buildings.'},
+ /* ===== 20 OTHER — comparatives (grammar), reading & context ===== */
+ {t:"GRAMMAR",q:'Comparative of the short adjective "cheap":',o:['more cheap','cheaper','cheapest','cheapmore'],a:1,e:'1-syllable → add -er: cheaper.'},
+ {t:"GRAMMAR",q:'Comparative of the irregular adjective "good":',o:['gooder','more good','better','best'],a:2,e:'good → better (irregular).'},
+ {t:"GRAMMAR",q:'Comparative of the irregular adjective "bad":',o:['worse','badder','more bad','worst'],a:0,e:'bad → worse (irregular).'},
+ {t:"GRAMMAR",q:'Comparative of the long adjective "expensive":',o:['expensiver','more expensive','expensivest','most expensive'],a:1,e:'Long adj → more expensive.'},
+ {t:"GRAMMAR",q:'Which is CORRECT?',o:['She is more friendlier than him.','She is friendlier than him.','She is friendly than him.','She is more friendly-er.'],a:1,e:'“more friendlier” is a double comparative ✗ → friendlier.'},
+ {t:"GRAMMAR",q:'Comparative of "professional":',o:['professionaler','more professional','professionalest','professionaller'],a:1,e:'Long adj → more professional.'},
+ {t:"GRAMMAR",q:'Comparative of "far":',o:['farer','more far','farther / further','farrer'],a:2,e:'far → farther / further (irregular).'},
+ {t:"GRAMMAR",q:'Fill: “Nothing is ___ than good service.”',o:['importanter','more important','most important','more importanter'],a:1,e:'important is long → more important.'},
+ {t:"GRAMMAR",q:'Fill: “Online books are ___ than campus books.”',o:['cheaper','more cheap','cheapest','more cheaper'],a:0,e:'cheap → cheaper.'},
+ {t:"GRAMMAR",q:'Comparative of "convenient":',o:['convenienter','more convenient','convenientest','convenientier'],a:1,e:'Long adj → more convenient.'},
+ {t:"READING",q:'At the Indian restaurant, customers complained about the…',o:['slow service','high prices','bad location','rude staff'],a:0,e:'Food was good but the service was slow.'},
+ {t:"READING",q:'The campus bookstore is convenient, but its prices are…',o:['the cheapest','higher than the mall and online','free','the same as online'],a:1,e:'~10% more than the mall, ~20% more than online.'},
+ {t:"READING",q:'The Metropolitan health club’s problem is that it is…',o:['too expensive','too far','too popular / crowded','too small'],a:2,e:'Too popular → always full, long waits.'},
+ {t:"READING",q:'The Honolulu hotel’s weak point is its…',o:['staff','location','price','food'],a:1,e:'Friendly staff, but location too far from downtown.'},
+ {t:"READING",q:'The Japanese restaurant owner says the number one thing is…',o:['fresh fish','talented chefs','service','low prices'],a:2,e:'“excellent service is the number one thing.”'},
+ {t:"READING",q:'The travel agent says the most important thing is…',o:['a good value','the website','speed','the office'],a:0,e:'Clients look for a good value.'},
+ {t:"READING",q:'The builder says the most crucial factor is…',o:['price','speed','quality','location'],a:1,e:'“speed… time is money.”'},
+ {t:"CONTEXT",q:'The opinion template starts with:',o:['“Nothing is more important than…”','“I don’t care about…”','“It is the cheapest…”','“Let’s reschedule…”'],a:0,e:'“In my opinion, nothing is more important than [Y]…”'},
+ {t:"CONTEXT",q:'The fashion store owner says creating displays is…',o:['easy','an art','cheap','slow'],a:1,e:'“Creating effective clothing displays is an art.”'},
+ {t:"CONTEXT",q:'Best reply to “The service is terrible”:',o:['“Great, let’s go there!”','“I know what you mean — the staff are rude.”','“The location is perfect.”','“It is the cheapest in town.”'],a:1,e:'Agreeing about poor service fits the context.'}
+];
+var qOrder=[],qIdx=0,qScore=0,qInt=null,qLeft=10,qAns=false;
+function qScreen(id){["l8qzStart","l8qzPlay","l8qzResult"].forEach(function(s){$(s).classList.toggle("active",s===id);});}
+function qStop(){if(qInt){clearInterval(qInt);qInt=null;}}
+window.l8QzStart=function(){qOrder=shuffle(QUIZ.map(function(_,i){return i;}));qIdx=0;qScore=0;qScreen("l8qzPlay");qRender();};
+function qRender(){
+ qAns=false;var q=QUIZ[qOrder[qIdx]];
+ $("l8qzCounter").textContent="QUESTION "+(qIdx+1)+" / 40";
+ $("l8qzType").textContent=q.t;
+ $("l8qzQ").textContent=q.q;
+ $("l8qzOpts").innerHTML=q.o.map(function(o,i){return '<div class="mcq-option" data-oi="'+i+'" onclick="l8QzPick(this)"><span class="ltr">'+String.fromCharCode(65+i)+'.</span> <span>'+esc(o)+'</span></div>';}).join('');
+ var ex=$("l8qzExplain");ex.classList.remove("show");ex.textContent="";
+ $("l8qzSubmit").style.display="";$("l8qzNext").style.display="none";
+ qLeft=10;$("l8qzTimer").textContent="⏳ 10s";$("l8qzTimer").classList.remove("danger");
+ var bar=$("l8qzBar");bar.classList.remove("danger");bar.style.transition="none";bar.style.width="100%";
+ void bar.offsetWidth;bar.style.transition="width 10s linear";bar.style.width="0%";
+ qStop();qInt=track(setInterval(function(){qLeft--;$("l8qzTimer").textContent="⏳ "+qLeft+"s";if(qLeft<=3){$("l8qzTimer").classList.add("danger");$("l8qzBar").classList.add("danger");}if(qLeft<=0){qStop();qTimeout();}},1000));
+}
+window.l8QzPick=function(el){if(qAns)return;$("l8qzOpts").querySelectorAll(".mcq-option").forEach(function(o){o.classList.remove("selected");});el.classList.add("selected");};
+function reveal(pick){
+ qAns=true;qStop();var q=QUIZ[qOrder[qIdx]];
+ $("l8qzOpts").querySelectorAll(".mcq-option").forEach(function(o,i){o.style.pointerEvents="none";if(i===q.a)o.classList.add("correct");else if(i===pick)o.classList.add("wrong");});
+ if(pick===q.a)qScore++;
+ var ex=$("l8qzExplain");ex.innerHTML=(pick===q.a?"✅ ":"❌ ")+q.e;ex.classList.add("show");
+ $("l8qzSubmit").style.display="none";$("l8qzNext").style.display="";
+ if(qIdx===39)$("l8qzNext").textContent="See result →";
+}
+window.l8QzSubmit=function(){if(qAns)return;var sel=$("l8qzOpts").querySelector(".mcq-option.selected");reveal(sel?parseInt(sel.getAttribute("data-oi"),10):-1);};
+function qTimeout(){if(qAns)return;reveal(-1);}
+window.l8QzNext=function(){if(qIdx>=39){qResult();return;}qIdx++;qRender();};
+function qResult(){
+ qStop();qScreen("l8qzResult");$("l8qzScore").textContent=qScore+" / 40";
+ var v;
+ if(qScore>=36)v="🏆 Outstanding! You've mastered successful-business English.";
+ else if(qScore>=28)v="👏 Great work — a few points to review.";
+ else if(qScore>=20)v="👍 Good start. Revisit Tabs 2–4 and try again.";
+ else v="💪 Keep going — replay the vocabulary and quiz.";
+ $("l8qzVerdict").textContent=v;
+}
+
+/* ---------- TABS (nested l8p1 / l8p2 / l8p2b) + in-content routing ---------- */
+var L8NESTED={l8p1:1,l8p2:1,l8p2b:1};
+document.addEventListener("click",function(e){
+ var t=e.target.closest(".tab-btn");
+ if(t){var bar=t.closest(".tab-bar");var g=bar&&bar.getAttribute("data-group");
+  if(g&&L8NESTED[g]){var tab=t.getAttribute("data-tab");
+   bar.querySelectorAll(".tab-btn").forEach(function(b){b.classList.toggle("active",b===t);});
+   document.querySelectorAll('.tab-panel[data-panel-group="'+g+'"]').forEach(function(p){p.classList.toggle("active",p.getAttribute("data-panel")===tab);});
+  }
+ }
+ var p1b=e.target.closest("[data-l8p1tab]");
+ if(p1b){var bar1=document.querySelector('.tab-bar[data-group="l8p1"]');var b1=bar1&&bar1.querySelector('.tab-btn[data-tab="'+p1b.getAttribute("data-l8p1tab")+'"]');if(b1)b1.click();window.scrollTo(0,0);}
+ var p2b=e.target.closest("[data-l8p2tab]");
+ if(p2b){var bar2=document.querySelector('.tab-bar[data-group="l8p2"]');var b2=bar2&&bar2.querySelector('.tab-btn[data-tab="'+p2b.getAttribute("data-l8p2tab")+'"]');if(b2)b2.click();window.scrollTo(0,0);}
+});
+
+/* ---------- HOOKS ---------- */
+window.l8ClearTimers=function(){TIMERS.forEach(clearInterval);TIMERS.length=0;qInt=null;t2Int=null;};
+window.l8Reset=function(){
+ window.l8ClearTimers();
+ renderVocab();renderPhrases();renderPron();renderQP();renderMatch();renderSpeaking();
+ renderEx1();renderEx2();renderRInfo();renderTfng();renderRMcq();renderShort();
+ renderLis1();renderLis2m();renderLis2l();renderLis3i();renderLis3o();renderPronL();renderDict();renderTranscripts();renderDisc();
+ ["fb-l8qp","fb-l8match","fb-l8ex1","fb-l8ex2","fb-l8rinfo","fb-l8rtfng","fb-l8rmcq","fb-l8lis1","fb-l8lis2m","fb-l8lis2l","fb-l8lis3i","fb-l8lis3o","fb-l8dict"].forEach(clearFb);
+ qScreen("l8qzStart");
+ document.querySelectorAll("#page-lesson8 .vocab-card.flipped").forEach(function(c){c.classList.remove("flipped");});
+ document.querySelectorAll("#page-lesson8 .reveal-block.revealed").forEach(function(r){r.classList.remove("revealed");});
+ document.querySelectorAll("#page-lesson8 .viTxt").forEach(function(v){v.style.display="none";});
+ wordBag=[];sitBag=[];promptBag=[];
+ var dw=$("l8drawWordRes"),ds=$("l8drawSitRes"),pr=$("l8promptRes");
+ if(dw)dw.innerHTML='<span class="small">Your word will appear here…</span>';
+ if(ds)ds.innerHTML='<span class="small">Your situation will appear here…</span>';
+ if(pr)pr.innerHTML='<span class="small">Your prompt will appear here…</span>';
+ t2Preset=60;t2Left=60;t2Render();
+ document.querySelectorAll(".preset-pill[data-sec8t2]").forEach(function(p){p.classList.remove("active");});
+};
+
+/* ---------- VERIFY ---------- */
+function verify(){
+ console.assert(QUIZ.length===40,"L8 quiz must be 40, got "+QUIZ.length);
+ var vq=QUIZ.filter(function(q){return q.t==="VOCABULARY";});console.assert(vq.length>=20,"L8 quiz needs >=20 vocab, got "+vq.length);
+ var vw={};vq.forEach(function(q){vw[q.q]=1;});console.assert(Object.keys(vw).length===vq.length,"L8 vocab questions distinct");
+ console.assert(FACTORS.length===12&&BIZTYPES.length===12,"L8 vocab 12+12");
+ console.assert(EX2.length===14,"L8 grammar ex2 = 14");
+ console.assert(LIS1.length===6&&LIS2M.length===6&&LIS2L.length===6&&LIS3I.length===4&&LIS3O.length===4,"L8 listening counts");
+ console.assert(DICT.length===5,"L8 dictation = 5");
+ console.assert(DISC.length===4,"L8 discussion = 4");
+ console.assert(PINGPONG.length===3&&IMPOSTER.length===3,"L8 2A activities = 3+3");
+ console.assert(REFLEX_WORDS.length>=18&&REFLEX_WORDS.length<=25,"L8 reflex words 18-25");
+ console.assert(REFLEX_SITS.length>=8&&REFLEX_SITS.length<=10,"L8 reflex sits 8-10");
+ console.assert(REFLEX_PROMPTS.length>=2&&REFLEX_PROMPTS.length<=4,"L8 prompts 2-4");
+}
+
+/* ---------- INIT ---------- */
+renderVocab();renderPhrases();renderPron();renderQP();renderMatch();renderSpeaking();
+renderEx1();renderEx2();renderRInfo();renderTfng();renderRMcq();renderShort();
+renderLis1();renderLis2m();renderLis2l();renderLis3i();renderLis3o();renderPronL();renderDict();renderTranscripts();renderDisc();
 t2Render();
 verify();
 })();
