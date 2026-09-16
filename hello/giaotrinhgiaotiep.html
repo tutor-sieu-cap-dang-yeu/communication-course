@@ -649,6 +649,59 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
   .j-step{margin-right:0;}
   .j-step::after{content:"";}
 }
+/* ===== LESSON 9 (Cargo Specs) ===== */
+.l9-sel{font-family:inherit;font-size:13.5px;font-weight:700;color:var(--teal);border:1.5px solid var(--teal);border-radius:6px;padding:3px 8px;background:var(--white);cursor:pointer;margin:0 2px;}
+.l9-sel.sel-ok{border-color:var(--green-success);color:var(--green-success);background:var(--green-light);}
+.l9-sel.sel-bad{border-color:var(--red-error,#c0392b);color:var(--red-error,#c0392b);background:#fdecea;}
+#page-lesson9 .ex-row{padding:12px 14px;border-bottom:1px solid var(--border);}
+#page-lesson9 .ex-row:last-child{border-bottom:none;}
+#page-lesson9 .ex-n{font-weight:800;color:var(--teal);margin-right:6px;}
+#page-lesson9 .ex-txt,#page-lesson9 .ex-q{font-size:14.5px;color:var(--text-dark);line-height:1.9;}
+#page-lesson9 .circle-opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+#page-lesson9 .circle-opt{font-family:inherit;font-size:13.5px;color:var(--text-dark);border:1.5px solid var(--border);border-radius:8px;padding:6px 12px;background:var(--white);cursor:pointer;transition:all .15s;}
+#page-lesson9 .circle-opt:hover{border-color:var(--teal);}
+#page-lesson9 .circle-opt.selected{border-color:var(--teal);background:var(--sage);font-weight:700;}
+#page-lesson9 .circle-opt.opt-correct{border-color:var(--green-success);background:var(--green-light);color:var(--green-success);font-weight:700;}
+#page-lesson9 .circle-opt.opt-wrong{border-color:var(--red-error,#c0392b);background:#fdecea;color:var(--red-error,#c0392b);}
+#page-lesson9 .mcq-exp{margin-top:8px;font-size:12.5px;color:var(--text-mid);background:var(--sage);border-radius:6px;padding:6px 10px;}
+#page-lesson9 .dict-in.in-ok{color:var(--green-success);font-weight:700;border-color:var(--green-success);background:var(--green-light);}
+#page-lesson9 .dict-in.in-bad{color:var(--red-error,#c0392b);border-color:var(--red-error,#c0392b);background:#fdecea;}
+/* spec columns */
+.spec3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px;}
+.spec2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:8px;}
+.spec-col{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;}
+.spec-col-head{font-weight:800;color:var(--forest);font-size:14px;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--sage);}
+.mat-list{margin:6px 0 0;padding-left:20px;}
+.mat-list li{font-size:13.5px;color:var(--text-dark);line-height:1.9;}
+.mat-list li b{color:var(--forest);}
+/* unit box */
+.unit-box{display:flex;flex-direction:column;gap:10px;}
+.unit-row{font-size:13px;color:var(--text-dark);line-height:1.7;}
+.unit-tag{display:inline-block;font-size:11px;font-weight:800;border-radius:20px;padding:2px 10px;margin-right:6px;letter-spacing:.03em;}
+.unit-tag.metric{background:var(--sage);color:var(--forest);}
+.unit-tag.nonmetric{background:#f0e6d8;color:#8a6d3b;}
+/* magazine band */
+.magazine-band{background:linear-gradient(135deg,var(--forest),var(--moss));color:#fff;font-weight:800;letter-spacing:.05em;font-size:13px;padding:8px 16px;border-radius:8px 8px 0 0;}
+.magazine-band + .read-passage{border-radius:0 0 8px 8px;}
+/* worksheets: spec sheet & quote form */
+.spec-sheet,.quote-form{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);padding:0;overflow:hidden;margin-top:8px;}
+.sheet-title{background:var(--forest);color:#fff;font-weight:800;font-size:13px;letter-spacing:.04em;padding:9px 16px;}
+.sheet-row{display:flex;align-items:center;gap:10px;padding:8px 16px;border-bottom:1px solid var(--border);flex-wrap:wrap;}
+.sheet-row:last-child{border-bottom:none;}
+.sheet-label{flex:1;min-width:160px;font-size:13.5px;color:var(--text-dark);font-weight:600;}
+.sheet-in{font-family:inherit;font-size:14px;color:var(--forest);border:1.5px solid var(--border);border-radius:6px;padding:4px 10px;outline:none;background:var(--cream,#fdfaf3);}
+.sheet-in:focus{border-color:var(--teal);}
+
+/* ===== LESSON 9 · Listening worksheets ===== */
+.word-box{background:#efe6f2;border:1px solid #d9c7e0;border-radius:8px;padding:10px 16px;margin:6px 0 10px;text-align:center;font-weight:700;color:var(--forest);font-size:14px;letter-spacing:.01em;}
+.spec-illus{font-size:12.5px;color:var(--text-mid);background:var(--sage);border-radius:6px;padding:7px 12px;margin-bottom:10px;}
+.form-sec{background:var(--sage);color:var(--forest);font-weight:800;font-size:12.5px;letter-spacing:.03em;padding:7px 16px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.form-sub{font-weight:700;color:var(--text-mid);font-size:13px;padding:9px 16px 2px;}
+#page-lesson9 .sheet-num{font-weight:800;color:var(--teal);margin-right:2px;}
+#page-lesson9 .sheet-val{font-size:13.5px;color:var(--text-dark);line-height:1.9;}
+#page-lesson9 .sheet-val.given{color:var(--text-mid);font-weight:600;}
+#page-lesson9 .sheet-val b{color:var(--forest);}
+#page-lesson9 .l9-sel{margin:0 2px;}
 </style>
 </head>
 <body>
@@ -926,7 +979,26 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
         <button class="btn btn-primary btn-sm" data-page="lesson8">Open lesson →</button>
       </div>
     </div>
-    <div class="module-card"><div class="module-head"><span class="mn">MODULE 5</span><h3>Coming soon</h3></div><div class="lesson-row locked"><div class="lnum">9</div><div class="linfo"><div class="lt">Lessons 9–10</div><div class="ld">Updating soon</div></div><span class="badge badge-forest">🔒 Locked</span></div></div>
+    <div class="module-card">
+      <div class="module-head"><span class="mn">MODULE 5</span><h3>Cargo Specifications &amp; Making Enquiries</h3></div>
+      <div style="padding:10px 22px 4px;">
+        <p style="font-size:13.5px;color:var(--text-mid);"><b>Module objective:</b> read, hear and convert cargo specifications — dimensions, weights (tare / gross / payload) and metric vs non-metric units — then make a polite freight enquiry and give a quotation.<br><b>Grammar focus:</b> nominalization for specs — <i>long → length</i>, and the pattern “The [noun] of [object] is [number]”.</p>
+      </div>
+      <div class="lesson-row">
+        <div class="lnum">9</div>
+        <div class="linfo">
+          <div class="lt">Lesson 9 — Cargo Specifications &amp; Making Enquiries</div>
+          <div class="ld">Cargo-spec &amp; material vocabulary (dimensions, weights, units, brick vs tile) · unit conversion tables · nominalization grammar · rewrite &amp; describe-a-container speaking · export-advice reading · spec-sheet &amp; quotation-form listening · phone-enquiry role-play · 40-question quiz</div>
+        </div>
+        <span class="done-mark" id="doneMark-lesson9" style="display:none;">✓ Completed</span>
+        <button class="btn btn-primary btn-sm" data-page="lesson9">Open lesson →</button>
+      </div>
+      <div class="lesson-row locked">
+        <div class="lnum">10</div>
+        <div class="linfo"><div class="lt">Lesson 10</div><div class="ld">Updating soon</div></div>
+        <span class="badge badge-forest">🔒 Locked</span>
+      </div>
+    </div>
     <div class="module-card"><div class="module-head"><span class="mn">MODULE 6</span><h3>Coming soon</h3></div><div class="lesson-row locked"><div class="lnum">11</div><div class="linfo"><div class="lt">Lessons 11–12</div><div class="ld">Updating soon</div></div><span class="badge badge-forest">🔒 Locked</span></div></div>
     <div class="module-card"><div class="module-head"><span class="mn">MODULE 7</span><h3>Coming soon</h3></div><div class="lesson-row locked"><div class="lnum">13</div><div class="linfo"><div class="lt">Lessons 13–14</div><div class="ld">Updating soon</div></div><span class="badge badge-forest">🔒 Locked</span></div></div>
     <div class="mock-card"><span class="ic">📝</span><div><h4>Mock Test — Phase 2</h4><p>Checkpoint for Phase 2 · taken in Session 15 together with a new lesson · coming soon</p></div><span class="badge badge-forest" style="margin-left:auto;">🔒 Locked</span></div>
@@ -4574,6 +4646,463 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--text-
   </div>
 </div>
 
+
+<!-- ================= PAGE: LESSON 9 (Module 5 · Cargo Specifications & Making Enquiries) ================= -->
+<div class="page" id="page-lesson9">
+  <div class="hero">
+    <div class="meta">
+      <span class="badge badge-mint">PHASE 2 · MODULE 5 · LESSON 9</span>
+      <span class="badge badge-white">CEFR A2 → B1</span>
+      <span class="badge badge-white">⏱ 120 MIN</span>
+    </div>
+    <h1>Cargo Specifications &amp; Making Enquiries</h1>
+    <p class="sub">Read, hear and convert cargo specs — <b>dimensions</b> (length · width · height · depth), <b>weights</b> (tare · gross · payload) and <b>metric ↔ non-metric</b> units — then make a polite freight enquiry, in the world of construction &amp; décor shipping.</p>
+    <div class="outcomes">
+      <span class="badge badge-white">Getting Ready</span>
+      <span class="badge badge-white">Speaking</span>
+      <span class="badge badge-white">Grammar</span>
+      <span class="badge badge-white">Reading</span>
+      <span class="badge badge-white">Listening</span>
+      <span class="badge badge-white">Discussion</span>
+      <span class="badge badge-white">Quiz</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="tab-bar" data-group="l9tabs">
+      <button class="tab-btn active" data-tab="l9-overview">1 · Overview</button>
+      <button class="tab-btn" data-tab="l9-p1">2 · Getting Ready</button>
+      <button class="tab-btn" data-tab="l9-p2">3 · Speaking</button>
+      <button class="tab-btn" data-tab="l9-grammar">4 · Grammar</button>
+      <button class="tab-btn" data-tab="l9-reading">5 · Reading</button>
+      <button class="tab-btn" data-tab="l9-listening">6 · Listening</button>
+      <button class="tab-btn" data-tab="l9-discussion">7 · Discussion</button>
+      <button class="tab-btn" data-tab="l9-quiz">8 · Quiz</button>
+    </div>
+
+    <!-- ===== TAB 1: OVERVIEW ===== -->
+    <div class="tab-panel active" data-panel-group="l9tabs" data-panel="l9-overview">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Welcome</span><h2 class="section-title">Talk about cargo like a pro</h2><p class="section-subtitle">By the end of this lesson you can describe a container &amp; its cargo, read and convert measurements, and phone a forwarder to ask for a quotation.</p></div>
+        <div class="info-box" style="margin-bottom:14px;"><b>Context:</b> shipping construction &amp; décor materials (cooling units, tiles, wood, lamps). <b>Review (Module 4):</b> polite enquiries about time, place &amp; schedules. <b>New:</b> reading, hearing &amp; converting cargo specs — dimensions, weights, metric vs non-metric units.</div>
+        <div class="journey">
+          <div class="j-step"><div class="j-num">1</div><h4>Language Input</h4><div class="j-part">Tab 2 · Getting Ready</div><p>Cargo specs, materials, unit tables, phrases &amp; pronunciation.</p></div>
+          <div class="j-step"><div class="j-num">2</div><h4>Guided Practice</h4><div class="j-part">Tab 3 · Speaking</div><p>Rewrite specs, describe a container, reflex speaking.</p></div>
+          <div class="j-step"><div class="j-num">3</div><h4>Language Recognition</h4><div class="j-part">Tabs 4–6 · Grammar, Reading &amp; Listening</div><p>Nominalization, an export article &amp; two phone worksheets.</p></div>
+          <div class="j-step"><div class="j-num">4</div><h4>Real-world Communication</h4><div class="j-part">Tabs 3, 7 · Speaking &amp; Discussion</div><p>Make a freight enquiry &amp; give a quotation.</p></div>
+          <div class="j-step"><div class="j-num">5</div><h4>Reflection &amp; Review</h4><div class="j-part">Tab 8 · Quiz</div><p>40-question game to lock everything in.</p></div>
+        </div>
+        <div class="goal-grid" style="margin-top:18px;">
+          <div class="goal-card"><div class="ic">📦</div><h4>Vocabulary</h4><p>Dimensions, weights, units, materials &amp; brick vs tile — with IPA.</p></div>
+          <div class="goal-card"><div class="ic">📐</div><h4>Grammar</h4><p>Nominalization: “6 m long → the length is 6 m”, and unit conversion.</p></div>
+          <div class="goal-card"><div class="ic">🗣️</div><h4>Speaking</h4><p>Describe a cargo spec sheet; read big numbers correctly.</p></div>
+          <div class="goal-card"><div class="ic">🎧</div><h4>Listening</h4><p>Fill a container spec sheet &amp; a freight quotation form.</p></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-primary" data-l9tab="l9-p1">Start: Getting Ready →</button></div>
+      </div>
+    </div>
+    <!-- ===== TAB 2: PART 1 — GETTING READY ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-p1">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Part 1 · Getting Ready</span><h2 class="section-title">Build your cargo language</h2><p class="section-subtitle">Four steps: <b>A</b> vocabulary, <b>B</b> useful phrases, <b>C</b> pronunciation, <b>D</b> quick practice.</p></div>
+        <div class="tab-bar" data-group="l9p1">
+          <button class="tab-btn active" data-tab="l9p1-a">A · Vocabulary</button>
+          <button class="tab-btn" data-tab="l9p1-b">B · Useful Phrases</button>
+          <button class="tab-btn" data-tab="l9p1-c">C · Pronunciation</button>
+          <button class="tab-btn" data-tab="l9p1-d">D · Quick Practice</button>
+        </div>
+
+        <!-- A · VOCABULARY -->
+        <div class="tab-panel active" data-panel-group="l9p1" data-panel="l9p1-a">
+          <div class="mini-label">A.1 · Cargo specs — Dimension · Weight · Units</div>
+          <div class="info-box" style="margin-bottom:14px;">📦 The core words to describe any package or container. Three groups — tap a term's card to flip for meaning &amp; example.</div>
+          <div class="spec3">
+            <div class="spec-col"><div class="spec-col-head">📐 Dimension</div><div class="vocab-grid" id="l9vg_dim"></div></div>
+            <div class="spec-col"><div class="spec-col-head">⚖️ Weight</div><div class="vocab-grid" id="l9vg_wt"></div></div>
+            <div class="spec-col"><div class="spec-col-head">📏 Units</div><div id="l9vg_unit"></div></div>
+          </div>
+
+          <div class="mini-label" style="margin-top:22px;">A.2 · Measurement units — conversion &amp; reference tables</div>
+          <div class="exercise">
+            <div class="exercise-title">Bảng 1 · Conversion formulas: Non-metric → Metric</div>
+            <table class="read-table">
+              <thead><tr><th>Category (Phân loại)</th><th>Non-metric Unit</th><th>Metric Equivalent</th><th>Ví dụ</th></tr></thead>
+              <tbody>
+                <tr><td rowspan="2"><b>Length</b> (Chiều dài)</td><td>1 inch (in / ")</td><td>~ 2.54 cm</td><td>Gạch ốp 12" x 12" ~ 30 cm x 30 cm</td></tr>
+                <tr><td>1 foot (ft / ')</td><td>~ 0.305 m (30.5 cm)</td><td>Container 40ft ~ 12 m dài</td></tr>
+                <tr><td><b>Weight</b> (Khối lượng)</td><td>1 pound (lb / lbs)</td><td>~ 0.45 kg</td><td>Thùng hàng 100 lbs ~ 45 kg</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">Bảng 2 · Comprehensive units — Metric vs Non-metric</div>
+            <table class="read-table">
+              <thead><tr><th>Category</th><th>Metric System (Hệ Mét)</th><th>Non-metric System (Hệ Phi mét)</th></tr></thead>
+              <tbody>
+                <tr><td><b>Length</b> /leŋθ/<br>Chiều dài</td><td>• meter (m) /ˈmiː.tər/ : mét<br>• centimeter (cm) /ˈsen.tɪˌmiː.tər/ : xen-ti-mét</td><td>• yard (yd) /jɑːd/ : thước Anh<br>• foot (ft) /fʊt/ : bộ<br>• inch (") /ɪntʃ/ : in-chơ</td></tr>
+                <tr><td><b>Weight</b> /weɪt/<br>Khối lượng</td><td>• gram (g) /ɡræm/ : gam<br>• kilogram (kg) /ˈkɪl.ə.ɡræm/ : ki-lô-gam</td><td>• pound (lb) /paʊnd/ : cân Anh<br>• ounce (oz) /aʊns/ : ao-xơ</td></tr>
+                <tr><td><b>Surface</b> /ˈsɜː.fɪs/<br>Diện tích bề mặt</td><td>• square millimetre (mm²) : mi-li-mét vuông<br>• square meter (m²) : mét vuông</td><td>• square foot (sq ft) : feet vuông<br>• acre /ˈeɪ.kər/ : mẫu Anh</td></tr>
+                <tr><td><b>Volume</b> /ˈvɒl.juːm/<br>Thể tích</td><td>• cubic meter (m³) : mét khối<br>• cubic centimeter (cm³) : xen-ti-mét khối</td><td>• cubic yard (cu yd) : yard khối</td></tr>
+                <tr><td><b>Capacity</b> /kəˈpæs.ə.ti/<br>Dung tích chất lỏng</td><td>• liter (l) /ˈliː.tər/ : lít<br>• milliliter (ml) : mi-li-lít</td><td>• fluid ounce (fl oz) : ao-xơ chất lỏng<br>• pint (pt) /paɪnt/ : pint<br>• gallon (gal) /ˈɡæl.ən/ : ga-lông</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mini-label" style="margin-top:22px;">A.3 · Construction shipment — materials (tap to flip)</div>
+          <div class="vocab-grid" id="l9vg_mat"></div>
+
+          <div class="mini-label" style="margin-top:22px;">A.4 · Brick vs Tile</div>
+          <div class="info-box" style="margin-bottom:14px;">🧱 Two families of building blocks. <b>Brick</b> = structural/rough; <b>Tile</b> = decorative/finishing.</div>
+          <div class="spec2">
+            <div class="spec-col"><div class="spec-col-head">🧱 brick /brɪk/ — Gạch xây dựng / thô</div><ul class="mat-list">
+              <li><b>red brick</b> /red brɪk/ — Gạch đỏ / đất sét nung</li>
+              <li><b>hollow brick</b> /ˈhɒl.əʊ brɪk/ — Gạch ống / gạch lỗ</li>
+              <li><b>exposed brick</b> /ɪkˈspəʊzd brɪk/ — Gạch trần</li>
+            </ul></div>
+            <div class="spec-col"><div class="spec-col-head">🔲 tile /taɪl/ — Gạch ốp lát / trang trí</div><ul class="mat-list">
+              <li><b>ceramic tile</b> /səˈræm.ɪk taɪl/ — Gạch gốm / men</li>
+              <li><b>floor tile</b> /flɔːr taɪl/ — Gạch lát sàn</li>
+              <li><b>wall tile</b> /wɔːl taɪl/ — Gạch ốp tường</li>
+            </ul></div>
+          </div>
+          <div class="listening-notice" style="margin-top:12px;">📌 <b>Lưu ý từ Tutor:</b> ngành Xây dựng &amp; Nội thất còn rất nhiều từ mô tả chất liệu, kiểu cách, màu sắc, hình dáng, kết cấu (móng nhà, vách tiêu âm, xà gồ…). Phần chất liệu chuyên sâu này dành cho <b>Tự học</b> — nhắn Tutor để nhận bộ tài liệu riêng nhé! 🛠️✨</div>
+
+          <!-- A.5 Context Passage (skill-designed) -->
+          <div class="exercise" style="margin-top:22px;">
+            <div class="exercise-title">📖 A.5 · Comprehensive Context Passage — “Quoting the tile shipment”</div>
+            <div class="info-box" style="margin-bottom:14px;">Every group from A.1–A.4 lives inside ONE short story about quoting a cargo. Read it aloud twice.</div>
+            <div class="legend">
+              <span class="hl-vocab">spec / material</span>
+              <span class="hl-phrase">enquiry phrase</span>
+              <span class="hl-pron">number / unit</span>
+              <span class="hl-accent">dimension word</span>
+            </div>
+            <div class="sample-box" style="line-height:2.1;">
+              <span class="hl-phrase">I need a quotation</span> for a <span class="hl-vocab">shipment</span> of <span class="hl-vocab">ceramic floor tiles</span>. We're using a <span class="hl-vocab">40ft container</span>. Its <span class="hl-vocab">tare weight</span> is <span class="hl-pron">4,030 kg</span> (that's <span class="hl-pron">8,880 pounds</span>), and the maximum <span class="hl-vocab">payload</span> is <span class="hl-pron">28,470 kg</span>, so the <span class="hl-vocab">gross weight</span> is <span class="hl-pron">32,500 kg</span>. The internal <span class="hl-accent">length</span> is <span class="hl-pron">12 metres</span> (<span class="hl-pron">39 ft 5 in</span>), the <span class="hl-accent">width</span> is <span class="hl-pron">2.35 m</span> and the <span class="hl-accent">height</span> is <span class="hl-pron">2.32 m</span>. <span class="hl-phrase">Could you briefly describe the goods?</span> — They're <span class="hl-vocab">non-hazardous</span> <span class="hl-vocab">goods</span> for a <span class="hl-vocab">roof</span> and <span class="hl-vocab">wall</span> project, plus a <span class="hl-vocab">sample</span> of <span class="hl-vocab">wall paint</span> and some <span class="hl-vocab">cement</span> and <span class="hl-vocab">sand</span>.
+            </div>
+          </div>
+          <div class="btn-group"><button class="btn btn-primary" data-l9p1tab="l9p1-b">Next: Useful Phrases →</button></div>
+        </div>
+
+        <!-- B · USEFUL PHRASES -->
+        <div class="tab-panel" data-panel-group="l9p1" data-panel="l9p1-b">
+          <div class="info-box" style="margin-bottom:14px;">💬 Phrases for making a freight enquiry &amp; describing cargo. <b>Tap “Show Vietnamese”</b> to reveal meanings.</div>
+          <div id="l9phrases"></div>
+          <div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="l9TogglePhrasesVi(this)">Show Vietnamese</button><button class="btn btn-primary" data-l9p1tab="l9p1-c">Next: Pronunciation →</button></div>
+        </div>
+
+        <!-- C · PRONUNCIATION -->
+        <div class="tab-panel" data-panel-group="l9p1" data-panel="l9p1-c">
+          <div class="section-header"><span class="part-label">Pronunciation focus · Numbers &amp; measurements</span><h2 class="section-title">Say the big numbers clearly</h2><p class="section-subtitle">Specs are useless if the number is misheard. Practise reading measurements, big weights and unit words aloud.</p></div>
+          <div class="mini-label">Read each measurement aloud — the way it is really said</div>
+          <div id="l9pronList"></div>
+          <div class="listening-notice" style="margin-top:14px;">🗣️ <b>Tip:</b> decimals use “point” — 2.35 m = “two point three five metres”. Thousands use commas as you read: 28,470 = “twenty-eight thousand, four hundred and seventy”.</div>
+          <div class="btn-group"><button class="btn btn-primary" data-l9p1tab="l9p1-d">Next: Quick Practice →</button></div>
+        </div>
+
+        <!-- D · QUICK PRACTICE -->
+        <div class="tab-panel" data-panel-group="l9p1" data-panel="l9p1-d">
+          <div class="info-box" style="margin-bottom:14px;">⚡ Fast checks. Choose an answer for each, then press <b>Check answers</b>.</div>
+          <div class="exercise">
+            <div class="exercise-title">D.1 · Choose the correct answer</div>
+            <div id="l9qpList"></div>
+            <div class="feedback-box" id="fb-l9qp"><div class="score-badge" id="sc-l9qp">0/6</div><span id="ms-l9qp"></span></div>
+            <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckQP()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetQP()">Reset</button></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">D.2 · Match each unit to its category</div>
+            <div class="exercise-instruction">Pick the correct category for each unit, then check.</div>
+            <div id="l9matchList"></div>
+            <div class="feedback-box" id="fb-l9match"><div class="score-badge" id="sc-l9match">0/8</div><span id="ms-l9match"></span></div>
+            <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckMatch()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetMatch()">Reset</button></div>
+          </div>
+          <div class="btn-group"><button class="btn btn-primary" data-l9tab="l9-p2">Next: Part 2 — Speaking →</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== TAB 3: PART 2 — SPEAKING ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-p2">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Part 2 · Speaking</span><h2 class="section-title">Describe cargo &amp; convert the numbers</h2><p class="section-subtitle">Guided rewriting &amp; describing (2A), then instant-reflex speaking (2B).</p></div>
+        <div class="tab-bar" data-group="l9p2">
+          <button class="tab-btn active" data-tab="l9p2-a">2A · Speaking</button>
+          <button class="tab-btn" data-tab="l9p2-b">2B · Reflex Practice</button>
+        </div>
+
+        <!-- 2A -->
+        <div class="tab-panel active" data-panel-group="l9p2" data-panel="l9p2-a">
+          <div class="exercise">
+            <div class="exercise-title">🔥 Warm-up 1 — Rewrite &amp; speak the sentences</div>
+            <div class="exercise-instruction">Turn each adjective sentence into a “The [noun] of … is …” sentence. Say it aloud, then reveal the model. <span style="opacity:.8;">Example: <i>The container is 6 metres long.</i> → <i>The length of the container is six metres.</i></span></div>
+            <div id="l9wu1"></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">📋 Warm-up 2 — Practice activity (Cargo Spec sheet)</div>
+            <div class="exercise-instruction">Tutor asks, student answers — describe each container from the sheet below.</div>
+            <table class="read-table">
+              <thead><tr><th>Item</th><th>Container Type</th><th>Dimensions (L x W x H)</th><th>Tare Weight</th><th>Payload</th><th>Gross Weight</th></tr></thead>
+              <tbody>
+                <tr><td>Decorative Lamps</td><td>20ft Container</td><td>5.9m x 2.35m x 2.39m</td><td>2,200 kg</td><td>18,000 kg</td><td>20,200 kg</td></tr>
+                <tr><td>Wooden Flooring</td><td>40ft Container</td><td>12.03m x 2.35m x 2.39m</td><td>3,800 kg</td><td>26,000 kg</td><td>29,800 kg</td></tr>
+              </tbody>
+            </table>
+            <div class="scenario-card" style="margin-top:14px;"><div class="scenario-head">🎯 Template — describe a cargo</div><div class="scenario-body">
+              <b>Introduction:</b> “This is a … / These are …”<br>
+              <b>Weight:</b> “Its gross weight is [Number] kg.” · “The maximum payload is [Number] kg.” · (lẻ) “Each box weighs [Number] kg / lbs.”<br>
+              <b>Dimensions &amp; volume:</b> “The length is [Number] meters. The width is [Number] meters. The height is [Number] meters.”
+            </div></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">✍️ Practice task — Translate the container specs (VN → EN)</div>
+            <div class="sample-box" style="margin-bottom:10px;">“Đây là loại container bên công ty của chúng tôi. Trọng lượng vỏ container là 4.030 kg (tương đương 8.880 pound). Trọng lượng tổng thể (gross weight) là 32.500 kg và tải trọng tối đa là 28.470 kg. Về kích thước bên trong: Chiều dài bên trong là 12 mét (tương đương 39 feet 5 inch). Chiều rộng là 2,35 mét và chiều cao là 2,32 mét (tương đương 7 feet 7 inch). Nhìn chung, loại container này rất phù hợp để vận chuyển máy móc hạng nặng.”</div>
+            <div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="l9Reveal('l9transKey',this)">Show model answer</button></div>
+            <div class="reveal-block" id="l9transKey"><div class="sample-box" style="margin-top:8px;">💬 “This is a container model from our company. Its tare weight is 4,030 kg (equivalent to 8,880 pounds). The gross weight is 32,500 kg, and the maximum payload is 28,470 kg. Regarding the internal dimensions: The length is 12 meters (equivalent to 39 ft 5 in). The width is 2.35 meters. The height is 2.32 meters (equivalent to 7 ft 7 in). Overall, this type of container is very suitable for transporting heavy machinery.”</div></div>
+          </div>
+          <div class="exercise">
+            <div class="exercise-title">✅ Speaking checklist</div>
+            <label class="check-item"><input type="checkbox" class="l9spk"> I used “The [length/width/height] of … is …”.</label>
+            <label class="check-item"><input type="checkbox" class="l9spk"> I read big numbers &amp; decimals correctly.</label>
+            <label class="check-item"><input type="checkbox" class="l9spk"> I gave the metric AND non-metric value where useful.</label>
+            <label class="check-item"><input type="checkbox" class="l9spk"> I used tare / gross weight &amp; payload correctly.</label>
+          </div>
+          <div class="btn-group"><button class="btn btn-primary" data-l9p2tab="l9p2-b">Next: Reflex Practice →</button></div>
+        </div>
+
+        <!-- 2B -->
+        <div class="tab-panel" data-panel-group="l9p2" data-panel="l9p2-b">
+          <div class="tab-bar" data-group="l9p2b">
+            <button class="tab-btn active" data-tab="l9p2b-t1">Tier 1 · Lucky Draw</button>
+            <button class="tab-btn" data-tab="l9p2b-t2">Tier 2 · Extended Speaking</button>
+          </div>
+          <div class="tab-panel active" data-panel-group="l9p2b" data-panel="l9p2b-t1">
+            <div class="info-box" style="margin-bottom:16px;">🎯 <b>Goal: speak IMMEDIATELY.</b> React like a real forwarder on the phone.</div>
+            <div class="draw-grid">
+              <div class="draw-zone">
+                <span class="alt-badge">IN-CLASS ALTERNATIVE: DRAW PAPER CARDS</span>
+                <h4>📚 Zone 1 — Say a cargo word</h4>
+                <div class="zone-desc">Draw a spec or material word → say a FULL sentence about a shipment using it.</div>
+                <button class="draw-btn" onclick="l9DrawWord()">DRAW A<br>WORD</button>
+                <div class="draw-result" id="l9drawWordRes"><span class="small">Your word will appear here…</span></div>
+              </div>
+              <div class="draw-zone">
+                <span class="alt-badge">IN-CLASS ALTERNATIVE: DRAW PAPER CARDS</span>
+                <h4>💬 Zone 2 — Enquiry situations</h4>
+                <div class="zone-desc">Draw a situation → respond with a COMPLETE sentence. One-word answers don't count!</div>
+                <button class="draw-btn" onclick="l9DrawSituation()">DRAW A<br>SITUATION</button>
+                <div class="draw-result" id="l9drawSitRes"><span class="small">Your situation will appear here…</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel-group="l9p2b" data-panel="l9p2b-t2">
+            <div class="info-box" style="margin-bottom:14px;">🎤 Speak for longer (30 s – 3 min) on a prompt. Draw a prompt, keep to the structure, beat the clock.</div>
+            <div class="exercise">
+              <div class="exercise-title">🎲 Draw a speaking prompt</div>
+              <button class="draw-btn" style="margin:6px auto 12px;" onclick="l9DrawPrompt()">DRAW A<br>PROMPT</button>
+              <div class="draw-result" id="l9promptRes"><span class="small">Your prompt will appear here…</span></div>
+              <div class="tier2-hint" style="margin-top:14px;"><b>💡 Use today's words &amp; structures:</b>
+                <ul>
+                  <li>Specs: tare / gross weight · payload · dimensions (length · width · height · depth) · volume</li>
+                  <li>Nominalization: “The length of the container is 12 metres.”</li>
+                  <li>Conversion: “12 metres, that's about 39 feet 5 inches.”</li>
+                  <li>Enquiry: “I need a quotation for…”, “Could you briefly describe the goods?”</li>
+                </ul>
+              </div>
+              <div class="count-row">
+                <div class="count-display" id="timerL9T2">01:00</div>
+                <button class="preset-pill" data-sec9t2 onclick="l9T2SetPreset(60,this)">1 min</button>
+                <button class="preset-pill" data-sec9t2 onclick="l9T2SetPreset(120,this)">2 min</button>
+                <button class="preset-pill" data-sec9t2 onclick="l9T2SetPreset(180,this)">3 min</button>
+                <button class="btn-start" onclick="l9T2StartTimer()">▶ Start</button>
+                <button class="btn-timer-reset" onclick="l9T2ResetTimer()">↺ Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group"><button class="btn btn-outline" data-l9tab="l9-p1">← Part 1</button><button class="btn btn-primary" data-l9tab="l9-grammar">Next: Grammar →</button></div>
+    </div>
+
+    <!-- ===== TAB 4: GRAMMAR ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-grammar">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Grammar focus · Nominalization</span><h2 class="section-title">From adjective to noun: describing specs</h2><p class="section-subtitle">To state a spec formally, turn the adjective into a noun: <b>long → length</b>, and use <b>“The [noun] of [object] is [number].”</b></p></div>
+        <div class="tense-grid">
+          <div class="tense-card"><div class="tense-name">Adjective ↔ Noun</div><div class="tense-formula">long → length</div><div class="tense-ex">long → <b>length</b> · wide → <b>width</b> · high → <b>height</b> · deep → <b>depth</b></div><div class="tense-ex2">heavy → weight · These nouns name the measurement.</div></div>
+          <div class="tense-card"><div class="tense-name">Pattern 1 — adjective</div><div class="tense-formula">S + be + number + unit + adj</div><div class="tense-ex">The container <b>is 6 metres long</b>.</div><div class="tense-ex2">Good for quick, spoken description.</div></div>
+          <div class="tense-card"><div class="tense-name">Pattern 2 — noun (formal)</div><div class="tense-formula">The [noun] of [object] is [number].</div><div class="tense-ex"><b>The length of the container is</b> 6 metres.</div><div class="tense-ex2">Or: “The container's length is 6 metres.”</div></div>
+        </div>
+        <div class="info-box" style="margin-top:14px;">📏 Also useful: give the metric value, then the non-metric equivalent — “12 metres, <b>that's about</b> 39 feet 5 inches.”</div>
+        <div class="exercise">
+          <div class="exercise-title">Exercise 1 · Adjective → Noun</div>
+          <div class="exercise-instruction">Type the measurement noun for each adjective, then check.</div>
+          <div id="l9ex1List"></div>
+          <div class="feedback-box" id="fb-l9ex1"><div class="score-badge" id="sc-l9ex1">0/5</div><span id="ms-l9ex1"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckEx1()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetEx1()">Reset</button></div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-title">Exercise 2 · Rewrite with the noun pattern</div>
+          <div class="exercise-instruction">Choose the correct “The [noun] of …” rewrite, then check.</div>
+          <div id="l9ex2List"></div>
+          <div class="feedback-box" id="fb-l9ex2"><div class="score-badge" id="sc-l9ex2">0/5</div><span id="ms-l9ex2"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckEx2()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetEx2()">Reset</button></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l9tab="l9-p2">← Speaking</button><button class="btn btn-primary" data-l9tab="l9-reading">Next: Reading →</button></div>
+      </div>
+    </div>
+    <!-- ===== TAB 5: READING ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-reading">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Reading</span><h2 class="section-title">How to successfully ship goods abroad</h2><p class="section-subtitle">Read the GLOBAL TRADE feature, then do the four tasks. Check your answers and reveal the key.</p></div>
+        <div class="magazine-band">📰 GLOBAL TRADE · EXPERT ADVICE</div>
+        <div class="read-passage">
+          <p>In this week's issue of our GLOBAL TRADE magazine we offer some expert advice on how to successfully ship goods abroad from Hank Wilcox. As the export manager for Jonston Cosmetics, Hank oversees the distribution of cosmetic products to more than 40 countries worldwide. Overseas trade and logistics issues play a major role in the company's business.</p>
+          <p style="font-weight:700;color:var(--forest);margin-top:14px;">How do you successfully manage shipping logistics at Jonston Cosmetics?</p>
+          <p>I think it's most important to work with good freight forwarders. So before we actually choose a freight forwarder, we check whether their service level comes up to our standards.</p>
+          <p style="font-weight:700;color:var(--forest);margin-top:14px;">What exactly does that mean?</p>
+          <p>Well, it means that we only want to work with forwarders who meet certain requirements. One thing that's really important is reliability. We need to be 100 per cent sure that our consignments are delivered to the customer at the right time. We also expect a high level of communication and co-operation between the forwarder and ourselves. And our forwarders must be able to provide flexible transport solutions at short notice.</p>
+          <p style="font-weight:700;color:var(--forest);margin-top:14px;">And what about transport costs?</p>
+          <p>The price is also important obviously, but as I said, there are other things to consider such as quality of service, handling of paperwork and advice. We usually ask for four quotations for each shipment.</p>
+          <p style="font-weight:700;color:var(--forest);margin-top:14px;">What about all the documentation required in overseas trade?</p>
+          <p>We have a team of experienced logistics people who discuss the best possible freight options with the customer and handle all the paperwork. Documentation is really very important, especially if things go wrong. So we always make sure we have copies and duplicates of every document in case something is lost.</p>
+          <p style="font-weight:700;color:var(--forest);margin-top:14px;">Consignments can easily be damaged in transit. Are your customers aware of that?</p>
+          <p>Yes, we always advise our customers on the risks and offer them the most suitable insurance for their consignments. Unfortunately, handling damage is quite common so it's always a good idea to insure a consignment. And insurance is less expensive than most people would expect; it usually costs between one and two per cent of the consignment's value.</p>
+        </div>
+
+        <div class="exercise">
+          <div class="exercise-title">T1 · Multiple choice</div>
+          <div id="l9rMcq"></div>
+          <div class="feedback-box" id="fb-l9rmcq"><div class="score-badge" id="sc-l9rmcq">0/4</div><span id="ms-l9rmcq"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckRMcq()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetRMcq()">Reset</button></div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-title">T2 · True or False</div>
+          <div id="l9rTf"></div>
+          <div class="feedback-box" id="fb-l9rtf"><div class="score-badge" id="sc-l9rtf">0/4</div><span id="ms-l9rtf"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckTf()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetTf()">Reset</button></div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-title">T3 · Fill in the blanks</div>
+          <div class="exercise-instruction">Words to use: <b>transit · paperwork · forwarders · reliability</b></div>
+          <div id="l9rFill"></div>
+          <div class="feedback-box" id="fb-l9rfill"><div class="score-badge" id="sc-l9rfill">0/4</div><span id="ms-l9rfill"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckRFill()">Check answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetRFill()">Reset</button></div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-title">T4 · Short answer</div>
+          <div id="l9rShort"></div>
+          <div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="l9ShowShort(this)">Show model answers</button></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l9tab="l9-grammar">← Grammar</button><button class="btn btn-primary" data-l9tab="l9-listening">Next: Listening →</button></div>
+      </div>
+    </div>
+
+    <!-- ===== TAB 6: LISTENING ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-listening">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Listening</span><h2 class="section-title">Fill the spec sheet &amp; the quotation form</h2><p class="section-subtitle">Your teacher plays each audio. Fill the worksheet, press Check, then reveal the transcript.</p></div>
+        <div class="listening-notice">🎧 <b>No audio in this file</b> — your teacher plays Audio 12 &amp; Audio 13. Complete each worksheet, then open the transcript to review.</div>
+
+        <!-- Listening 1 worksheet: container spec (Task1 word-box + Task2 non-metric) -->
+        <div class="exercise">
+          <div class="exercise-title">Listening 1 · Audio 12 — Describing a container</div>
+          <div class="exercise-instruction"><b>Task 1:</b> Listen to a shipping agent describing one of the containers available. Complete the missing details 1–6 with the words from the box.</div>
+          <div class="word-box" id="l9l1box"></div>
+          <div class="spec-illus">📦 Container drawing (from the audio): height <b>2.32 m</b> · width <b>2.35 m</b> · length <b>12.02 m</b></div>
+          <div class="spec-sheet" id="l9lis1"></div>
+          <div class="exercise-instruction" style="margin-top:16px;"><b>Task 2:</b> Listen again and note the non-metric measurements the agent mentions.</div>
+          <div class="quote-form" id="l9lis1b"></div>
+          <div class="feedback-box" id="fb-l9lis1"><div class="score-badge" id="sc-l9lis1">0/11</div><span id="ms-l9lis1"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckLis1()">Check answers</button><button class="btn btn-secondary btn-sm" onclick="l9ShowLis1()">Show answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetLis1()">Reset</button><button class="btn btn-secondary btn-sm" onclick="l9Reveal('l9ts1',this)">Show transcript</button></div>
+          <div class="reveal-block" id="l9ts1"><div class="transcript" id="l9ts1Body"></div></div>
+        </div>
+
+        <!-- Listening 2 worksheet: online quotation form -->
+        <div class="exercise">
+          <div class="exercise-title">Listening 2 · Audio 13 — Online quotation form</div>
+          <div class="exercise-instruction">Listen to the phone call and complete the missing details in the online quotation form.</div>
+          <div class="quote-form" id="l9lis2"></div>
+          <div class="feedback-box" id="fb-l9lis2"><div class="score-badge" id="sc-l9lis2">0/10</div><span id="ms-l9lis2"></span></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" onclick="l9CheckLis2()">Check answers</button><button class="btn btn-secondary btn-sm" onclick="l9ShowLis2()">Show answers</button><button class="btn btn-outline btn-sm" onclick="l9ResetLis2()">Reset</button><button class="btn btn-secondary btn-sm" onclick="l9Reveal('l9ts2',this)">Show transcript</button></div>
+          <div class="reveal-block" id="l9ts2"><div class="transcript" id="l9ts2Body"></div></div>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l9tab="l9-reading">← Reading</button><button class="btn btn-primary" data-l9tab="l9-discussion">Next: Discussion →</button></div>
+      </div>
+    </div>
+    <!-- ===== TAB 7: DISCUSSION ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-discussion">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Discussion · Role-play</span><h2 class="section-title">Make a freight enquiry by phone</h2><p class="section-subtitle">Work in pairs: one is the <b>Caller</b> (needs a quotation), one is the <b>Forwarder</b> (fills the form). Cover every item on the checklist in full sentences.</p></div>
+        <div class="spec2">
+          <div class="spec-col"><div class="spec-col-head">📞 Caller — you must GIVE</div><ul class="mat-list">
+            <li>a description of the <b>goods</b> (and hazardous or not)</li>
+            <li>the <b>number of units</b> &amp; <b>gross weight</b> each</li>
+            <li>the <b>dimensions</b> (H × W × D) &amp; <b>volume</b></li>
+            <li>the <b>ship-from</b> city, <b>collection</b> &amp; <b>delivery</b> dates</li>
+            <li>your <b>phone / fax</b> number</li>
+          </ul></div>
+          <div class="spec-col"><div class="spec-col-head">🧑‍💼 Forwarder — you must ASK</div><ul class="mat-list">
+            <li>“Could you briefly describe the goods?”</li>
+            <li>“How many units do you want to ship?”</li>
+            <li>“And the size of each box?”</li>
+            <li>“Where do you want to ship the goods from?”</li>
+            <li>“When should delivery be made?”</li>
+          </ul></div>
+        </div>
+        <div class="exercise" style="margin-top:16px;">
+          <div class="exercise-title">🎭 Scenario cards — build the call, then reveal a model exchange</div>
+          <div id="l9disc"></div>
+        </div>
+        <div class="exercise">
+          <div class="exercise-title">✅ Discussion checklist</div>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I described the goods &amp; said if they were hazardous.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I gave the weight, dimensions and volume with correct units.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I gave the collection &amp; delivery dates.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I spelled out my phone/fax numbers clearly.</label>
+        </div>
+        <div class="btn-group"><button class="btn btn-outline" data-l9tab="l9-listening">← Listening</button><button class="btn btn-primary" data-l9tab="l9-quiz">Next: Quiz →</button></div>
+      </div>
+    </div>
+
+    <!-- ===== TAB 8: QUIZ ===== -->
+    <div class="tab-panel" data-panel-group="l9tabs" data-panel="l9-quiz">
+      <div class="l3-block">
+        <div class="section-header"><span class="part-label">Final review · Quiz game</span><h2 class="section-title">Cargo &amp; Enquiries — 40-question challenge</h2><p class="section-subtitle">40 questions · 10 seconds each · answer before the bar runs out. At least 20 are “what does it mean?” vocabulary questions, plus conversions, specs, reading &amp; listening context.</p></div>
+        <div class="quiz-screen active" id="l9qzStart">
+          <div class="quiz-intro"><div class="quiz-intro-ic">🎮</div><h3>Ready to test yourself?</h3>
+            <p>40 quick questions: 20 ask “what does a word mean?” and 20 cover units &amp; conversions, dimensions/weights, and the reading &amp; listening. Each question gives you 10 seconds — if the timer runs out, it counts as wrong and shows the answer.</p>
+            <button class="btn btn-primary" onclick="l9QzStart()">▶ Start Quiz</button>
+          </div>
+        </div>
+        <div class="quiz-screen" id="l9qzPlay">
+          <div class="quiz-head"><span class="quiz-counter" id="l9qzCounter">QUESTION 1 / 40</span><span class="timer-pill" id="l9qzTimer">⏳ 10s</span></div>
+          <div class="quiz-bar-wrap"><div class="quiz-bar" id="l9qzBar"></div></div>
+          <div class="quiz-type" id="l9qzType">VOCABULARY</div>
+          <div class="quiz-q" id="l9qzQ"></div>
+          <div class="quiz-opts" id="l9qzOpts"></div>
+          <div class="quiz-explain" id="l9qzExplain"></div>
+          <div class="btn-group"><button class="btn btn-primary btn-sm" id="l9qzSubmit" onclick="l9QzSubmit()">Submit</button><button class="btn btn-secondary btn-sm" id="l9qzNext" onclick="l9QzNext()" style="display:none;">Next →</button></div>
+        </div>
+        <div class="quiz-screen" id="l9qzResult">
+          <div class="quiz-result"><div class="big-score" id="l9qzScore">0 / 40</div><div class="quiz-verdict" id="l9qzVerdict"></div><button class="btn btn-primary" onclick="l9QzStart()">↻ Play again</button></div>
+        </div>
+
+        <div class="exercise" style="margin-top:18px;">
+          <div class="exercise-title">✅ Self-assessment</div>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I know the cargo-spec &amp; material vocabulary.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I can convert &amp; read metric / non-metric units.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I can describe a container's dimensions &amp; weights.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I can make a freight enquiry and give a quotation.</label>
+          <label class="check-item"><input type="checkbox" class="l9spk"> I feel more confident talking about shipping.</label>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-outline" data-l9tab="l9-discussion">← Discussion</button>
+          <button class="btn btn-primary" onclick="markComplete('lesson9',this)">✓ Mark Lesson Complete</button>
+          <button class="btn btn-outline" data-page="phase2">← Back to Phase 2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </main>
 </div>
 <button class="reset-fab" onclick="globalReset()">🔄 Reset All</button>
@@ -4716,7 +5245,7 @@ function showPage(id){
   if(pg){ pg.classList.add('active'); }
   document.querySelectorAll('.nav-item').forEach(function(n){
     var target = n.getAttribute('data-page');
-    var lessonParent = (id === 'lesson1' || id === 'lesson2' || id === 'lesson3' || id === 'lesson4' || id === 'mocktest1') ? 'phase1' : ((id === 'lesson5' || id === 'lesson6' || id === 'lesson7' || id === 'lesson8') ? 'phase2' : id);
+    var lessonParent = (id === 'lesson1' || id === 'lesson2' || id === 'lesson3' || id === 'lesson4' || id === 'mocktest1') ? 'phase1' : ((id === 'lesson5' || id === 'lesson6' || id === 'lesson7' || id === 'lesson8' || id === 'lesson9') ? 'phase2' : id);
     n.classList.toggle('active', target === lessonParent);
   });
   window.scrollTo(0,0);
@@ -4768,6 +5297,8 @@ document.addEventListener('click', function(e){
   if(b7){ switchTab('l7tabs', b7.getAttribute('data-l7tab')); return; }
   var b8 = e.target.closest('[data-l8tab]');
   if(b8){ switchTab('l8tabs', b8.getAttribute('data-l8tab')); return; }
+  var b9 = e.target.closest('[data-l9tab]');
+  if(b9){ switchTab('l9tabs', b9.getAttribute('data-l9tab')); return; }
 });
 
 /* ---------- 5. RENDER: alphabet / names / countries / numbers / vocab ---------- */
@@ -5057,6 +5588,7 @@ function clearAllTimers(){
   if(window.l6ClearTimers){ window.l6ClearTimers(); }
   if(window.l7ClearTimers){ window.l7ClearTimers(); }
   if(window.l8ClearTimers){ window.l8ClearTimers(); }
+  if(window.l9ClearTimers){ window.l9ClearTimers(); }
 }
 
 /* ---------- 12. PROGRESS ---------- */
@@ -5091,7 +5623,7 @@ function updateProgress(){
     if(p1done){ pill1.classList.add('done'); pill1.classList.remove('current'); dot1.textContent = '✓'; nav1.textContent = '✓'; }
     else { pill1.classList.add('current'); pill1.classList.remove('done'); dot1.textContent = '●'; nav1.textContent = '●'; }
   }
-  var p2done = completedLessons['lesson5'] && completedLessons['lesson6'] && completedLessons['lesson7'] && completedLessons['lesson8'];
+  var p2done = completedLessons['lesson5'] && completedLessons['lesson6'] && completedLessons['lesson7'] && completedLessons['lesson8'] && completedLessons['lesson9'];
   var pill2 = document.getElementById('pill2');
   var dot2 = document.getElementById('pillDot2');
   var nav2 = document.getElementById('navSt2');
@@ -5142,6 +5674,7 @@ function globalReset(){
   if(window.l6Reset){ window.l6Reset(); }
   if(window.l7Reset){ window.l7Reset(); }
   if(window.l8Reset){ window.l8Reset(); }
+  if(window.l9Reset){ window.l9Reset(); }
   var pill1 = document.getElementById('pill1');
   if(pill1){ pill1.classList.add('current'); pill1.classList.remove('done'); }
   showPage('overview');
@@ -8696,6 +9229,495 @@ function verify(){
 renderVocab();renderPhrases();renderPron();renderQP();renderMatch();renderSpeaking();
 renderEx1();renderEx2();renderRInfo();renderTfng();renderRMcq();renderShort();
 renderLis1();renderLis2m();renderLis2l();renderLis3i();renderLis3o();renderPronL();renderDict();renderTranscripts();renderDisc();
+t2Render();
+verify();
+})();
+
+
+/* ===== LESSON 9 ENGINE — Cargo Specifications & Making Enquiries (isolated IIFE) ===== */
+(function(){
+"use strict";
+var $=function(id){return document.getElementById(id);};
+var TIMERS=[];
+function track(h){TIMERS.push(h);return h;}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function norm(s){return String(s).trim().toLowerCase().replace(/[.,?!;:]+$/,"");}
+function normLoose(s){return String(s).trim().toLowerCase().replace(/[.,\u00a0]/g," ").replace(/\s+/g," ").trim();}
+function fb(fbId,scId,msId,s,tot){var f=$(fbId);if(!f)return;$(scId).textContent=s+"/"+tot;var m=$(msId);if(m)m.textContent=(s===tot)?"Perfect! 🎉":(s>=Math.ceil(tot*0.6)?"Good — check the red ones.":"Keep practising.");f.classList.remove("success","error","info");f.classList.add("show",(s===tot)?"success":(s>=Math.ceil(tot*0.6)?"info":"error"));}
+function clearFb(id){var f=$(id);if(f)f.classList.remove("show","success","error","info");}
+window.l9Reveal=function(id,btn){var el=$(id);if(!el)return;var r=el.classList.toggle("revealed");if(btn){if(/^Show /.test(btn.textContent))btn.textContent=btn.textContent.replace(/^Show /,"Hide ");else if(/^Hide /.test(btn.textContent))btn.textContent=btn.textContent.replace(/^Hide /,"Show ");}};
+
+/* generic MCQ */
+function renderMCQ(cid,arr){var w=$(cid);if(!w)return;w.innerHTML=arr.map(function(x,i){var opts=x.o.map(function(o,oi){return '<button class="circle-opt" data-i="'+i+'" data-oi="'+oi+'" onclick="l9Pick(this)">'+String.fromCharCode(97+oi)+'. '+esc(o)+'</button>';}).join('');return '<div class="ex-row mcq" data-i="'+i+'"><div class="ex-q"><span class="ex-n">'+(i+1)+'.</span> '+esc(x.q)+'</div><div class="circle-opts">'+opts+'</div></div>';}).join('');}
+window.l9Pick=function(el){var row=el.closest(".ex-row");if(row.classList.contains("graded"))return;row.querySelectorAll(".circle-opt").forEach(function(o){o.classList.remove("selected");});el.classList.add("selected");};
+function gradeMCQ(cid,arr,fbId,scId,msId){var s=0;arr.forEach(function(x,i){var row=$(cid).querySelector('.ex-row[data-i="'+i+'"]');row.classList.add("graded");var sel=row.querySelector(".circle-opt.selected");var pick=sel?parseInt(sel.getAttribute("data-oi"),10):-1;if(pick===x.a)s++;row.querySelectorAll(".circle-opt").forEach(function(o,oi){o.classList.remove("opt-correct","opt-wrong");if(oi===x.a)o.classList.add("opt-correct");else if(oi===pick)o.classList.add("opt-wrong");o.style.pointerEvents="none";});if(x.e){var ex=row.querySelector(".mcq-exp");if(!ex){ex=document.createElement("div");ex.className="mcq-exp";row.appendChild(ex);}ex.innerHTML="💡 "+x.e;}});fb(fbId,scId,msId,s,arr.length);}
+/* generic SELECT */
+function renderSel(cid,arr,opts){var w=$(cid);if(!w)return;var sel=function(nm){return '<select class="l9-sel" data-nm="'+nm+'"><option value="">—</option>'+opts.map(function(o){return '<option value="'+o[0]+'">'+esc(o[1])+'</option>';}).join('')+'</select>';};w.innerHTML=arr.map(function(x,i){return '<div class="ex-row" data-i="'+i+'"><span class="ex-n">'+(i+1)+'.</span><span class="ex-txt">'+esc(x.q)+' &nbsp;'+sel(cid+"_"+i)+'</span></div>';}).join('');}
+function gradeSel(cid,arr,fbId,scId,msId){var s=0;arr.forEach(function(x,i){var el=document.querySelector('.l9-sel[data-nm="'+cid+'_'+i+'"]');if(!el)return;var ok=el.value===x.a;if(ok)s++;el.classList.remove("sel-ok","sel-bad");el.classList.add(ok?"sel-ok":"sel-bad");el.disabled=true;});fb(fbId,scId,msId,s,arr.length);}
+/* generic FILL */
+function gradeFill(pairs,fbId,scId,msId){var s=0;pairs.forEach(function(p){var el=$(p.id);if(!el)return;var ok=(p.alt||[p.ans]).some(function(a){return normLoose(el.value)===normLoose(a);});el.classList.remove("in-ok","in-bad");if(el.value.trim()!=="")el.classList.add(ok?"in-ok":"in-bad");if(ok)s++;});fb(fbId,scId,msId,s,pairs.length);}
+
+/* ---------- A. VOCABULARY ---------- */
+function richCard(name,ipa,vi,def){return '<div class="vocab-card"><span class="flip-hint">tap ↻</span><div class="word">'+esc(name)+'</div><div class="ipa">'+esc(ipa)+'</div><div class="en-def">'+esc(vi)+'</div><div class="back"><div class="vi">'+esc(vi)+'</div><div class="example">'+esc(def)+'</div></div></div>';}
+var SPEC_DIM=[
+ ["dimension","/daɪˈmen.ʃən/","Kích thước (L × W × H)","The overall size: Length × Width × Height."],
+ ["length","/leŋθ/","Chiều dài (adj: long)","Units: meter, centimeter, yard, foot, inch."],
+ ["width","/wɪdθ/","Chiều rộng (adj: wide)","What is the width of the door?"],
+ ["height","/haɪt/","Chiều cao (adj: high)","The door height is 2.32 meters."],
+ ["depth","/depθ/","Chiều sâu (adj: deep)","The depth of the cabinet is 50 centimeters."],
+ ["surface","/ˈsɜː.fɪs/","Diện tích bề mặt","Units: mm², m², square foot, acre."],
+ ["volume","/ˈvɒl.juːm/","Thể tích","Units: m³, cm³, cubic yard."],
+ ["capacity","/kəˈpæs.ə.ti/","Dung tích chất lỏng","Units: liter, milliliter, fluid ounce, pint, gallon."]
+];
+var SPEC_WT=[
+ ["weight","/weɪt/","Khối lượng","Units: gram, kilogram, pound, ounce."],
+ ["tare weight","/teə weɪt/","Trọng lượng vỏ (thùng/container)","The tare weight of this 40ft container is 4,030 kg."],
+ ["payload","/ˈpeɪ.ləʊd/","Trọng lượng hàng hóa thực tế","The maximum payload for tiles is 28 tons."],
+ ["gross weight","/ɡrəʊs weɪt/","Tổng trọng lượng (container + hàng)","The gross weight of the shipment is 20,200 kg."]
+];
+var MATERIALS=[
+ ["shipment","/ˈʃɪp.mənt/","Lô hàng","The shipment will arrive on August 3rd."],
+ ["goods","/ɡʊdz/","Hàng hóa (số nhiều)","These goods are non-hazardous."],
+ ["sample","/ˈsɑːm.pəl/","Mẫu / hàng mẫu","Please send me a sample of the tile."],
+ ["wall paint","/wɔːl peɪnt/","Sơn tường","We need 20 liters of white wall paint."],
+ ["wall","/wɔːl/","Tường / bức tường","The brick wall is 3 meters high."],
+ ["roof","/ruːf/","Mái nhà","The roof is made of red tiles."],
+ ["ceiling","/ˈsiː.lɪŋ/","Trần nhà","The high ceiling makes the room feel large."],
+ ["floor","/flɔːr/","Sàn nhà","We are laying wooden flooring today."],
+ ["frame","/freɪm/","Khung (cửa, nhà, kết cấu)","The door frame is 2 meters high."],
+ ["cement","/sɪˈment/","Xi măng","We need 50 bags of cement for the floor."],
+ ["sand","/sænd/","Cát","Mix sand and cement with water."]
+];
+function renderVocab(){
+ var d=$("l9vg_dim");if(d)d.innerHTML=SPEC_DIM.map(function(x){return richCard(x[0],x[1],x[2],x[3]);}).join('');
+ var w=$("l9vg_wt");if(w)w.innerHTML=SPEC_WT.map(function(x){return richCard(x[0],x[1],x[2],x[3]);}).join('');
+ var u=$("l9vg_unit");if(u)u.innerHTML='<div class="unit-box"><div class="unit-row"><span class="unit-tag metric">Metric</span> meter (m) · centimeter (cm) · kilogram (kg) · ton (t)</div><div class="unit-row"><span class="unit-tag nonmetric">Non-metric</span> inch (in) · foot / feet (ft) · pound (lbs)</div></div>';
+ var m=$("l9vg_mat");if(m)m.innerHTML=MATERIALS.map(function(x){return richCard(x[0],x[1],x[2],x[3]);}).join('');
+}
+
+/* ---------- B. PHRASES ---------- */
+var PHRASES=[
+ ["I need a quotation for air freight to …","Tôi cần báo giá vận chuyển hàng không đến …"],
+ ["Could you briefly describe the goods?","Anh/chị mô tả ngắn gọn mặt hàng được không?"],
+ ["They're non-hazardous material.","Đây là hàng không nguy hiểm."],
+ ["How many units do you want to ship?","Bạn muốn gửi bao nhiêu kiện hàng?"],
+ ["What are the dimensions of each box?","Kích thước của mỗi thùng là bao nhiêu?"],
+ ["Where do you want to ship the goods from?","Bạn muốn gửi hàng đi từ đâu?"],
+ ["When should delivery be made?","Khi nào thì cần giao hàng?"],
+ ["I'll get back to you with a quotation.","Tôi sẽ gửi lại báo giá cho bạn."]
+];
+function renderPhrases(){var w=$("l9phrases");if(!w)return;w.innerHTML=PHRASES.map(function(p){return '<div class="phrase-card"><span class="phrase-en">'+esc(p[0])+'</span><span class="phrase-vi viTxt viTxtP9" style="display:none;">'+esc(p[1])+'</span></div>';}).join('');}
+window.l9TogglePhrasesVi=function(btn){var on=false;document.querySelectorAll("#l9phrases .viTxtP9").forEach(function(v){var show=v.style.display==="none";v.style.display=show?"":"none";on=show;});btn.textContent=on?"Hide Vietnamese":"Show Vietnamese";};
+
+/* ---------- C. PRONUNCIATION ---------- */
+var PRON_L=[["2.35 m","two point three five metres"],["4,030 kg","four thousand and thirty kilos"],["28,470 kg","twenty-eight thousand, four hundred and seventy kilos"],["39 ft 5 in","thirty-nine foot five inches"],["30.31 m³","thirty point three one cubic metres"],['12" x 12"',"twelve inches by twelve inches"]];
+function renderPronL(){var w=$("l9pronList");if(!w)return;w.innerHTML='<div class="pron-grid">'+PRON_L.map(function(p){return '<div class="pron-pair"><div class="pron-teen" style="flex:1;"><span class="pron-num" style="font-size:17px;">'+esc(p[0])+'</span><span class="pron-say">“'+esc(p[1])+'”</span></div></div>';}).join('')+'</div>';}
+
+/* ---------- D. QUICK PRACTICE ---------- */
+var QP=[
+ {q:'"Tare weight" is…',o:['the empty weight of the container or box','the cargo weight only','the total weight','the volume'],a:0,e:'Tare = the empty (packaging) weight.'},
+ {q:'Which is a NON-metric length unit?',o:['centimeter','meter','foot','millimeter'],a:2,e:'Foot / inch / yard are non-metric.'},
+ {q:'"Payload" means…',o:['the packaging weight','the actual weight of the cargo','the container size','the delivery date'],a:1,e:'Payload = the real cargo weight.'},
+ {q:'1 inch is about…',o:['2.54 cm','0.45 kg','0.305 m','1 m'],a:0,e:'1 inch ≈ 2.54 cm.'},
+ {q:'"Volume" is measured in…',o:['kilograms','cubic meters (m³)','square meters (m²)','liters only'],a:1,e:'Volume → cubic units (m³).'},
+ {q:'"Gross weight" equals…',o:['cargo only','container only','container + cargo together','packaging only'],a:2,e:'Gross = tare + payload (all together).'}
+];
+function renderQP(){renderMCQ("l9qpList",QP);}
+window.l9CheckQP=function(){gradeMCQ("l9qpList",QP,"fb-l9qp","sc-l9qp","ms-l9qp");};
+window.l9ResetQP=function(){renderQP();clearFb("fb-l9qp");};
+
+var CAT_OPTS=[["Length","Length (chiều dài)"],["Weight","Weight (khối lượng)"],["Volume","Volume (thể tích)"],["Capacity","Capacity (dung tích)"],["Surface","Surface (diện tích)"]];
+var MATCH=[
+ {q:"meter (m)",a:"Length"},
+ {q:"kilogram (kg)",a:"Weight"},
+ {q:"cubic meter (m³)",a:"Volume"},
+ {q:"liter (l)",a:"Capacity"},
+ {q:"square meter (m²)",a:"Surface"},
+ {q:"pound (lb)",a:"Weight"},
+ {q:"inch (in)",a:"Length"},
+ {q:"gallon (gal)",a:"Capacity"}
+];
+function renderMatch(){renderSel("l9matchList",MATCH,CAT_OPTS);}
+window.l9CheckMatch=function(){gradeSel("l9matchList",MATCH,"fb-l9match","sc-l9match","ms-l9match");};
+window.l9ResetMatch=function(){renderMatch();clearFb("fb-l9match");};
+
+/* ---------- 2A. WARM-UP 1 (verbatim) ---------- */
+var WU1=[
+ ["The package weighs 45 kg.","The weight of the package is 45 kg. (Or: The package's weight is 45 kg.)"],
+ ["This seagoing vessel is about 30 m wide.","The width of this seagoing vessel is about 30 m. (Or: This seagoing vessel's width is about 30 m.)"],
+ ["The case we need to ship is 1 m long, 50 cm wide and 35 cm high.","The dimensions of the case we need to ship are 1 m long, 50 cm wide and 35 cm high. (Or: The length of the case is 1 m, its width is 50 cm and its height is 35 cm.)"],
+ ["Its depth is nearly 3 cm.","It is nearly 3 cm deep."],
+ ["The ship's length is more than 65 m.","The ship is more than 65 m long."],
+ ["The open container's door height is 7 ft 10 in.","The open container's door is 7 ft 10 in high."]
+];
+function renderWU1(){var w=$("l9wu1");if(!w)return;w.innerHTML=WU1.map(function(x,i){return '<div class="phrase-card"><span class="phrase-en">'+(i+1)+'. '+esc(x[0])+'</span><div class="btn-group" style="margin-top:6px;"><button class="btn btn-secondary btn-sm" onclick="l9Reveal(\'l9wu1_'+i+'\',this)">Show model</button></div><div class="reveal-block" id="l9wu1_'+i+'"><div class="sample-box" style="margin-top:8px;">💬 '+esc(x[1])+'</div></div></div>';}).join('');}
+
+/* ---------- 2B. REFLEX ---------- */
+var REFLEX_WORDS=[
+ ["dimension","kích thước"],["length","chiều dài"],["width","chiều rộng"],["height","chiều cao"],["depth","chiều sâu"],["volume","thể tích"],["capacity","dung tích"],["surface","diện tích"],
+ ["tare weight","trọng lượng vỏ"],["gross weight","tổng trọng lượng"],["payload","tải trọng hàng"],["shipment","lô hàng"],["goods","hàng hóa"],["sample","hàng mẫu"],
+ ["cement","xi măng"],["sand","cát"],["roof","mái nhà"],["ceiling","trần nhà"],["red brick","gạch đỏ"],["ceramic tile","gạch gốm"]
+];
+var REFLEX_SITS=[
+ "A customer asks for a quotation for tiles to Dubai — reply with one full sentence.",
+ "Describe a 20ft container's gross weight and payload in full sentences.",
+ "Convert and say aloud: the length is 12 metres — that's about … feet.",
+ "The forwarder asks: “Could you briefly describe the goods?” — answer for a shipment of cement.",
+ "State the dimensions of a box that is 170 cm high, 145 cm wide and 82 cm deep.",
+ "Ask the caller for the collection date and the delivery date politely.",
+ "Explain the difference between tare weight and gross weight in one sentence.",
+ "Read a phone number aloud clearly: 0046 890265030.",
+ "Recommend freight insurance and say why (use ‘because’).",
+ "Describe a shipment of ceramic floor tiles for a roof-and-wall project."
+];
+var REFLEX_PROMPTS=[
+ "You are a forwarder. A caller needs a quotation. Ask for the goods, the number of units, the weight, the dimensions, the volume, the ship-from city and the delivery date — in full polite questions.",
+ "Describe one container from the cargo-spec sheet: its type, tare/gross weight, payload and dimensions (metric AND non-metric).",
+ "Translate and say aloud the full container description (tare 4,030 kg / gross 32,500 kg / payload 28,470 kg / 12 m × 2.35 m × 2.32 m).",
+ "Explain to a new colleague the difference between metric and non-metric units, with two conversion examples (inch↔cm, pound↔kg)."
+];
+var wordBag=[],sitBag=[],promptBag=[];
+window.l9DrawWord=function(){if(!wordBag.length)wordBag=shuffle(REFLEX_WORDS);var it=wordBag.pop();$("l9drawWordRes").innerHTML='<span class="big">'+esc(it[0])+'</span><span class="small">'+esc(it[1])+'</span>';};
+window.l9DrawSituation=function(){if(!sitBag.length)sitBag=shuffle(REFLEX_SITS);var it=sitBag.pop();$("l9drawSitRes").innerHTML='<span class="big" style="font-size:16px;">'+esc(it)+'</span>';};
+window.l9DrawPrompt=function(){if(!promptBag.length)promptBag=shuffle(REFLEX_PROMPTS);var it=promptBag.pop();$("l9promptRes").innerHTML='<span class="big" style="font-size:16px;">'+esc(it)+'</span>';};
+var t2Preset=60,t2Left=60,t2Int=null;
+function t2Fmt(s){var m=Math.floor(s/60),x=s%60;return (m<10?"0":"")+m+":"+(x<10?"0":"")+x;}
+function t2Render(){var d=$("timerL9T2");if(d){d.textContent=t2Fmt(t2Left);d.classList.toggle("timeup",t2Left===0);}}
+window.l9T2SetPreset=function(sec,pill){if(t2Int){clearInterval(t2Int);t2Int=null;}t2Preset=sec;t2Left=sec;t2Render();if(pill){pill.parentElement.querySelectorAll(".preset-pill[data-sec9t2]").forEach(function(p){p.classList.remove("active");});pill.classList.add("active");}};
+window.l9T2StartTimer=function(){if(t2Int){clearInterval(t2Int);t2Int=null;}if(t2Left<=0)t2Left=t2Preset;t2Render();t2Int=track(setInterval(function(){t2Left--;if(t2Left<=0){t2Left=0;clearInterval(t2Int);t2Int=null;}t2Render();},1000));};
+window.l9T2ResetTimer=function(){if(t2Int){clearInterval(t2Int);t2Int=null;}t2Left=t2Preset;t2Render();};
+
+/* ---------- GRAMMAR ---------- */
+var EX1=[
+ {adj:"long",ans:"length"},{adj:"wide",ans:"width"},{adj:"high",ans:"height"},{adj:"deep",ans:"depth"},{adj:"heavy",ans:"weight"}
+];
+function renderEx1(){var w=$("l9ex1List");if(!w)return;w.innerHTML=EX1.map(function(x,i){return '<div class="ex-row" data-i="'+i+'"><span class="ex-n">'+(i+1)+'.</span><span class="ex-txt"><b>'+esc(x.adj)+'</b> → <input type="text" class="fill-in" id="l9e1_'+i+'" size="12"></span></div>';}).join('');}
+window.l9CheckEx1=function(){gradeFill(EX1.map(function(x,i){return {id:"l9e1_"+i,ans:x.ans};}),"fb-l9ex1","sc-l9ex1","ms-l9ex1");};
+window.l9ResetEx1=function(){renderEx1();clearFb("fb-l9ex1");};
+
+var EX2=[
+ {q:'"The box is 2 m long."',o:['The length of the box is 2 m.','The long of the box is 2 m.','The box is length 2 m.'],a:0,e:'long → length; "The length of … is …".'},
+ {q:'"The door is 90 cm wide."',o:['The wide of the door is 90 cm.','The width of the door is 90 cm.','The door width 90 cm is.'],a:1,e:'wide → width.'},
+ {q:'"The wall is 3 m high."',o:['The high of the wall is 3 m.','The wall has 3 m high.','The height of the wall is 3 m.'],a:2,e:'high → height.'},
+ {q:'"The cabinet is 50 cm deep."',o:['The depth of the cabinet is 50 cm.','The deep of the cabinet is 50 cm.','The cabinet is depth 50 cm.'],a:0,e:'deep → depth.'},
+ {q:'"The package weighs 45 kg."',o:['The weigh of the package is 45 kg.','The package is 45 kg weight.','The weight of the package is 45 kg.'],a:2,e:'weighs → weight (noun).'}
+];
+function renderEx2(){renderMCQ("l9ex2List",EX2);}
+window.l9CheckEx2=function(){gradeMCQ("l9ex2List",EX2,"fb-l9ex2","sc-l9ex2","ms-l9ex2");};
+window.l9ResetEx2=function(){renderEx2();clearFb("fb-l9ex2");};
+
+/* ---------- READING (verbatim tasks) ---------- */
+var RMCQ=[
+ {q:"What is Hank Wilcox's main job role at Jonston Cosmetics?",o:["Logistics Coordinator","Export Manager","Freight Forwarder","Insurance Agent"],a:1,e:"He is the export manager for Jonston Cosmetics."},
+ {q:"According to Hank, what is the most important factor when choosing a freight forwarder?",o:["Offering the lowest price","Reliability and high-level communication","Having offices in 40 countries","Free insurance coverage"],a:1,e:"Reliability & communication matter most; price is not everything."},
+ {q:"How many quotations does Jonston Cosmetics usually request for each shipment?",o:["2","3","4","5"],a:2,e:"They usually request four quotations."},
+ {q:"How much does freight insurance usually cost relative to the consignment's value?",o:["Less than 1%","Between 1% and 2%","Around 5%","More than 10%"],a:1,e:"Only about 1% to 2% of the cargo value."}
+];
+function renderRMcq(){renderMCQ("l9rMcq",RMCQ);}
+window.l9CheckRMcq=function(){gradeMCQ("l9rMcq",RMCQ,"fb-l9rmcq","sc-l9rmcq","ms-l9rmcq");};
+window.l9ResetRMcq=function(){renderRMcq();clearFb("fb-l9rmcq");};
+
+var RTF=[
+ {q:"Jonston Cosmetics distributes cosmetic products to more than 50 countries worldwide.",o:["True","False"],a:1,e:"False — more than 40 countries, not 50."},
+ {q:"Hank believes that transport price is the only thing to consider when choosing a forwarder.",o:["True","False"],a:1,e:"False — price matters but there are other factors."},
+ {q:"Having copies and duplicates of shipping documents is important in case something gets lost.",o:["True","False"],a:0,e:"True."},
+ {q:"Damage to goods during transit is very rare in shipping.",o:["True","False"],a:1,e:"False — damage in transit is fairly common."}
+];
+function renderRTf(){renderMCQ("l9rTf",RTF);}
+window.l9CheckTf=function(){gradeMCQ("l9rTf",RTF,"fb-l9rtf","sc-l9rtf","ms-l9rtf");};
+window.l9ResetTf=function(){renderRTf();clearFb("fb-l9rtf");};
+
+var RFILL=[
+ {pre:"1. Before choosing freight",post:", we check if their service meets our standards.",ans:"forwarders"},
+ {pre:"2. One key requirement for a good forwarder is",post:"to ensure goods arrive on time.",ans:"reliability"},
+ {pre:"3. The logistics team handles all the",post:"and discusses the best freight options.",ans:"paperwork"},
+ {pre:"4. Goods can easily be damaged in",post:", so freight insurance is recommended.",ans:"transit"}
+];
+function renderRFill(){var w=$("l9rFill");if(!w)return;w.innerHTML=RFILL.map(function(x,i){return '<div class="ex-row" data-i="'+i+'"><span class="ex-txt">'+esc(x.pre)+' <input type="text" class="fill-in" id="l9rf_'+i+'" size="14"> '+esc(x.post)+'</span></div>';}).join('');}
+window.l9CheckRFill=function(){gradeFill(RFILL.map(function(x,i){return {id:"l9rf_"+i,ans:x.ans};}),"fb-l9rfill","sc-l9rfill","ms-l9rfill");};
+window.l9ResetRFill=function(){renderRFill();clearFb("fb-l9rfill");};
+
+var RSHORT=[
+ ["Why does Jonston Cosmetics keep copies and duplicates of every document?","To ensure they still have documentation if the original files are lost or if something goes wrong."],
+ ["Why is buying freight insurance recommended for customers?","Because consignments can easily be damaged in transit, and insurance is quite cheap (only 1% to 2% of the cargo value)."]
+];
+function renderShort(){var w=$("l9rShort");if(!w)return;w.innerHTML=RSHORT.map(function(x,i){return '<div class="phrase-card"><span class="phrase-en">'+(i+1)+'. '+esc(x[0])+'</span><span class="phrase-vi viTxt viTxtShort9" style="display:none;">✅ '+esc(x[1])+'</span></div>';}).join('');}
+window.l9ShowShort=function(btn){var on=false;document.querySelectorAll("#l9rShort .viTxtShort9").forEach(function(v){var show=v.style.display==="none";v.style.display=show?"":"none";on=show;});btn.textContent=on?"Hide model answers":"Show model answers";};
+
+/* ---------- LISTENING 1 · Task1 (word box) + Task2 (non-metric) ---------- */
+var L1BOX=["height","payload","length","tare weight","width","gross weight"];
+var L1T1=[
+ {n:1,ans:"tare weight",val:"4,030 kg"},
+ {n:2,ans:"gross weight",val:"32,500 kg"},
+ {n:3,ans:"payload",val:"28,470 kg",pre:"maximum "},
+ {n:4,ans:"length",val:"12.02 m"},
+ {n:5,ans:"width",val:"2.35 m"},
+ {n:6,ans:"height",val:"2.32 m"}
+];
+var L1T2=[
+ {n:7,ans:"8,880",alt:["8880","8,880"]},
+ {n:8,ans:"39",alt:["39"]},
+ {n:9,ans:"5",alt:["5"]},
+ {n:10,ans:"7",alt:["7"]},
+ {n:11,ans:"7",alt:["7"]}
+];
+function l1sel(i){return '<select class="l9-sel" id="l9L1s_'+i+'"><option value="">\u2014</option>'+L1BOX.map(function(o){return '<option value="'+esc(o)+'">'+esc(o)+'</option>';}).join('')+'</select>';}
+function renderLis1(){
+ var box=$("l9l1box");if(box)box.innerHTML=L1BOX.join(" \u00a0\u2022\u00a0 ");
+ var w=$("l9lis1");
+ if(w){
+  var rows=L1T1.slice(0,3).map(function(x,i){return '<div class="sheet-row"><span class="sheet-num">'+x.n+'.</span><span class="sheet-val">'+(x.pre||"")+l1sel(i)+' : <b>'+esc(x.val)+'</b></span></div>';}).join('');
+  rows+='<div class="form-sub">Internal measurements:</div>';
+  rows+=L1T1.slice(3).map(function(x,ii){var i=ii+3;return '<div class="sheet-row"><span class="sheet-num">'+x.n+'.</span><span class="sheet-val">'+l1sel(i)+' : <b>'+esc(x.val)+'</b></span></div>';}).join('');
+  w.innerHTML='<div class="sheet-title">Type of container: 40 ft open top</div>'+rows;
+ }
+ var t2=$("l9lis1b");
+ if(t2){
+  var inp=function(n){return '<input type="text" class="dict-in sheet-in" id="l9L1i_'+n+'" size="6">';};
+  t2.innerHTML='<div class="sheet-title">Non-metric measurements</div>'+
+   '<div class="sheet-row"><span class="sheet-label">Tare weight</span><span class="sheet-val">(7) '+inp(7)+' lbs</span></div>'+
+   '<div class="sheet-row"><span class="sheet-label">Internal Length</span><span class="sheet-val">(8) '+inp(8)+' ft &nbsp;&nbsp;(9) '+inp(9)+' in</span></div>'+
+   '<div class="sheet-row"><span class="sheet-label">Internal Height</span><span class="sheet-val">(10) '+inp(10)+' ft &nbsp;&nbsp;(11) '+inp(11)+' in</span></div>';
+ }
+}
+window.l9CheckLis1=function(){
+ var s=0;
+ L1T1.forEach(function(x,i){var el=$("l9L1s_"+i);if(!el)return;var ok=el.value===x.ans;el.classList.remove("sel-ok","sel-bad");if(el.value)el.classList.add(ok?"sel-ok":"sel-bad");if(ok)s++;});
+ L1T2.forEach(function(x){var el=$("l9L1i_"+x.n);if(!el)return;var ok=(x.alt||[x.ans]).some(function(a){return normLoose(el.value)===normLoose(a);});el.classList.remove("in-ok","in-bad");if(el.value.trim()!=="")el.classList.add(ok?"in-ok":"in-bad");if(ok)s++;});
+ fb("fb-l9lis1","sc-l9lis1","ms-l9lis1",s,11);
+};
+window.l9ShowLis1=function(){
+ L1T1.forEach(function(x,i){var el=$("l9L1s_"+i);if(el){el.value=x.ans;el.classList.remove("sel-bad");el.classList.add("sel-ok");}});
+ L1T2.forEach(function(x){var el=$("l9L1i_"+x.n);if(el){el.value=x.ans;el.classList.remove("in-bad");el.classList.add("in-ok");}});
+};
+window.l9ResetLis1=function(){renderLis1();clearFb("fb-l9lis1");};
+
+/* ---------- LISTENING 2 · online quotation form ---------- */
+var LIS2=[
+ {n:1,label:"Company name",ans:"Cool Air",alt:["cool air"]},
+ {n:2,label:"Point of origin",ans:"Stockholm, Sweden",alt:["stockholm","stockholm sweden","stockholm, sweden"]},
+ {n:3,label:"Destination",ans:"Dubai, UAE",alt:["dubai","uae","united arab emirates","dubai uae","dubai, uae","dubai, united arab emirates"]},
+ {n:4,label:"Number of units/items",ans:"15",alt:["15","15 boxes","15 units"]},
+ {n:5,label:"Pick-up date",ans:"August 3rd",alt:["august 3rd","august 3","aug 3rd","3rd august"]},
+ {n:6,label:"Delivery date",ans:"August 6th",alt:["august 6th","august 6","aug 6th","6th august"]},
+ {n:7,label:"Total weight (kg)",ans:"150 kg (each)",alt:["150","150 kg","150 kg each","150 kg (each)","2250","2,250","2250 kg","2,250 kg"]},
+ {n:8,label:"Type and nature of goods",ans:"cooling units",alt:["cooling units","cooling unit","cooling units (non-hazardous)","cooling units non-hazardous"]},
+ {n:9,label:"Hazardous",ans:"No",alt:["no","non-hazardous","non hazardous","not hazardous","none"]},
+ {n:10,label:"Other: Must arrive by",ans:"August 6th",alt:["august 6th","august 6","aug 6th","6th august"]}
+];
+var L2FORM=[
+ {sec:"Company Information",rows:[
+   {blank:1,label:"Company name"},
+   {given:["Contact","Karla Hanssen"]},
+   {given:["Tel No.","0046 890265030"]},
+   {given:["Fax No.","0046 890265039"]},
+   {given:["Email address","khanssen@coolair.se"]}
+ ]},
+ {sec:"Shipping Information",rows:[
+   {blank:2,label:"Point of origin"},
+   {blank:3,label:"Destination"},
+   {given:["Method of transport","Air"]},
+   {blank:4,label:"Number of units/items"},
+   {blank:5,label:"Pick-up date"},
+   {blank:6,label:"Delivery date"}
+ ]},
+ {sec:"Freight Information",rows:[
+   {given:["Volume (m\u00b3)","30.31 m\u00b3"]},
+   {blank:7,label:"Total weight (kg)"},
+   {given:["Dimensions (cm)","170 cm high, 145 cm wide, 82 cm deep"]},
+   {blank:8,label:"Type and nature of goods"}
+ ]},
+ {sec:"Special Requirements",rows:[
+   {blank:9,label:"Hazardous"},
+   {blank:10,label:"Other",pre:"Must arrive by "}
+ ]}
+];
+function renderLis2(){var w=$("l9lis2");if(!w)return;
+ var html='<div class="sheet-title">QUOTATION FORM</div>';
+ L2FORM.forEach(function(S){
+  html+='<div class="form-sec">'+esc(S.sec)+'</div>';
+  S.rows.forEach(function(r){
+   if(r.given){
+    html+='<div class="sheet-row"><span class="sheet-label">'+esc(r.given[0])+':</span><span class="sheet-val given">'+esc(r.given[1])+'</span></div>';
+   }else{
+    html+='<div class="sheet-row"><span class="sheet-label">'+esc(r.label)+':</span><span class="sheet-val">'+(r.pre||"")+'<span class="sheet-num">'+r.blank+'.</span> <input type="text" class="dict-in sheet-in" id="l9l2_'+r.blank+'" size="20"></span></div>';
+   }
+  });
+ });
+ w.innerHTML=html;
+}
+window.l9CheckLis2=function(){var s=0;LIS2.forEach(function(x){var el=$("l9l2_"+x.n);if(!el)return;var ok=(x.alt||[x.ans]).some(function(a){return normLoose(el.value)===normLoose(a);});el.classList.remove("in-ok","in-bad");if(el.value.trim()!=="")el.classList.add(ok?"in-ok":"in-bad");if(ok)s++;});fb("fb-l9lis2","sc-l9lis2","ms-l9lis2",s,LIS2.length);};
+window.l9ShowLis2=function(){LIS2.forEach(function(x){var el=$("l9l2_"+x.n);if(el){el.value=x.ans;el.classList.remove("in-bad");el.classList.add("in-ok");}});};
+window.l9ResetLis2=function(){renderLis2();clearFb("fb-l9lis2");}
+
+/* transcripts (verbatim) */
+var TS1=["OK, so this is one of our larger containers – the 40ft Open Top. Its tare weight is 4,030 kilos, that is 8,880 pounds. Its gross weight is 32,500 kilos. And here are the internal measurements of the container. The Open Top container's length inside is 12 metres – or 39 foot 5 inches. Its internal width is 2.35 m, and its height is 2.32 m – that's 7 foot 7 inches. And the container's maximum payload is 28,470 kilos."];
+var TS2=[
+ "Martin: IFT International Forwarders, Martin Smith. How can I help you?",
+ "Karla: Hello, this is Karla Hanssen from Cool Air, Sweden. I need a quotation for air freight to the United Arab Emirates. I've been trying to complete the online quotation form, but it keeps crashing.",
+ "Martin: Sorry about that. We have had some problems with it recently. I'll see if I can retrieve it. You said your name was Hanssen, didn't you?",
+ "Karla: Yes, that's right.",
+ "Martin: OK, here it is. It's saved some of your details. We can go through the rest of the consignment details over the phone and I'll fill in the quotation for you.",
+ "Martin: Could you briefly describe the goods you want to ship? — Karla: They're cooling units and they're going to Dubai.",
+ "Martin: OK, so that's non-hazardous material. How many units do you want to ship? — Karla: 15 boxes with a gross weight of 150 kg each.",
+ "Martin: And the size of each box? — Karla: Each box is 170 cm high, 145 cm wide and 82 cm deep. I think the volume would be about 30 m³.",
+ "Martin: OK, so the volume would be 30.31 m³ for the whole consignment. Where do you want to ship the goods from? — Karla: Stockholm, Sweden.",
+ "Martin: When would you like the units to be collected? — Karla: On August 3rd. — Martin: When should delivery be made? — Karla: Our customer must receive the units on August 6th.",
+ "Karla: My number is 0046 890265030 and the fax number is 0046 890265039. And my name is Karla Hanssen. — Martin: Thanks very much Ms Hanssen. I'll speak to you soon. Goodbye."
+];
+function fillTs(id,arr){var w=$(id);if(w)w.innerHTML=arr.map(function(t){return '<p>'+esc(t)+'</p>';}).join('');}
+function renderTranscripts(){fillTs("l9ts1Body",TS1);fillTs("l9ts2Body",TS2);}
+
+/* ---------- DISCUSSION (role-play scenario cards) ---------- */
+var DISC=[
+ {sit:"Caller: You want a quotation for 10 boxes of ceramic floor tiles (gross weight 120 kg each) shipped to Dubai.",
+  model:"Caller: I need a quotation for 10 boxes of ceramic floor tiles going to Dubai. Each box has a gross weight of 120 kg. They're non-hazardous goods. Could you tell me the price and the transit time?"},
+ {sit:"Forwarder: Ask the caller for everything you need to fill the quotation form.",
+  model:"Forwarder: Could you briefly describe the goods? How many units, and the gross weight of each? What are the dimensions of each box? Where do you want to ship from, and when should delivery be made?"},
+ {sit:"Caller: Confirm a fixed delivery date and give your contact details.",
+  model:"Caller: It's very important that our customer receives the units on August 6th. Would that be a problem? My phone number is 0046 890265030 and the fax is 0046 890265039."}
+];
+function renderDisc(){var w=$("l9disc");if(!w)return;w.innerHTML=DISC.map(function(x,i){return '<div class="phrase-card"><div class="dialogue-box">🎭 '+esc(x.sit)+'</div><div class="btn-group" style="margin-top:8px;"><button class="btn btn-secondary btn-sm" onclick="l9Reveal(\'l9disc_'+i+'\',this)">Show model exchange</button></div><div class="reveal-block" id="l9disc_'+i+'"><div class="sample-box" style="margin-top:8px;">💬 '+esc(x.model)+'</div></div></div>';}).join('');}
+
+/* ---------- QUIZ (40) ---------- */
+var QUIZ=[
+ /* 20 VOCABULARY (meaning-first, 20 distinct) */
+ {t:"VOCABULARY",q:'"dimension" what does it mean?',o:['The overall size of something: length, width and height.','The total money paid for shipping.','The date goods will arrive.','The company that ships goods.'],a:0,e:'Dimension = size (L × W × H).'},
+ {t:"VOCABULARY",q:'"length" what does it mean?',o:['How wide something is.','How long something is (side to side, end to end).','How heavy something is.','How much a box can hold.'],a:1,e:'Length = how long (long → length).'},
+ {t:"VOCABULARY",q:'"width" what does it mean?',o:['How tall something is.','How deep something is.','How wide something is (side to side).','How heavy something is.'],a:2,e:'Width = how wide (wide → width).'},
+ {t:"VOCABULARY",q:'"height" what does it mean?',o:['How high / tall something is.','How long something is.','The weight of a box.','The volume of a container.'],a:0,e:'Height = how high (high → height).'},
+ {t:"VOCABULARY",q:'"depth" what does it mean?',o:['How wide something is.','How far something goes from front to back (how deep).','The price of the goods.','The number of boxes.'],a:1,e:'Depth = how deep (deep → depth).'},
+ {t:"VOCABULARY",q:'"tare weight" what does it mean?',o:['The weight of the cargo only.','The total weight of everything.','The empty weight of the container or box.','The maximum weight allowed.'],a:2,e:'Tare weight = the empty (packaging) weight.'},
+ {t:"VOCABULARY",q:'"payload" what does it mean?',o:['The actual weight of the cargo carried.','The empty container weight.','The size of the box.','The delivery date.'],a:0,e:'Payload = the real cargo weight.'},
+ {t:"VOCABULARY",q:'"gross weight" what does it mean?',o:['The cargo weight only.','The total weight of the container plus the cargo.','The empty box weight.','The volume in m³.'],a:1,e:'Gross weight = tare + payload (all together).'},
+ {t:"VOCABULARY",q:'"volume" what does it mean?',o:['The weight of goods.','The surface area.','The amount of space something takes up (in m³).','The price of freight.'],a:2,e:'Volume = space taken up (cubic units).'},
+ {t:"VOCABULARY",q:'"capacity" what does it mean?',o:['How much liquid a container can hold.','How heavy the cargo is.','How long the container is.','The number of workers.'],a:0,e:'Capacity = liquid a container can hold (litres…).'},
+ {t:"VOCABULARY",q:'"surface" what does it mean?',o:['The weight of a box.','The area of the outside / a flat side (in m²).','The delivery time.','The number of units.'],a:1,e:'Surface = area (measured in m²).'},
+ {t:"VOCABULARY",q:'"shipment" what does it mean?',o:['A single small sample.','A group of goods sent together (a consignment).','The empty container.','A phone quotation.'],a:1,e:'Shipment = a load of goods sent together.'},
+ {t:"VOCABULARY",q:'"goods" what does it mean?',o:['The staff of a company.','Products / items that are bought, sold or shipped.','The mood of a place.','The paperwork.'],a:1,e:'Goods = items for sale or shipping (always plural).'},
+ {t:"VOCABULARY",q:'"sample" what does it mean?',o:['A small example of a product, to show quality.','The full shipment.','The container weight.','The invoice.'],a:0,e:'Sample = a small example of the goods.'},
+ {t:"VOCABULARY",q:'"brick" what does it mean?',o:['A decorative floor covering.','A rough block used to build walls.','A type of paint.','A measuring unit.'],a:1,e:'Brick = structural building block.'},
+ {t:"VOCABULARY",q:'"tile" what does it mean?',o:['A rough building block.','A thin flat piece used to cover floors or walls.','A bag of cement.','A wooden frame.'],a:1,e:'Tile = flat piece for floors/walls (decorative).'},
+ {t:"VOCABULARY",q:'"cement" what does it mean?',o:['A grey powder mixed with sand and water to build.','A type of tile.','The roof of a house.','A shipping document.'],a:0,e:'Cement = powder for building (mix with sand & water).'},
+ {t:"VOCABULARY",q:'"sand" what does it mean?',o:['A wall paint colour.','Tiny grains of rock, mixed with cement.','A measuring unit.','A container type.'],a:1,e:'Sand = fine grains mixed with cement.'},
+ {t:"VOCABULARY",q:'"roof" what does it mean?',o:['The floor of a room.','The top covering of a building.','A window frame.','A door.'],a:1,e:'Roof = the top of a building.'},
+ {t:"VOCABULARY",q:'"ceiling" what does it mean?',o:['The upper inside surface of a room.','The outside top of a house.','The floor.','The wall paint.'],a:0,e:'Ceiling = the inside top surface of a room.'},
+ /* 20 OTHER — units/conversion, specs, reading & listening */
+ {t:"UNITS",q:'Which is a METRIC unit?',o:['inch','foot','kilogram','pound'],a:2,e:'kilogram/meter = metric; inch/foot/pound = non-metric.'},
+ {t:"UNITS",q:'Which is a NON-metric unit?',o:['centimeter','pound','meter','gram'],a:1,e:'pound / inch / foot are non-metric.'},
+ {t:"UNITS",q:'1 inch is approximately…',o:['2.54 cm','0.45 kg','0.305 m','1 m'],a:0,e:'1 inch ≈ 2.54 cm.'},
+ {t:"UNITS",q:'1 foot is approximately…',o:['2.54 cm','0.305 m','0.45 kg','1 yard'],a:1,e:'1 foot ≈ 0.305 m (30.5 cm).'},
+ {t:"UNITS",q:'1 pound is approximately…',o:['0.45 kg','2.54 cm','1 kg','0.305 m'],a:0,e:'1 pound ≈ 0.45 kg.'},
+ {t:"UNITS",q:'Volume is measured in…',o:['square meters (m²)','cubic meters (m³)','kilograms','liters only'],a:1,e:'Volume → cubic units (m³).'},
+ {t:"UNITS",q:'Liquid capacity is measured in…',o:['meters','kilograms','liters / gallons','square feet'],a:2,e:'Capacity → litre, gallon, pint…'},
+ {t:"GRAMMAR",q:'Rewrite: "The box is 2 m long." →',o:['The long of the box is 2 m.','The length of the box is 2 m.','The box has length 2 m long.','The box is length 2 m.'],a:1,e:'long → length; "The length of … is …".'},
+ {t:"GRAMMAR",q:'The noun for the adjective "wide" is…',o:['wideness','width','wide','widing'],a:1,e:'wide → width.'},
+ {t:"GRAMMAR",q:'The noun for the adjective "deep" is…',o:['deepness','depth','deep','deeping'],a:1,e:'deep → depth.'},
+ {t:"SPECS",q:'You read "2.35 m" aloud as…',o:['two thirty-five metres','two point three five metres','two hundred thirty-five metres','twenty-three point five metres'],a:1,e:'Decimals use "point".'},
+ {t:"SPECS",q:'"39 ft 5 in" describes a…',o:['weight','length','volume','price'],a:1,e:'feet/inches → a length.'},
+ {t:"SPECS",q:'If tare weight is 4,030 kg and payload is 28,470 kg, the gross weight is…',o:['24,440 kg','32,500 kg','28,470 kg','4,030 kg'],a:1,e:'Gross = tare + payload = 32,500 kg.'},
+ {t:"READING",q:'Hank Wilcox works as the … at Jonston Cosmetics.',o:['logistics coordinator','export manager','freight forwarder','insurance agent'],a:1,e:'He is the export manager.'},
+ {t:"READING",q:'Jonston Cosmetics ships to more than … countries.',o:['20','30','40','50'],a:2,e:'More than 40 countries.'},
+ {t:"READING",q:'Freight insurance usually costs about … of the cargo value.',o:['1% to 2%','around 5%','more than 10%','less than 1%'],a:0,e:'Only 1–2% of the value.'},
+ {t:"LISTENING",q:'In Listening 1, the container is a…',o:['20ft dry container','40ft Open Top','20ft reefer','40ft flat rack'],a:1,e:'It is the 40ft Open Top.'},
+ {t:"LISTENING",q:'In Listening 2, Karla wants to ship…',o:['wall tiles','cooling units','wooden flooring','decorative lamps'],a:1,e:'Cooling units to Dubai.'},
+ {t:"LISTENING",q:'Karla needs delivery by…',o:['August 3rd','August 6th','August 30th','September 3rd'],a:1,e:'Collection Aug 3rd, delivery Aug 6th.'},
+ {t:"CONTEXT",q:'Best way to start a freight enquiry on the phone:',o:['"Nothing is more important than price."','"I need a quotation for air freight to …"','"Reschedule the meeting, please."','"Two-faced staff are a problem."'],a:1,e:'Open with the quotation request.'}
+];
+var qOrder=[],qIdx=0,qScore=0,qInt=null,qLeft=10,qAns=false;
+function qScreen(id){["l9qzStart","l9qzPlay","l9qzResult"].forEach(function(s){$(s).classList.toggle("active",s===id);});}
+function qStop(){if(qInt){clearInterval(qInt);qInt=null;}}
+window.l9QzStart=function(){qOrder=shuffle(QUIZ.map(function(_,i){return i;}));qIdx=0;qScore=0;qScreen("l9qzPlay");qRender();};
+function qRender(){
+ qAns=false;var q=QUIZ[qOrder[qIdx]];
+ $("l9qzCounter").textContent="QUESTION "+(qIdx+1)+" / 40";
+ $("l9qzType").textContent=q.t;$("l9qzQ").textContent=q.q;
+ $("l9qzOpts").innerHTML=q.o.map(function(o,i){return '<div class="mcq-option" data-oi="'+i+'" onclick="l9QzPick(this)"><span class="ltr">'+String.fromCharCode(65+i)+'.</span> <span>'+esc(o)+'</span></div>';}).join('');
+ var ex=$("l9qzExplain");ex.classList.remove("show");ex.textContent="";
+ $("l9qzSubmit").style.display="";$("l9qzNext").style.display="none";
+ qLeft=10;$("l9qzTimer").textContent="⏳ 10s";$("l9qzTimer").classList.remove("danger");
+ var bar=$("l9qzBar");bar.classList.remove("danger");bar.style.transition="none";bar.style.width="100%";
+ void bar.offsetWidth;bar.style.transition="width 10s linear";bar.style.width="0%";
+ qStop();qInt=track(setInterval(function(){qLeft--;$("l9qzTimer").textContent="⏳ "+qLeft+"s";if(qLeft<=3){$("l9qzTimer").classList.add("danger");$("l9qzBar").classList.add("danger");}if(qLeft<=0){qStop();qTimeout();}},1000));
+}
+window.l9QzPick=function(el){if(qAns)return;$("l9qzOpts").querySelectorAll(".mcq-option").forEach(function(o){o.classList.remove("selected");});el.classList.add("selected");};
+function reveal(pick){
+ qAns=true;qStop();var q=QUIZ[qOrder[qIdx]];
+ $("l9qzOpts").querySelectorAll(".mcq-option").forEach(function(o,i){o.style.pointerEvents="none";if(i===q.a)o.classList.add("correct");else if(i===pick)o.classList.add("wrong");});
+ if(pick===q.a)qScore++;
+ var ex=$("l9qzExplain");ex.innerHTML=(pick===q.a?"✅ ":"❌ ")+q.e;ex.classList.add("show");
+ $("l9qzSubmit").style.display="none";$("l9qzNext").style.display="";
+ if(qIdx===39)$("l9qzNext").textContent="See result →";
+}
+window.l9QzSubmit=function(){if(qAns)return;var sel=$("l9qzOpts").querySelector(".mcq-option.selected");reveal(sel?parseInt(sel.getAttribute("data-oi"),10):-1);};
+function qTimeout(){if(qAns)return;reveal(-1);}
+window.l9QzNext=function(){if(qIdx>=39){qResult();return;}qIdx++;qRender();};
+function qResult(){
+ qStop();qScreen("l9qzResult");$("l9qzScore").textContent=qScore+" / 40";
+ var v;
+ if(qScore>=36)v="🏆 Outstanding! You've mastered cargo specs & enquiries.";
+ else if(qScore>=28)v="👏 Great work — a few points to review.";
+ else if(qScore>=20)v="👍 Good start. Revisit Tabs 2–6 and try again.";
+ else v="💪 Keep going — replay the vocabulary and quiz.";
+ $("l9qzVerdict").textContent=v;
+}
+
+/* ---------- TABS (nested l9p1 / l9p2 / l9p2b) + routing ---------- */
+var L9NESTED={l9p1:1,l9p2:1,l9p2b:1};
+document.addEventListener("click",function(e){
+ var t=e.target.closest(".tab-btn");
+ if(t){var bar=t.closest(".tab-bar");var g=bar&&bar.getAttribute("data-group");
+  if(g&&L9NESTED[g]){var tab=t.getAttribute("data-tab");
+   bar.querySelectorAll(".tab-btn").forEach(function(b){b.classList.toggle("active",b===t);});
+   document.querySelectorAll('.tab-panel[data-panel-group="'+g+'"]').forEach(function(p){p.classList.toggle("active",p.getAttribute("data-panel")===tab);});
+  }
+ }
+ var p1b=e.target.closest("[data-l9p1tab]");
+ if(p1b){var bar1=document.querySelector('.tab-bar[data-group="l9p1"]');var b1=bar1&&bar1.querySelector('.tab-btn[data-tab="'+p1b.getAttribute("data-l9p1tab")+'"]');if(b1)b1.click();window.scrollTo(0,0);}
+ var p2b=e.target.closest("[data-l9p2tab]");
+ if(p2b){var bar2=document.querySelector('.tab-bar[data-group="l9p2"]');var b2=bar2&&bar2.querySelector('.tab-btn[data-tab="'+p2b.getAttribute("data-l9p2tab")+'"]');if(b2)b2.click();window.scrollTo(0,0);}
+});
+
+/* ---------- HOOKS ---------- */
+window.l9ClearTimers=function(){TIMERS.forEach(clearInterval);TIMERS.length=0;qInt=null;t2Int=null;};
+window.l9Reset=function(){
+ window.l9ClearTimers();
+ renderVocab();renderPhrases();renderPronL();renderQP();renderMatch();renderWU1();
+ renderEx1();renderEx2();renderRMcq();renderRTf();renderRFill();renderShort();
+ renderLis1();renderLis2();renderTranscripts();renderDisc();
+ ["fb-l9qp","fb-l9match","fb-l9ex1","fb-l9ex2","fb-l9rmcq","fb-l9rtf","fb-l9rfill","fb-l9lis1","fb-l9lis2"].forEach(clearFb);
+ qScreen("l9qzStart");
+ document.querySelectorAll("#page-lesson9 .vocab-card.flipped").forEach(function(c){c.classList.remove("flipped");});
+ document.querySelectorAll("#page-lesson9 .reveal-block.revealed").forEach(function(r){r.classList.remove("revealed");});
+ document.querySelectorAll("#page-lesson9 .viTxt").forEach(function(v){v.style.display="none";});
+ wordBag=[];sitBag=[];promptBag=[];
+ var dw=$("l9drawWordRes"),ds=$("l9drawSitRes"),pr=$("l9promptRes");
+ if(dw)dw.innerHTML='<span class="small">Your word will appear here…</span>';
+ if(ds)ds.innerHTML='<span class="small">Your situation will appear here…</span>';
+ if(pr)pr.innerHTML='<span class="small">Your prompt will appear here…</span>';
+ t2Preset=60;t2Left=60;t2Render();
+ document.querySelectorAll(".preset-pill[data-sec9t2]").forEach(function(p){p.classList.remove("active");});
+};
+
+/* ---------- VERIFY ---------- */
+function verify(){
+ console.assert(QUIZ.length===40,"L9 quiz must be 40, got "+QUIZ.length);
+ var vq=QUIZ.filter(function(q){return q.t==="VOCABULARY";});console.assert(vq.length>=20,"L9 quiz needs >=20 vocab, got "+vq.length);
+ var vw={};vq.forEach(function(q){vw[q.q]=1;});console.assert(Object.keys(vw).length===vq.length,"L9 vocab questions distinct");
+ console.assert(SPEC_DIM.length===8&&SPEC_WT.length===4&&MATERIALS.length===11,"L9 vocab counts");
+ console.assert(WU1.length===6,"L9 warm-up1 = 6");
+ console.assert(L1T1.length===6&&L1T2.length===5&&LIS2.length===10,"L9 listening worksheet counts");
+ console.assert(RMCQ.length===4&&RTF.length===4&&RFILL.length===4&&RSHORT.length===2,"L9 reading counts");
+ console.assert(DISC.length===3,"L9 discussion = 3");
+ console.assert(REFLEX_WORDS.length>=18&&REFLEX_WORDS.length<=25,"L9 reflex words");
+ console.assert(REFLEX_PROMPTS.length>=2&&REFLEX_PROMPTS.length<=4,"L9 prompts 2-4");
+}
+
+/* ---------- INIT ---------- */
+renderVocab();renderPhrases();renderPronL();renderQP();renderMatch();renderWU1();
+renderEx1();renderEx2();renderRMcq();renderRTf();renderRFill();renderShort();
+renderLis1();renderLis2();renderTranscripts();renderDisc();
 t2Render();
 verify();
 })();
